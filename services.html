@@ -38,6 +38,315 @@
     <link rel="stylesheet" href="css/mousecursor.css" />
     <!-- Main Custom Css -->
     <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": ["MedicalOrganization","MedicalClinic","LocalBusiness"],
+      "@id": "https://www.nakshatraclinic.com/#clinic",
+      "name": "Nakshatra Clinic",
+      "url": "https://www.nakshatraclinic.com/",
+      "logo": "https://www.nakshatraclinic.com/images/nakshatra-logo.jpg",
+      "image": "REPLACE_WITH_SERVICES_PAGE_IMAGE_URL",
+      "telephone": "+91-8446013011",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office No. 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon",
+        "addressLocality": "Pune",
+        "addressRegion": "MH",
+        "postalCode": "411045",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5820,
+        "longitude": 73.7690
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ],
+      "medicalSpecialty": [
+        "ReproductiveMedicine",
+        "ObstetricsAndGynecology"
+      ],
+      "areaServed": [
+        "Baner",
+        "Balewadi",
+        "Wakad",
+        "Hinjewadi",
+        "Pune"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/nakshatra.clinic?igsh=NnFpOWllZXlsdmw0",
+        "https://www.facebook.com/NakshatraClinic",
+        "https://youtube.com/@nakshatraivfandintimacycli5653?si=yRcy36-4MC9-hyXM"
+      ],
+      "employee": { "@id": "https://www.nakshatraclinic.com/#doctor-ramit-kamate" },
+      "hasOfferCatalog": { "@id": "https://www.nakshatraclinic.com/services.html#services" },
+
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://www.nakshatraclinic.com/#localbusiness",
+      "name": "Nakshatra Clinic",
+      "url": "https://www.nakshatraclinic.com/services.html",
+      "telephone": "+91-8446013011",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office No. 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon",
+        "addressLocality": "Pune",
+        "addressRegion": "MH",
+        "postalCode": "411045",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5820,
+        "longitude": 73.7690
+      },
+      "areaServed": [
+        "Baner",
+        "Balewadi",
+        "Wakad",
+        "Hinjewadi",
+        "Pune"
+      ],
+      "parentOrganization": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+
+    {
+      "@type": "Physician",
+      "@id": "https://www.nakshatraclinic.com/#doctor-ramit-kamate",
+      "name": "Dr. Ramit Kamate",
+      "medicalSpecialty": [
+        "ReproductiveMedicine",
+        "ObstetricsAndGynecology"
+      ],
+      "worksFor": { "@id": "https://www.nakshatraclinic.com/#clinic" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office No. 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon",
+        "addressLocality": "Pune",
+        "addressRegion": "MH",
+        "postalCode": "411045",
+        "addressCountry": "IN"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Medical Qualification",
+          "name": "REPLACE_WITH_QUALIFICATIONS (e.g., MBBS, DGO, DNB - OBGYN, Fellowship in Reproductive Medicine)"
+        }
+      ],
+      "knowsAbout": [
+        "Infertility Treatment",
+        "IUI Treatment",
+        "ICSI Treatment",
+        "IVF Treatment",
+        "Ovulation Induction",
+        "Fertility Surgeries",
+        "Sexual Medicine & Therapy",
+        "General Gynecology",
+        "Fetal Medicine",
+        "Egg & Sperm Freezing",
+        "Pregnancy Care",
+        "MTP Services"
+      ]
+    },
+
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://www.nakshatraclinic.com/services.html#services",
+      "name": "Nakshatra Clinic - Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#infertility-treatment" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#iui" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#icsi" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#ovulation-induction" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#fertility-surgeries" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#sexual-medicine-therapy" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#general-gynecology" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#fetal-medicine" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#egg-sperm-freezing" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#pregnancy-care" } },
+        { "@type": "Offer", "itemOffered": { "@id": "https://www.nakshatraclinic.com/services.html#mtp-services" } }
+      ]
+    },
+
+    {
+      "@type": "MedicalTherapy",
+      "@id": "https://www.nakshatraclinic.com/services.html#infertility-treatment",
+      "name": "Infertility Treatment",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://www.nakshatraclinic.com/services.html#procedure-iui",
+      "name": "Intrauterine Insemination (IUI)",
+      "description": "A fertility procedure where prepared sperm is placed into the uterus around ovulation to improve chances of conception.",
+      "procedureType": "Therapeutic",
+      "bodyLocation": "Uterus / Female reproductive system",
+      "howPerformed": "Ovulation tracking, semen processing, and intrauterine insemination performed in-clinic as advised by the treating specialist.",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": "https://www.nakshatraclinic.com/services.html#icsi",
+      "name": "ICSI Treatment",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": "https://www.nakshatraclinic.com/services.html#ovulation-induction",
+      "name": "Ovulation Induction",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://www.nakshatraclinic.com/services.html#fertility-surgeries",
+      "name": "Fertility Surgeries",
+      "description": "Procedures related to fertility care as advised by the specialist.",
+      "procedureType": "Therapeutic",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": "https://www.nakshatraclinic.com/services.html#sexual-medicine-therapy",
+      "name": "Sexual Medicine & Therapy",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": "https://www.nakshatraclinic.com/services.html#general-gynecology",
+      "name": "General Gynecology",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": "https://www.nakshatraclinic.com/services.html#fetal-medicine",
+      "name": "Fetal Medicine",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": "https://www.nakshatraclinic.com/services.html#egg-sperm-freezing",
+      "name": "Egg & Sperm Freezing",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": "https://www.nakshatraclinic.com/services.html#pregnancy-care",
+      "name": "Pregnancy Care",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": "https://www.nakshatraclinic.com/services.html#mtp-services",
+      "name": "MTP Services",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+
+    {
+      "@type": "EmergencyService",
+      "@id": "https://www.nakshatraclinic.com/services.html#emergency",
+      "name": "Emergency Support - Nakshatra Clinic",
+      "provider": { "@id": "https://www.nakshatraclinic.com/#clinic" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office No. 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon",
+        "addressLocality": "Pune",
+        "addressRegion": "MH",
+        "postalCode": "411045",
+        "addressCountry": "IN"
+      },
+      "serviceArea": { "@type": "AdministrativeArea", "name": "Pune, Maharashtra" },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "servicePhone": "REPLACE_WITH_EMERGENCY_NUMBER"
+      },
+      "hoursAvailable": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ]
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nakshatraclinic.com/services.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": " How many IVF cycles might I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": " Schedule a consultation with our fertility experts and
+                      take the first step toward your parenthood journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many IVF cycles might I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": " Schedule a consultation with our fertility experts and
+                      take the first step toward your parenthood journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": " Can IVF be used with donor eggs or sperm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Schedule a consultation with our fertility experts and
+                      take the first step toward your parenthood journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": " Can IVF be used with donor eggs or sperm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Schedule a consultation with our fertility experts and
+                      take the first step toward your parenthood journey."
+          }
+        }
+      ]
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.nakshatraclinic.com/services.html#breadcrumbs",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.nakshatraclinic.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.nakshatraclinic.com/services.html" },
+        { "@type": "ListItem", "position": 3, "name": "Contact", "item": "https://www.nakshatraclinic.com/contact/" }
+      ]
+    }
+
+  ]
+}
+     </script>
+
   </head>
   <body>
     <!-- Preloader Start -->
@@ -2251,7 +2560,7 @@
                       <h3>Call Us:</h3>
                     </div>
                     <div class="cta-contact-item-content">
-                      <p><a href="tel:254882963">+91-254-882-963</a></p>
+                      <p><a href="tel:+9184460-13011">+9184460-13011</a></p>
                     </div>
                   </div>
                   <!-- Faqs Contact Item End -->
@@ -2401,34 +2710,6 @@
               </div>
               <!-- FAQ Item End -->
 
-              <!-- FAQ Item Start -->
-              <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
-                <h2 class="accordion-header" id="heading5">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse5"
-                    aria-expanded="false"
-                    aria-controls="collapse5"
-                  >
-                    Can IVF be used with donor eggs or sperm?
-                  </button>
-                </h2>
-                <div
-                  id="collapse5"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading5"
-                  data-bs-parent="#faqaccordion"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Schedule a consultation with our fertility experts and
-                      take the first step toward your parenthood journey.
-                    </p>
-                  </div>
-                </div>
-              </div>
               <!-- FAQ Item End -->
             </div>
             <!-- FAQ Accordion End -->
