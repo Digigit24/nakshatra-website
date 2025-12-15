@@ -18,6 +18,123 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<link href="css/custom.css" rel="stylesheet" media="screen">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "PostalAddress",
+      "@id": "https://www.nakshatraclinic.com/#address",
+      "streetAddress": "REPLACE_WITH_STREET",
+      "addressLocality": "Baner",
+      "addressRegion": "Maharashtra",
+      "postalCode": "REPLACE_WITH_PIN",
+      "addressCountry": "IN"
+    },
+    {
+      "@type": "GeoCoordinates",
+      "@id": "https://www.nakshatraclinic.com/#geo",
+      "latitude": "REPLACE_WITH_LAT",
+      "longitude": "REPLACE_WITH_LNG"
+    },
+
+    {
+      "@type": ["WebPage", "MedicalWebPage"],
+      "@id": "https://www.nakshatraclinic.com/appointment-page.html#webpage",
+      "url": "https://www.nakshatraclinic.com/appointment-page.html",
+      "name": "Book Appointment - Nakshatra Clinic",
+      "description": "Book an appointment online for fertility and women’s health consultations at Nakshatra Clinic.",
+      "isPartOf": { "@id": "https://www.nakshatraclinic.com/#website" },
+      "about": { "@id": "https://www.nakshatraclinic.com/#clinic" },
+      "inLanguage": "en-IN",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://www.nakshatraclinic.com/appointment-page.html#primaryimage",
+        "url": "REPLACE_WITH_APPOINTMENT_PAGE_IMAGE_URL",
+        "caption": "Appointment booking - Nakshatra Clinic"
+      },
+      "potentialAction": [
+        {
+          "@type": ["ReserveAction", "ScheduleAction"],
+          "name": "Book Appointment",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.nakshatraclinic.com/appointment-page.html",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Clinic Appointment Reservation"
+          }
+        }
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://www.nakshatraclinic.com/#website",
+      "url": "https://www.nakshatraclinic.com/",
+      "name": "Nakshatra Clinic",
+      "publisher": { "@id": "https://www.nakshatraclinic.com/#clinic" }
+    },
+
+    {
+      "@type": ["MedicalClinic", "MedicalBusiness", "LocalBusiness"],
+      "@id": "https://www.nakshatraclinic.com/#clinic",
+      "name": "Nakshatra Clinic",
+      "url": "https://www.nakshatraclinic.com/",
+      "logo": "https://www.nakshatraclinic.com/images/nakshatra-logo.jpg",
+      "image": "https://www.nakshatraclinic.com/images/nakshatra-logo.jpg",
+      "telephone": "+91-8446013011",
+      "priceRange": "₹₹",
+      "address": { "@id": "https://www.nakshatraclinic.com/#address" },
+      "geo": { "@id": "https://www.nakshatraclinic.com/#geo" },
+      "areaServed": [{ "@type": "City", "name": "Pune" }],
+      "medicalSpecialty": [
+        "Obstetrics",
+        "Gynecology",
+        "ReproductiveEndocrinology"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-8446013011",
+          "contactType": "appointments",
+          "availableLanguage": ["English", "Hindi", "Marathi"]
+        }
+      ],
+      "department": [
+        { "@id": "https://www.nakshatraclinic.com/#fertility-department" }
+      ]
+    },
+
+    {
+      "@type": ["MedicalClinic", "MedicalBusiness"],
+      "@id": "https://www.nakshatraclinic.com/#fertility-department",
+      "name": "Fertility & IVF",
+      "medicalSpecialty": "ReproductiveEndocrinology",
+      "parentOrganization": { "@id": "https://www.nakshatraclinic.com/#clinic" },
+      "url": "https://www.nakshatraclinic.com/appointment-page.html",
+      "telephone": "REPLACE_WITH_PHONE",
+      "address": { "@id": "https://www.nakshatraclinic.com/#address" },
+      "geo": { "@id": "https://www.nakshatraclinic.com/#geo" }
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.nakshatraclinic.com/appointment-page.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.nakshatraclinic.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Appointment", "item": "https://www.nakshatraclinic.com/appointment-page.html" }
+      ]
+    }
+  ]
+}
+</script>
+
 	<style>
 		.map-container iframe{width:100%;height:200px;border:0;border-radius:8px;margin-top:10px;}
 		.faq-accordion .accordion-body p{margin:0;color:#555;font-size:0.95em;line-height:1.6;}
