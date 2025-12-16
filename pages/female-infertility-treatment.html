@@ -104,9 +104,162 @@
         box-shadow:0 8px 32px rgba(0,0,0,.1);
         }
         .glass-block p{margin:0;line-height:1.7;}
+
     </style>
+
+    <!-- schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
     
-    </head>
+        {
+          "@type": "Organization",
+          "@id": "https://nakshatraclinic.com/#organization",
+          "name": "Nakshatra Clinic",
+          "url": "https://nakshatraclinic.com/",
+          "logo": "https://nakshatraclinic.com/path-to-your-logo.png",
+          "telephone": "+918446013011",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Office No 101, First Floor, Chaitanya High Point Building, Near Bharati Vidyapeeth English Medium School, Dasara Chowk, Balewadi-Baner",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "postalCode": "411045",
+            "addressCountry": "IN"
+          },
+          "sameAs": [
+            "https://www.facebook.com/NakshatraClinic/",
+            "https://www.instagram.com/nakshatra.clinic/"
+          ]
+        },
+    
+        {
+          "@type": "MedicalBusiness",
+          "@id": "https://nakshatraclinic.com/#medicalbusiness",
+          "name": "Nakshatra Clinic",
+          "description": "Fertility and infertility treatment services including IVF, IUI, ovulation induction, and surgical procedures for female infertility.",
+          "url": "https://nakshatraclinic.com/pages/female-infertility-treatment.html",
+          "telephone": "+918446013011",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Office No 101, First Floor, Chaitanya High Point Building, Near Bharati Vidyapeeth English Medium School, Dasara Chowk, Balewadi-Baner",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "postalCode": "411045",
+            "addressCountry": "IN"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday", "Tuesday", "Wednesday",
+                "Thursday", "Friday", "Saturday", "Sunday"
+              ],
+              "opens": "10:00",
+              "closes": "19:00"
+            }
+          ],
+          "medicalSpecialty": [
+            "Fertility",
+            "Reproductive Medicine",
+            "Gynecology"
+          ],
+          "parentOrganization": {
+            "@id": "https://nakshatraclinic.com/#organization"
+          }
+        },
+    
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://nakshatraclinic.com/pages/female-infertility-treatment.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nakshatraclinic.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://nakshatraclinic.com/services.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Female Infertility Treatment",
+              "item": "https://nakshatraclinic.com/pages/female-infertility-treatment.html"
+            }
+          ]
+        },
+    
+        {
+          "@type": "Service",
+          "@id": "https://nakshatraclinic.com/pages/female-infertility-treatment.html#IVF",
+          "name": "IVF (In Vitro Fertilization)",
+          "description": "In Vitro Fertilization services for female infertility treatment involving egg fertilization outside the body.",
+          "url": "https://nakshatraclinic.com/ivf-options/",
+          "provider": {
+            "@id": "https://nakshatraclinic.com/#medicalbusiness"
+          },
+          "serviceType": "IVF Treatment"
+        },
+    
+        {
+          "@type": "Service",
+          "@id": "https://nakshatraclinic.com/pages/female-infertility-treatment.html#IUI",
+          "name": "IUI (Intrauterine Insemination)",
+          "description": "IUI treatment to assist female fertility by placing sperm directly into the uterus during ovulation.",
+          "url": "https://nakshatraclinic.com/female-infertility/iui-treatment-in-pune/",
+          "provider": {
+            "@id": "https://nakshatraclinic.com/#medicalbusiness"
+          },
+          "serviceType": "IUI Treatment"
+        },
+    
+        {
+          "@type": "MedicalProcedure",
+          "@id": "https://nakshatraclinic.com/pages/female-infertility-treatment.html#ovulation-induction",
+          "name": "Ovulation Induction",
+          "description": "Medical procedure to induce ovulation in women with irregular or absent ovulation as part of infertility treatment."
+        },
+    
+        {
+          "@type": "MedicalProcedure",
+          "@id": "https://nakshatraclinic.com/pages/female-infertility-treatment.html#surgical-procedures",
+          "name": "Surgical Infertility Procedures",
+          "description": "Surgical procedures used in female infertility treatment, such as laparoscopy and hysteroscopy."
+        },
+    
+        {
+          "@type": "Article",
+          "@id": "https://nakshatraclinic.com/pages/female-infertility-treatment.html#article",
+          "headline": "Female Infertility Treatment at Nakshatra Clinic",
+          "description": "Comprehensive overview of female infertility treatment options including IVF, IUI, ovulation induction, and surgical procedures.",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://nakshatraclinic.com/pages/female-infertility-treatment.html"
+          },
+          "author": {
+            "@type": "Organization",
+            "@id": "https://nakshatraclinic.com/#organization"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://nakshatraclinic.com/#organization"
+          },
+          "datePublished": "2025-01-15",
+          "dateModified": "2025-12-15"
+        }
+    
+      ]
+    }
+    </script>
+
+    
+</head>
 
 <body>
 
@@ -460,7 +613,7 @@
                                 <!-- Card 2 -->
                                 <div class="col-12 col-sm-6 col-lg-3">
                                   <div class="card border rounded-0 h-100 wow fadeInUp" data-wow-delay="1.2s">
-                                    <img loading="lazy"src="/images/Repeated Implantation Failure (RIF) Treatment.jpg" class="card-img-top rounded-0"
+                                    <img loading="lazy"src="# Implantation Failure (RIF) Treatment.jpg" class="card-img-top rounded-0"
                                       alt="Repeated Implantation Failure">
                                     <div class="card-body p-4">
                                       <h5 class="mb-3" style="color:#20296E;">Repeated Implantation Failure</h5>
@@ -490,7 +643,7 @@
                                 <!-- Card 4 -->
                                 <div class="col-12 col-sm-6 col-lg-3">
                                   <div class="card border rounded-0 h-100 wow fadeInUp" data-wow-delay="1.6s">
-                                    <img loading="lazy"src="/images/Ovarian Drilling for PCOD Treatment.jpg" class="card-img-top rounded-0" alt="Ovarian Drilling">
+                                    <img loading="lazy"src="/# Drilling for PCOD Treatment.jpg" class="card-img-top rounded-0" alt="Ovarian Drilling">
                                     <div class="card-body p-4">
                                       <h5 class="mb-3" style="color:#20296E;">Ovarian Drilling</h5>
                                       <p class="small mb-0">
