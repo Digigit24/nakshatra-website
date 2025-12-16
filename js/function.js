@@ -245,59 +245,60 @@
     });
 
     /* Contact form validation */
-    var $contactform = $("#contactForm");
-    $contactform.validator({ focus: false }).on("submit", function (event) {
-        if (!event.isDefaultPrevented()) {
-            event.preventDefault();
-            submitForm();
-        }
-    });
+    /* Handled by js/form-integration.js */
+    // var $contactform = $("#contactForm");
+    // $contactform.validator({ focus: false }).on("submit", function (event) {
+    //     if (!event.isDefaultPrevented()) {
+    //         event.preventDefault();
+    //         submitForm();
+    //     }
+    // });
 
-    function submitForm() {
-        $.ajax({
-            type: "POST",
-            url: "form-process.php",
-            data: $contactform.serialize(),
-            success: function (text) {
-                if (text === "success") {
-                    formSuccess();
-                } else {
-                    submitMSG(false, text);
-                }
-            }
-        });
-    }
+    // function submitForm() {
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "form-process.php",
+    //         data: $contactform.serialize(),
+    //         success: function (text) {
+    //             if (text === "success") {
+    //                 formSuccess();
+    //             } else {
+    //                 submitMSG(false, text);
+    //             }
+    //         }
+    //     });
+    // }
 
-    function formSuccess() {
-        $contactform[0].reset();
-        submitMSG(true, "Message Sent Successfully!")
-    }
+    // function formSuccess() {
+    //     $contactform[0].reset();
+    //     submitMSG(true, "Message Sent Successfully!")
+    // }
 
-    function submitMSG(valid, msg) {
-        if (valid) {
-            var msgClasses = "h4 text-success";
-        } else {
-            var msgClasses = "h4 text-danger";
-        }
-        $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-    }
+    // function submitMSG(valid, msg) {
+    //     if (valid) {
+    //         var msgClasses = "h4 text-success";
+    //     } else {
+    //         var msgClasses = "h4 text-danger";
+    //     }
+    //     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+    // }
     /* Contact form validation end */
 
     /* Appointment form – disable old AJAX, use real submit */
-    var $appointmentForm = $("#appointmentForm");
+    // var $appointmentForm = $("#appointmentForm");
     /* 1.  kill validator hijack for this form only */
-    if ($appointmentForm.data('validator')) $appointmentForm.validator('destroy');
+    // if ($appointmentForm.data('validator')) $appointmentForm.validator('destroy');
 
     /* 2.  real-browser-submit handler */
-    $(document).on('click', '#realSubmitBtn', function () {
-        var form = $appointmentForm[0];
-        if (form.checkValidity && !form.checkValidity()) {
-            form.reportValidity();
-            return;
-        }
-        $(this).prop('disabled', true).text('Sending…');
-        $appointmentForm.off('submit').submit(); // normal POST to action URL
-    });
+    // $(document).on('click', '#realSubmitBtn', function () {
+    //     var form = $appointmentForm[0];
+    //     if (form.checkValidity && !form.checkValidity()) {
+    //         form.reportValidity();
+    //         return;
+    //     }
+    //     $(this).prop('disabled', true).text('Sending…');
+    //     $appointmentForm.off('submit').submit(); // normal POST to action URL
+    // });
 
     /* Animated Wow Js */
     new WOW().init();
