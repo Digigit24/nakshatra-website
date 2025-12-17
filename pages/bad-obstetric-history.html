@@ -54,7 +54,191 @@
         .glass-block{background:rgba(255,255,255,.15);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:2rem;color:#fff;box-shadow:0 8px 32px rgba(0,0,0,.1)}
         .glass-block p{margin:0;line-height:1.7}
     </style>
+    <!--Schema-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://www.nakshatraclinic.com/#organization",
+      "name": "Nakshatra Clinic",
+      "description": "Nakshatra Clinic offers comprehensive obstetric care, pregnancy services, and specialized evaluation for bad obstetric history (BOH) in Pune.",
+      "image": "https://www.nakshatraclinic.com/images/nakshatra-logo.jpg",
+      "url": "https://www.nakshatraclinic.com/",
+      "telephone": "+91-8446013011",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon, Baner",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411045",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.5204",
+        "longitude": "73.8567"
+      },
+      "openingHours": [
+        "Mo-Su 10:00-19:00"
+      ],
+      "sameAs": [
+        "https://www.youtube.com/@nakshatraivfandintimacycli5653",
+        "https://www.instagram.com/nakshatra.clinic",
+        "https://www.facebook.com/NakshatraClinic"
+      ]
+    },
+
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.nakshatraclinic.com/#localbusiness",
+      "name": "Nakshatra Clinic",
+      "url": "https://www.nakshatraclinic.com/",
+      "telephone": "+918446013011",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon, Baner",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411045",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.5204",
+        "longitude": "73.8567"
+      },
+      "openingHours": [
+        "Mo-Su 10:00-19:00"
+      ],
+      "parentOrganization": {
+        "@id": "https://www.nakshatraclinic.com/#organization"
+      }
+    },
+
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://www.nakshatraclinic.com/pages/bad-obstetric-history.html#webpage",
+      "url": "https://www.nakshatraclinic.com/pages/bad-obstetric-history.html",
+      "name": "Bad Obstetric History – Nakshatra Clinic",
+      "description": "Information about bad obstetric history (BOH), causes, evaluation, and specialized care provided by Nakshatra Clinic in Pune.",
+      "lastReviewed": "2025-12-01",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.nakshatraclinic.com/path-to-your-page-image.jpg"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.nakshatraclinic.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pregnancy Services",
+            "item": "https://www.nakshatraclinic.com/pages/pregnancy.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Bad Obstetric History",
+            "item": "https://www.nakshatraclinic.com/pages/bad-obstetric-history.html"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "MedicalCondition",
+      "@id": "https://www.nakshatraclinic.com/pages/bad-obstetric-history.html#condition",
+      "name": "Bad Obstetric History",
+      "description": "Bad Obstetric History (BOH) refers to previous adverse pregnancy outcomes such as recurrent miscarriages, stillbirth, or neonatal deaths that may impact future pregnancies.",
+      "cause": "Previous unfavorable pregnancy outcomes (miscarriage, stillbirth, neonatal death)", 
+      "possibleTreatment": "Specialized evaluation and personalized care at Nakshatra Clinic",
+      "associatedAnatomy": {
+        "@type": "AnatomicalStructure",
+        "name": "Female reproductive system"
+      },
+      "signOrSymptom": "Repeated pregnancy loss or complications"
+    },
+
+    {
+      "@type": "MedicalService",
+      "@id": "https://www.nakshatraclinic.com/pages/bad-obstetric-history.html#service",
+      "name": "Evaluation and Care for Bad Obstetric History",
+      "description": "Comprehensive evaluation, monitoring, and specialized care for individuals with bad obstetric history at Nakshatra Clinic.",
+      "provider": {
+        "@id": "https://www.nakshatraclinic.com/#organization"
+      },
+      "serviceType": "Bad Obstetric History Evaluation and Care",
+      "audience": {
+        "@type": "MedicalAudience",
+        "name": "Women with previous adverse pregnancy outcomes"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Bad Obstetric History (BOH)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bad Obstetric History (BOH) refers to repeated pregnancy losses, stillbirths, or neonatal deaths in past pregnancies. At our Pune clinic, we provide advanced diagnostic and treatment options to identify the cause and support successful future pregnancies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the common causes of BOH?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common causes include genetic abnormalities, hormonal imbalances, infections, immune disorders, uterine problems, or lifestyle factors. Our Pune specialists perform detailed testing to find and treat the underlying cause for better pregnancy outcomes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What treatment options are available for BOH in Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Treatment for BOH in Pune includes hormonal therapy, infection control, vitamin supplementation, genetic counseling, and fertility monitoring. Our expert gynecologists create personalized plans to improve conception and ensure a healthy pregnancy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can women with BOH have a healthy pregnancy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, many women with BOH successfully conceive and deliver healthy babies with proper diagnosis, treatment, and monitoring. Our Pune specialists provide continuous antenatal care to support safe and positive pregnancy outcomes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does stress affect Bad Obstetric History?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stress can impact hormonal balance, blood pressure, and overall pregnancy health. At our Pune clinic, we focus on emotional counseling, lifestyle guidance, and relaxation techniques along with medical care for BOH patients."
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script>
 </head>
+
+
+
+
+
 
 <body>
 <div class="preloader">
@@ -582,22 +766,10 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-item">
-                                    <button class="accordion-question" aria-expanded="false">
-                                        5. Can women with BOH have a healthy pregnancy?
-                                    </button>
-                                    <div class="accordion-answer">
-                                        <p>
-                                            Yes, many women with BOH successfully conceive and deliver healthy babies with proper diagnosis, treatment,
-                                            and monitoring. Our Pune specialists provide continuous antenatal care to support safe and positive
-                                            pregnancy outcomes.
-                                        </p>
-                                    </div>
-                                </div>
 
                                 <div class="accordion-item">
                                     <button class="accordion-question" aria-expanded="false">
-                                        6. How does stress affect Bad Obstetric History?
+                                        5. How does stress affect Bad Obstetric History?
                                     </button>
                                     <div class="accordion-answer">
                                         <p>

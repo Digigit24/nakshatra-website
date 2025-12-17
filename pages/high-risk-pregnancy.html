@@ -57,7 +57,192 @@
         .glass-block { background:rgba(255,255,255,.15); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,.2); border-radius:16px; padding:2rem; color:#fff; box-shadow:0 8px 32px rgba(0,0,0,.1); }
         .glass-block p { margin:0; line-height:1.7; }
     </style>
+
+    <!--schema-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://www.nakshatraclinic.com/#organization",
+      "name": "Nakshatra Clinic",
+      "description": "Nakshatra Clinic provides expert obstetric and prenatal care, including management of high‑risk pregnancy conditions in Pune.",
+      "image": "https://www.nakshatraclinic.com/images/nakshatra-logo.jpg",
+      "url": "https://www.nakshatraclinic.com/",
+      "telephone": "+91‑8446013011",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon, Baner",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411045",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.5204",
+        "longitude": "73.8567"
+      },
+      "openingHours": [
+        "Mo‑Su 10:00‑19:00"
+      ],
+      "sameAs": [
+        "https://www.youtube.com/@nakshatraivfandintimacycli5653",
+        "https://www.instagram.com/nakshatra.clinic",
+        "https://www.facebook.com/NakshatraClinic"
+      ]
+    },
+
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.nakshatraclinic.com/#localbusiness",
+      "name": "Nakshatra Clinic",
+      "url": "https://www.nakshatraclinic.com/",
+      "telephone": "+918446013011",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon, Baner",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411045",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.5204",
+        "longitude": "73.8567"
+      },
+      "openingHours": [
+        "Mo‑Su 10:00‑19:00"
+      ],
+      "parentOrganization": {
+        "@id": "https://www.nakshatraclinic.com/#organization"
+      }
+    },
+
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://www.nakshatraclinic.com/pages/high-risk-pregnancy.html#webpage",
+      "url": "https://www.nakshatraclinic.com/pages/high-risk-pregnancy.html",
+      "name": "High Risk Pregnancy – Nakshatra Clinic",
+      "description": "High‑risk pregnancy refers to pregnancies with increased chances of complications for the mother or fetus. Learn causes, care, and monitoring provided at Nakshatra Clinic in Pune.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.nakshatraclinic.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pregnancy Services",
+            "item": "https://www.nakshatraclinic.com/pages/pregnancy.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "High Risk Pregnancy",
+            "item": "https://www.nakshatraclinic.com/pages/high-risk-pregnancy.html"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "MedicalCondition",
+      "@id": "https://www.nakshatraclinic.com/pages/high-risk-pregnancy.html#condition",
+      "name": "High‑Risk Pregnancy",
+      "description": "A high‑risk pregnancy is a pregnancy with an increased chance of complications for the mother, fetus, or both compared to a typical pregnancy. Such cases often require close monitoring and specialized care. High‑risk pregnancy can be caused by pre‑existing maternal conditions, obstetric complications, or fetal factors.",
+      "cause": "Factors including pre‑existing health conditions, pregnancy‑related complications, age, and lifestyle factors may lead to a high‑risk pregnancy.",
+      "possibleTreatment": "Specialized prenatal monitoring, consultation with maternal‑fetal medicine specialists, and personalized care plans.",
+      "signOrSymptom": "Symptoms or signs can include abnormal fetal movements, severe fatigue, high blood pressure, or other warning signs requiring immediate care.",
+      "associatedAnatomy": {
+        "@type": "AnatomicalStructure",
+        "name": "Female reproductive system"
+      }
+    },
+
+    {
+      "@type": "MedicalService",
+      "@id": "https://www.nakshatraclinic.com/pages/high-risk-pregnancy.html#service",
+      "name": "High‑Risk Pregnancy Care & Monitoring",
+      "description": "Comprehensive care and monitoring for high‑risk pregnancies, including detailed evaluations, ultrasounds, specialist consultations, and personalized management to improve maternal and fetal outcomes.",
+      "provider": {
+        "@id": "https://www.nakshatraclinic.com/#organization"
+      },
+      "serviceType": "High‑Risk Pregnancy Care",
+      "audience": {
+        "@type": "MedicalAudience",
+        "name": "Expectant Mothers with High‑Risk Pregnancy"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is considered a high-risk pregnancy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A pregnancy with higher chances of complications due to medical, genetic or lifestyle factors. A high-risk pregnancy is when the mother or baby faces a greater chance of complications due to medical, genetic, or lifestyle factors. Our Pune specialists provide advanced monitoring and expert care to ensure safe pregnancy outcomes even in complex cases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the common causes of high-risk pregnancy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "High-risk pregnancies can result from conditions like diabetes, high blood pressure, thyroid imbalance, or advanced maternal age. At our Pune clinic, we identify the exact cause and offer tailored treatment and care plans for a healthy pregnancy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is a high-risk pregnancy managed in Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "High-risk pregnancy management in Pune involves frequent checkups, specialized scans, and personalized medical plans. Our gynecologists ensure continuous monitoring and timely interventions to protect both mother and baby throughout the pregnancy journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What symptoms require immediate medical attention?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you experience severe abdominal pain, bleeding, dizziness, or reduced baby movement, seek immediate care. Our Pune high-risk pregnancy team is available 24/7 to handle emergencies and ensure timely treatment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What tests are done for high-risk pregnancies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tests include ultrasounds, blood sugar monitoring, thyroid testing, fetal growth scans, and genetic screenings. At our Pune clinic, these tests help detect complications early and guide appropriate treatment throughout the pregnancy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I reduce the risks during pregnancy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maintaining a healthy lifestyle, eating nutritious foods, exercising safely, and attending regular prenatal checkups can reduce risks. Our Pune doctors provide preventive guidance and continuous care to help you manage your pregnancy safely."
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script>
 </head>
+
+
+
 
 <body>
 <div class="preloader">
