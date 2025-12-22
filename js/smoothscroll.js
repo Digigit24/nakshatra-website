@@ -560,7 +560,16 @@ function isContentOverflowing(el) {
     return (el.clientHeight + 10 < el.scrollHeight);
 }
 
-// typically for <body> and <html>
+// typically for <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3JF3BY7JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G3JF3BY7JN');
+</script>
+<body> and <html>
 function overflowNotHidden(el) {
     var overflow = getComputedStyle(el, '').getPropertyValue('overflow-y');
     return (overflow !== 'hidden');
