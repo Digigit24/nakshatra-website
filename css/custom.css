@@ -7005,3 +7005,13 @@ header.main-header .header-sticky.active{
         padding: 20px;
     }
 }
+/* Floating Buttons */
+    .phone-float {
+      position: fixed; width: 60px; height: 60px; right: 35px; border-radius: 50px;
+      bottom: 160px !important;
+      text-align: center; font-size: 28px; z-index: 1000; display: flex; align-items: center; justify-content: center;
+      color: #fff; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .phone-float { bottom: 180px; background: #007bff; }
+    .phone-float:hover { transform: scale(1.1); color: #fff; }
+    .logo-1 { display: block !important; visibility: visible !important; }
