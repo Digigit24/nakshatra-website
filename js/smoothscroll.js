@@ -569,7 +569,10 @@ function isContentOverflowing(el) {
 
   gtag('config', 'G-G3JF3BY7JN');
 </script>
-<body> and <html>
+<body>
+ <a href="tel:+917058658711" class="phone-float" target="_blank">
+      <i class="fa fa-phone phone-icon"></i>
+    </a> and <html>
 function overflowNotHidden(el) {
     var overflow = getComputedStyle(el, '').getPropertyValue('overflow-y');
     return (overflow !== 'hidden');
