@@ -43,8 +43,14 @@
         if (response.ok) {
           form.reset();
           // Track Meta Pixel Lead event
-          if (typeof fbq === "function") {
-            fbq("track", "Lead");
+          // Track Meta Pixel Lead event
+          if (typeof window.fbq === "function") {
+            window.fbq("track", "Lead");
+            console.log("Meta Pixel Lead event triggered successfully");
+          } else {
+            console.warn(
+              "Meta Pixel Lead event NOT triggered: window.fbq is not a function"
+            );
           }
           showMessage(form, "Message Sent Successfully!", "success");
         } else {
