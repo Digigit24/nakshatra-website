@@ -10,7 +10,7 @@ files = [
 
 inline_script = """  <script>
     (function () {
-      const API_ENDPOINT = "https://forms.thedigitechsolutions.com/api/forms/submit/09f77c2c-a501-4b0b-b96d-552efe7145d5";
+      const API_ENDPOINT = "https://www.forms.thedigitechsolutions.com/api/forms/submit/09f77c2c-a501-4b0b-b96d-552efe7145d5";
 
       function handleFormSubmit(event) {
         event.preventDefault();
