@@ -8,6 +8,22 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WBZ7VJCT');</script>
+
+
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-338713549/69GcCKrHo9gbEM23waEB',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
     <!-- End Google Tag Manager -->
     <!-- SEO Meta Tags (Exact Match) -->
     <title>Best IVF Center in Pune | Test Tube Baby Treatment</title>
@@ -2124,104 +2140,107 @@
   <script src="js/function.js"></script>
   
   <script>
-    (function () {
-      const API_ENDPOINT = "https://www.forms.thedigitechsolutions.com/api/forms/submit/09f77c2c-a501-4b0b-b96d-552efe7145d5";
+      (function () {
+        const API_ENDPOINT = "https://hms.celiyo.com/api/nakshatra/submit/";
 
-      function handleFormSubmit(event) {
-        event.preventDefault();
-        const form = event.target;
+        function handleFormSubmit(event) {
+          event.preventDefault();
+          const form = event.target;
 
-        // Check for validity
-        if (form.checkValidity && !form.checkValidity()) {
-          form.reportValidity();
-          return;
+          if (form.checkValidity && !form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+
+          const submitButton = form.querySelector(
+            'button[type="submit"], input[type="submit"], button:not([type]), #realSubmitBtn'
+          );
+          if (submitButton) {
+            submitButton.disabled = true;
+            if (submitButton.innerText.trim().length > 0) {
+              submitButton.setAttribute(
+                "data-original-text",
+                submitButton.innerText
+              );
+              submitButton.innerText = "Sending...";
+            }
+          }
+
+          const formData = new FormData(form);
+          // Add client_event_id for deduplication
+          formData.append("client_event_id", crypto.randomUUID());
+
+          fetch(API_ENDPOINT, {
+            method: "POST",
+            headers: {
+              "X-TENANT-ID": "d2bcd1ee-e5c5-4c9f-bff2-aaf901d40440",
+            },
+            body: formData, // Send as FormData for the Django view
+          })
+            .then((response) => {
+              if (response.ok) {
+                form.reset();
+                if (typeof window.fbq === "function") {
+                  window.fbq("track", "Lead");
+                }
+                showMessage(form, "Message Sent Successfully!", "success");
+              } else {
+                showMessage(form, "Submission failed. Please retry.", "error");
+              }
+            })
+            .catch((error) => {
+              console.error("Form submission error:", error);
+              showMessage(
+                form,
+                "Error submitting form. Please try again later.",
+                "error"
+              );
+            })
+            .finally(() => {
+              if (submitButton) {
+                submitButton.disabled = false;
+                if (submitButton.getAttribute("data-original-text")) {
+                  submitButton.innerText =
+                    submitButton.getAttribute("data-original-text");
+                }
+              }
+            });
         }
 
-        const submitButton = form.querySelector('button[type="submit"], input[type="submit"], button:not([type]), #realSubmitBtn');
-        const originalButtonText = submitButton ? submitButton.innerText : "";
-
-        if (submitButton) {
-          submitButton.disabled = true;
-          if (submitButton.innerText.trim().length > 0) {
-            submitButton.setAttribute("data-original-text", originalButtonText);
-            submitButton.innerText = "Sending...";
+        function showMessage(form, message, type) {
+          let msgContainer = form.querySelector("#msgSubmit");
+          if (!msgContainer) {
+            msgContainer = document.createElement("div");
+            msgContainer.id = "msgSubmit";
+            msgContainer.className = "h3 hidden";
+            form.appendChild(msgContainer);
+          }
+          msgContainer.innerText = message;
+          msgContainer.classList.remove("hidden", "d-none");
+          msgContainer.style.display = "block";
+          msgContainer.classList.remove("text-success", "text-danger");
+          if (type === "success") {
+            msgContainer.classList.add("text-success");
+          } else {
+            msgContainer.classList.add("text-danger");
           }
         }
 
-        const formData = new FormData(form);
-        const payload = Object.fromEntries(formData.entries());
-
-        fetch(API_ENDPOINT, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        })
-          .then((response) => {
-            if (response.ok) {
-              form.reset();
-              // Track Meta Pixel Lead event
-              if (typeof window.fbq === "function") {
-                window.fbq("track", "Lead");
-                console.log("Meta Pixel Lead event triggered successfully");
-              } else {
-                console.warn("Meta Pixel Lead event NOT triggered: window.fbq is not a function");
-              }
-              showMessage(form, "Message Sent Successfully!", "success");
-            } else {
-              showMessage(form, "Submission failed. Please retry.", "error");
-            }
-          })
-          .catch((error) => {
-            console.error("Form submission error:", error);
-            showMessage(form, "Error submitting form. Please try again later.", "error");
-          })
-          .finally(() => {
-            if (submitButton) {
-              submitButton.disabled = false;
-              if (submitButton.getAttribute("data-original-text")) {
-                submitButton.innerText = submitButton.getAttribute("data-original-text");
-              }
-            }
+        function init() {
+          const forms = document.querySelectorAll("form");
+          forms.forEach((form) => {
+            form.removeAttribute("action");
+            form.addEventListener("submit", handleFormSubmit);
           });
-      }
-
-      function showMessage(form, message, type) {
-        let msgContainer = form.querySelector("#msgSubmit");
-        if (!msgContainer) {
-          msgContainer = document.createElement("div");
-          msgContainer.id = "msgSubmit";
-          msgContainer.className = "h3 hidden";
-          form.appendChild(msgContainer);
         }
-        msgContainer.innerText = message;
-        msgContainer.classList.remove("hidden", "d-none");
-        msgContainer.style.display = "block";
-        msgContainer.classList.remove("text-success", "text-danger");
-        if (type === "success") {
-          msgContainer.classList.add("text-success");
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", init);
         } else {
-          msgContainer.classList.add("text-danger");
+          init();
         }
-      }
-
-      function init() {
-        const forms = document.querySelectorAll("form");
-        forms.forEach((form) => {
-          form.removeAttribute("action");
-          form.removeEventListener("submit", handleFormSubmit);
-          form.addEventListener("submit", handleFormSubmit);
-        });
-      }
-
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", init);
-      } else {
-        init();
-      }
-    })();
-  </script>
+      })();
+    </script>
 </body>
 
 </html>
