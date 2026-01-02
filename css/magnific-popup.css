@@ -19,7 +19,6 @@
   position: fixed;
   outline: none !important;
   -webkit-backface-visibility: hidden; }
-
 .mfp-container {
   text-align: center;
   position: absolute;
@@ -117,7 +116,6 @@ button.mfp-arrow {
   z-index: 1046;
   box-shadow: none;
   touch-action: manipulation; }
-
 button::-moz-focus-inner {
   padding: 0;
   border: 0; }
