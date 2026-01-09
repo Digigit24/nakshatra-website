@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^nakshatraclinic\.com [NC]
+RewriteRule ^(.*)$ https://www.nakshatraclinic.com/$1 [L,R=301]
+
+# Force HTTPS (optional but recommended)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
