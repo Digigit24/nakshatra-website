@@ -238,7 +238,511 @@
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
    
+       <style>
+        .page-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/about-hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0 80px;
+            color: white;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            padding: 80px 0;
+        }
+
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-vision {
+            background-color: #f9f9f9;
+            padding: 80px 0;
+        }
+
+        .mission-box,
+        .vision-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+
+        .team-section {
+            padding: 80px 0;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .team-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 5px solid #f0f0f0;
+        }
+
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .values-section {
+            background-color: #f9f9f9;
+            padding: 80px 0;
+        }
+
+        .value-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: #e6f7ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .value-icon img {
+            max-width: 40px;
+        }
+
+        .stats-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #4a90e2, #6c5ce7);
+            color: white;
+        }
+
+        .stat-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb-item a {
+            color: #fff;
+        }
+
+        .breadcrumb-item.active {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .main-header{
+          background-color: #20296E;
+        }
+        #header{
+          border-radius: 20px;
+        }
+                .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+  bottom: 90px;
+	/* bottom:20px; */
+	right:35px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+/* --- SECTION WRAPPER --- */
+.nks-hero-section {
+    margin-top: -150px; /* Pulls section up on Desktop */
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 5;
+}
+
+/* --- LEFT SIDE TEXT --- */
+.nks-left-content {
+    padding-right: 40px; /* Space between text and form on Desktop */
+    text-align: left;
+}
+
+.nks-title {
+    font-size: 3rem; 
+    font-weight: 800;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.nks-highlight {
+    color: #FF70A3;
+}
+
+.nks-desc {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 95%;
+    font-weight: 500;
+}
+
+/* --- BUTTON STYLES --- */
+.nks-btn-wrapper {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nks-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #FF70A3;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.nks-cta-btn .icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.nks-cta-btn:hover {
+    background: #FF70A3;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 112, 163, 0.4);
+}
+
+/* Pulse Animation */
+@keyframes pulse-pink {
+    0% { box-shadow: 0 0 0 0 rgba(255, 112, 163, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 112, 163, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 112, 163, 0); }
+}
+
+.btn-pulse {
+    background: #FF70A3;
+    border-color: #FF70A3;
+    animation: pulse-pink 2s infinite;
+}
+
+/* --- FORM STYLES (Padding & Layout) --- */
+.nks-form-wrapper {
+    background: rgba(20, 20, 20, 0.65); /* Darker glass for readability */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
     
+    /* PERFECT PADDING FOR DESKTOP */
+    padding: 40px 25px; 
+    
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    width: 550px;
+}
+
+.nks-form-header h3 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nks-input {
+    width: 100%;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: 0.3s;
+}
+
+.nks-input:focus {
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 112, 163, 0.5);
+}
+
+.nks-select {
+    color: #444;
+    cursor: pointer;
+}
+
+.nks-submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #FF70A3 0%, #ff3d85 100%);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 77, 141, 0.4);
+    transition: transform 0.2s;
+    margin-top: 10px;
+}
+
+.nks-submit-btn:hover {
+    transform: scale(1.02);
+}
+
+/* --- MOBILE RESPONSIVE CODE --- */
+@media (max-width: 991px) {
+    .nks-hero-section {
+        margin-top: 0; /* Reset desktop negative margin */
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .nks-left-content {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 40px; /* Space between text and form */
+    }
+
+    .nks-title {
+        font-size: 2.4rem;
+    }
+    
+    .nks-desc {
+        font-size: 1.1rem;
+        margin: 0 auto 30px auto;
+    }
+
+    /* Stack buttons on mobile */
+    .nks-btn-wrapper {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nks-cta-btn {
+        width: 100%;
+    }
+
+    /* FORM MOBILE ADJUSTMENTS */
+    .nks-form-wrapper {
+        /* Adjusted padding for mobile screens */
+        height: 550px;
+        width: 370px;
+        padding: 30px 20px; 
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nks-title {
+        font-size: 1.8rem;
+    }
+    
+    .nks-form-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Ensure inputs don't zoom on iPhone */
+    .nks-input {
+        font-size: 16px; 
+        height: 50px;
+    }
+    
+    .nks-form-wrapper {
+        padding: 25px 15px; /* Maximum width on very small screens */
+    }
+}
+
+/* About section style */
+/* --- SECTION WRAPPER --- */
+.nks-founder-section {
+    padding: 80px 0;
+    background-color: #ffffff; /* Clean background */
+    overflow: hidden;
+}
+
+/* --- TEXT CONTENT STYLING --- */
+.nks-founder-content {
+    padding-right: 30px; /* Space between text and image on desktop */
+}
+
+.nks-subtitle {
+    color: #FF70A3;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nks-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.nks-degrees {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+    /* font-style: italic; */
+}
+
+.nks-text {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify; /* Makes text blocks look neat */
+}
+
+/* --- BUTTONS --- */
+.nks-btn-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.nks-btn-default {
+    background-color: #FF70A3;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #FF70A3;
+    display: inline-block;
+}
+
+.nks-btn-default:hover {
+    background-color: #ff4d8d;
+    border-color: #ff4d8d;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #FF70A3;
+}
+
+.btn-outline:hover {
+    background-color: #FF70A3;
+    color: #fff;
+}
+
+/* --- IMAGE STYLING --- */
+.nks-founder-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nks-founder-img {
+    max-width: 100%;
+    height: 550px;
+    border-radius: 10px; /* Slight curve for modern look */
+    /* Ensures no background box appears behind image */
+    background: transparent; 
+    box-shadow: none; 
+    display: block;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 991px) {
+    .nks-founder-section {
+        padding: 60px 0;
+    }
+
+    .nks-founder-content {
+        padding-right: 0;
+        text-align: center; /* Center text on tablet/mobile */
+        margin-bottom: 40px;
+    }
+
+    .nks-text {
+        text-align: center; /* Center paragraphs on mobile */
+    }
+
+    .nks-btn-group {
+        justify-content: center;
+    }
+
+    .nks-founder-img-wrapper {
+        margin-top: 20px;
+    }
+    
+    .nks-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nks-heading {
+        font-size: 1.8rem;
+    }
+    
+    .nks-btn-default {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+    </style>
 </head>
 
 <!-- Google tag (gtag.js) -->
