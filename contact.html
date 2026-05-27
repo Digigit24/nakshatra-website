@@ -6,12 +6,19 @@
 <head>
   <!-- Meta -->
   <meta charset="utf-8" >
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YFG6D9X6N"></script>
    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-3YFG6D9X6N');
     </script>
+   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WBZ7VJCT');</script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-338713549"></script>
    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -50,34 +57,23 @@
     <!-- Favicon Icon -->
   <!-- Favicon Icon -->
    <link rel="shortcut icon" type="image/x-icon" href="/images/nakshatra-logo-loader.png" >
+
+  <!-- Custom Redesign Stylesheet & Essential CDNs -->
+  <link href="css/all.min.css" rel="stylesheet">
+  <link href="css/nakshatra-redesign.css?v=17.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Google Fonts Css-->
-  <link rel="preconnect" href="https://www.fonts.googleapis.com" >
-  <link rel="preconnect" href="https://www.fonts.gstatic.com" crossorigin >
-  <link href="https://www.fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" >
-  <!-- Bootstrap Css -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" >
-  <!-- SlickNav Css -->
-  <link href="css/slicknav.min.css" rel="stylesheet" >
-  <!-- Swiper Css -->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" >
-  <!-- Font Awesome Icon Css-->
-  <link href="css/all.min.css" rel="stylesheet" media="screen" >
-  <!-- Animated Css -->
-  <link href="css/animate.css" rel="stylesheet" >
-  <!-- Magnific Popup Core Css File -->
-  <link rel="stylesheet" href="css/magnific-popup.css" >
-  <!-- Mouse Cursor Css File -->
-  <link rel="stylesheet" href="css/mousecursor.css" >
-   <meta name="google-site-verification"
+<!-- Bootstrap Css -->
+<!-- SlickNav Css -->
+<!-- Swiper Css -->
+<!-- Font Awesome Icon Css-->
+<!-- Animated Css -->
+<!-- Magnific Popup Core Css File -->
+<!-- Mouse Cursor Css File -->
+<meta name="google-site-verification"
       content="HCOFTtKHIXapxiYgMyzIk95WTI9XtnHeWwiE0x0Zga8" >
   <!-- Main Custom Css -->
-  <link href="css/custom.css" rel="stylesheet" media="screen" >
-            <link rel="stylesheet" href="https://www.maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://www.api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
-
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://www.schema.org",
   "@graph": [
@@ -272,893 +268,757 @@
   ]
 }
 </script>
-<style>
-    .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-  bottom: 90px;
-	/* bottom:20px; */
-	right:35px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-</style>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WBZ7VJCT');</script>
-
-  <!-- Google Ads -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-338713549"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-338713549');
-  </script>
-
-  <script>
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
+  <style>
+    .contact-page-hero {
+      background: var(--gradient-hero);
+      padding: 72px 0 88px;
+    }
+    .contact-hero-grid,
+    .contact-main-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 52px;
+      align-items: center;
+    }
+    .contact-hero-copy {
+      animation: contactIntroIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .contact-quick-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      animation: contactIntroIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+    }
+    .contact-info-card,
+    .contact-form-card,
+    .contact-map-card {
+      background: var(--gradient-card);
+      border: 1px solid rgba(217, 27, 114, 0.1);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      transition: var(--transition-smooth);
+    }
+    .contact-info-card {
+      padding: 24px;
+      min-height: 100%;
+    }
+    .contact-info-card:hover,
+    .contact-form-card:hover,
+    .contact-map-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .contact-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+    .contact-info-card h3 {
+      font-size: 19px;
+      margin: 0 0 12px;
+      color: var(--color-deep-navy);
+    }
+    .contact-info-card p,
+    .contact-info-card li {
+      color: var(--color-body);
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .contact-info-card ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 8px;
+    }
+    .contact-info-card li span {
+      display: block;
+      color: var(--color-muted);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .contact-info-card a {
+      color: var(--color-deep-navy);
+      font-weight: 700;
+    }
+    .contact-info-card a:hover {
+      color: var(--color-primary);
+    }
+    .contact-form-card {
+      padding: 40px;
+    }
+    .contact-map-card {
+      padding: 12px;
+      overflow: hidden;
+    }
+    .contact-map-card iframe {
+      width: 100%;
+      min-height: 520px;
+      border: 0;
+      display: block;
+      border-radius: 18px;
+    }
+    .contact-cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+    textarea.r-form-control {
+      min-height: 136px;
+      padding-top: 14px;
+      resize: vertical;
+    }
+    @keyframes contactIntroIn {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 992px) {
+      .contact-hero-grid,
+      .contact-main-grid,
+      .contact-quick-grid {
+        grid-template-columns: 1fr;
       }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-338713549/69GcCKrHo9gbEM23waEB',
-        'event_callback': callback
-    });
-    return false;
-  }
-  </script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3JF3BY7JN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-G3JF3BY7JN');
-  </script>
+      .contact-quick-grid { gap: 16px; }
+      .contact-map-card iframe { min-height: 420px; }
+    }
+    @media (max-width: 640px) {
+      .contact-page-hero { padding: 54px 0 64px; }
+      .contact-form-card { padding: 24px 18px; }
+      .redesign-form-grid { grid-template-columns: 1fr; }
+      .form-full-width { grid-column: span 1; }
+      .contact-cta-row .r-btn-primary,
+      .contact-cta-row .r-btn-secondary { width: 100%; }
+      .contact-map-card iframe { min-height: 340px; }
+    }
+  </style>
 </head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBZ7VJCT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  
-  <a href="tel:+917058658711" class="phone-float" target="_blank">
-    <i class="fa fa-phone phone-icon"></i>
-  </a>
-  <!-- Preloader Start -->
-  <div class="preloader">
-    <div class="loading-container">
-      <div class="loading"></div>
-      <div id="loading-icon"><img loading="lazy" src="images/nakshatra-logo-loader.png" alt="Nakshatra Logo Loader">
-      </div>
-    </div>
-  </div>
-  <!-- Preloader End -->
+<body class="redesign-body">
+    <!-- Scroll Reading Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
 
-  <!-- Topbar Section Start -->
-  <div class="topbar">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-9">
-          <div class="topbar-contact-info">
-            <ul>
-              <li><img loading="lazy" src="images/icon-phone-accent.svg" alt="Icon Phone Accent"><a href="tel:+91 7058658711">+91 7058658711</a>
-              </li>
-              <li><img loading="lazy" src="images/icon-mail-accent.svg" alt="Icon Mail Accent"><a
-                  href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a></li>
+    <!-- Nav Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
 
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="topbar-social-links">
-            <ul>
-              <li>
-                <a href="https://www.youtube.com/@nakshatraivfandintimacycli5653"><i
-                    class="fa-brands fa-youtube"></i></i></a>
-              </li>
-               <li>
-                <a href="https://www.instagram.com/nakshatra.clinic"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/NakshatraClinic"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Topbar Section End -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBZ7VJCT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
+    <!-- Floating Actions -->
+    <a href="tel:+917058658711" class="phone-float-redesign" target="_blank" aria-label="Call Nakshatra Clinic">
+      <i class="fa fa-phone"></i>
+    </a>
+    <a href="https://wa.me/917058658711" class="whatsapp-float-redesign" target="_blank" aria-label="WhatsApp Nakshatra Clinic">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
-  <!-- Header Start -->
-  <header class="main-header bg-section">
-    <div class="header-sticky">
-     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img loading="lazy" src="/images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo"
-              style="width: 2rem;    width: 11rem;
-    background-color: white;
-    object-fit: contain;
-    border-radius: 0.3rem;
-    padding: 8px;" ></a>
-          <div class="collapse navbar-collapse main-menu">
-            <div class="nav-menu-wrapper">
-              <ul class="navbar-nav mr-auto" id="menu">
-                <!-- Home -->
-                <li class="nav-item">
-                  <a class="nav-link" href="/index.html">Home</a>
-                </li>
-
-               
-
-                <!-- Rest of top-level items -->
-                <li class="nav-item">
-                  <a class="nav-link" href="/about-us.html">About Us</a>
-                </li>
-                 <!-- Services  –  multi-level dropdown -->
-                <li class="nav-item submenu">
-                  <a class="nav-link" href="/services.html">Services</a>
-                  <ul>
-                    <!-- Female Infertility -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/female-infertility-treatment.html">Female Infertility</a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/female-infertility-treatment.html">Female Infertility
-                            Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/low-amh-treatment.html">Low AMH Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/ovarian-drilling-for-pcod-treatment.html">Ovarian Drilling for
-                            PCOD Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/polycystic-ovary-syndrome-treatment.html">Polycystic Ovary
-                            Syndrome Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/repeated-implantation-failure.html">Repeated Implantation
-                            Failure</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Female Infertility Surgeries -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/female-infertility-surgeries.html">Female Infertility Surgeries
+    <!-- ==========================================================================
+       1. Header
+       ========================================================================== -->
+    <header class="site-header-redesign">
+      <div class="r-container">
+        <div class="header-container-redesign">
+          <a class="logo-link" href="index.html">
+            <img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo">
+          </a>
+          
+          <nav class="navigation-menu-redesign">
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" id="navToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            
+            <ul class="nav-links-list" id="navMenu">
+              <button class="nav-close-btn" id="navClose" aria-label="Close Menu">&times;</button>
+              <li><a class="nav-link-item" href="index.html">Home</a></li>
+              <li><a class="nav-link-item" href="about-us.html">About Us</a></li>
+              <li class="nav-item-treatments">
+                <a class="nav-link-item mega-trigger" href="services.html">
+                  Treatments <i class="fa fa-angle-down mega-arrow"></i>
+                </a>
+                <div class="mega-menu-panel" id="megaMenuPanel">
+                  <div class="r-container">
+                    <div class="mega-menu-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-header"><i class="fa fa-flask"></i> IVF &amp; ART</div>
+                        <ul class="mega-links">
+                          <li><a href="services/ivf-options.html">IVF Options</a></li>
+                          <li><a href="services/advanced-ivf-treatment.html">IVF Treatment</a></li>
+                          <li><a href="services/icsi-treatment.html">ICSI Treatment</a></li>
+                          <li><a href="services/intrauterine-insemination.html">IUI Insemination</a></li>
+                          <li><a href="services/blastocyst-formation.html">Blastocyst Formation</a></li>
+                          <li><a href="services/laser-assisted-hatching.html">Laser Hatching</a></li>
+                          <li><a href="services/embroys-freezing-vitrification.html">Embryos Freezing</a></li>
+                          <li><a href="services/ovum-donation.html">Ovum Donation</a></li>
+                          <li><a href="services/ovulation-induction.html">Ovulation Induction</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-header"><i class="fa fa-search-plus"></i> Diagnostics</div>
+                        <ul class="mega-links">
+                          <li><a href="services/advanced-ivf-tests.html">Advanced IVF Tests</a></li>
+                          <li><a href="services/detailed-female-infertility-analysis.html">Female Infertility Analysis</a></li>
+                          <li><a href="services/endometrial-receptivity-analysis.html">Endometrial Receptivity</a></li>
+                          <li><a href="services/follicular-study.html">Follicular Study</a></li>
+                          <li><a href="services/male-infertility-analysis.html">Male Infertility Analysis</a></li>
+                          <li><a href="services/dna-fragmentation.html">DNA Fragmentation</a></li>
+                          <li><a href="services/preimplantation-genetic-testing.html">PGT Genetic Testing</a></li>
+                          <li><a href="services/micro-tese.html">Micro TESE</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-header"><i class="fa fa-female"></i> Female Fertility</div>
+                        <ul class="mega-links">
+                          <li><a href="services/female-infertility-treatment.html">Female Infertility</a></li>
+                          <li><a href="services/low-amh-treatment.html">Low AMH Treatment</a></li>
+                          <li><a href="services/polycystic-ovary-syndrome-treatment.html">PCOS Treatment</a></li>
+                          <li><a href="services/repeated-implantation-failure.html">Repeated Implantation Failure</a></li>
+                          <li><a href="services/ovarian-drilling-for-pcod-treatment.html">Ovarian Drilling (PCOD)</a></li>
+                          <li><a href="services/female-infertility-surgeries.html">Blocked Fallopian Tubes</a></li>
+                          <li><a href="services/endometrial-polyp-removal.html">Endometrial Polyp Removal</a></li>
+                          <li><a href="services/endometriosis-treatment.html">Endometriosis Treatment</a></li>
+                          <li><a href="services/ovarian-cysts-removal.html">Ovarian Cysts Removal</a></li>
+                          <li><a href="services/removal-of-adhesions-in-uterus.html">Uterine Adhesions Removal</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-header"><i class="fa fa-male"></i> Male Fertility</div>
+                        <ul class="mega-links">
+                          <li><a href="services/male-infertility-treatment.html">Male Infertility</a></li>
+                          <li><a href="services/oligospermia-low-sperm-count-treatment.html">Oligospermia (Low Sperm)</a></li>
+                          <li><a href="services/oligo-astheno-teratozoospermia.html">OAT Syndrome</a></li>
+                          <li><a href="services/testicular-sperm-aspiration.html">TESA (Sperm Aspiration)</a></li>
+                        </ul>
+                        <div class="mega-col-header mega-col-header-sub"><i class="fa fa-heart"></i> OB &amp; Pregnancy</div>
+                        <ul class="mega-links">
+                          <li><a href="services/obstetrics-gynecology.html">Obstetrics &amp; Gynecology</a></li>
+                          <li><a href="services/pregnancy.html">Pregnancy Care</a></li>
+                          <li><a href="services/preconception-counseling.html">Preconception Counseling</a></li>
+                          <li><a href="services/abnormal-uterinebleeding.html">Abnormal Uterine Bleeding</a></li>
+                          <li><a href="services/uterine-fibroids.html">Uterine Fibroids</a></li>
+                          <li><a href="services/vaginal-infection.html">Vaginal Infection</a></li>
+                          <li><a href="services/urinary-tractinfection.html">Urinary Tract Infection</a></li>
+                          <li><a href="services/hysteroscopy.html">Hysteroscopy</a></li>
+                          <li><a href="services/laparoscopy.html">Laparoscopy</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="mega-footer-bar">
+                      <a href="services.html" class="mega-view-all-btn">
+                        Explore All Treatments <i class="fa fa-long-arrow-right"></i>
                       </a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/female-infertility-surgeries.html">Blocked Fallopian Tubes</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/endometrial-polyp-removal.html">Endometrial Polyp Removal</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/endometriosis-treatment.html">Endometriosis Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/ovarian-cysts-removal.html">Ovarian Cysts Removal</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/removal-of-adhesions-in-uterus.html">Removal of Adhesions in
-                            Uterus</a>
-                        </li>
-                      </ul>
-                    </li>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a class="nav-link-item" href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
 
-                    <!-- Male Infertility -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/male-infertility-treatment.html">Male Infertility</a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/male-infertility-treatment.html">Male Infertility</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/oligospermia-low-sperm-count-treatment.html">Oligospermia (Low
-                            Sperm Count) Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/oligo-astheno-teratozoospermia.html">Oligo Astheno
-                            Teratozoospermia</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/dna-fragmentation.html">DNA Fragmentation</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- IVF Specialties -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/ivf-specialties.html">IVF Specialties</a>
-                      <ul>
-                        <!-- Advanced IVF Tests -->
-                        <li class="nav-item submenu">
-                          <a class="nav-link" href="/services/advanced-ivf-tests.html">Advanced IVF Tests </a>
-                          <ul>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/detailed-female-infertility-analysis.html">Detailed Female
-                                Infertility Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/endometrial-receptivity-analysis.html">Endometrial Receptivity
-                                Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/follicular-study.html">Follicular Study</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/male-infertility-analysis.html">Male Infertility Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/preimplantation-genetic-testing.html">Preimplantation Genetic
-                                Testing</a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <!-- Advanced IVF Treatment -->
-                        <li class="nav-item submenu">
-                       <a class="nav-link" href="/services/advanced-ivf-treatment.html">Advanced IVF Treatment</a>
-                          <ul>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/blastocyst-formation.html">Blastocyst Formation</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/icsi-treatment.html">ICSI Treatment</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/laser-assisted-hatching.html">Laser-Assisted Hatching</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/micro-tese.html">Micro TESE</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/testicular-sperm-aspiration.html">Testicular Sperm Aspiration
-                                (TESA) & Sperm
-                                Retrieval</a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <!-- Donor Services -->
-                            <li class="nav-item">
-                          <a class="nav-link" href="/services/ovum-donation.html">Ovum Donation</a>
-                        </li>
-
-                        <!-- Fertility Services -->
-                          <li class="nav-item">
-                          <a class="nav-link" href="/services/embroys-freezing-vitrification.html">Embryos Freezing & Vitrification</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Single-link services -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="/services/ivf-options.html">IVF Options</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/services/intrauterine-insemination.html">Intrauterine Insemination</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/services/ovulation-induction.html">Ovulation Induction</a>
-                    </li>
-
-                    <!-- Obstetrics & Gynecology Care -->
-                  <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/obstetrics-gynecology.html">Obstetrics & Gynecology Care
-                      </a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/obstetrics-gynecology.html">Obstetrics & Gynecology</a>
-                        </li>
-                            <li class="nav-item">
-                          <a class="nav-link" href="/services/preconception-counseling.html">Preconception Counseling</a>
-                        </li>
-                     <li class="nav-item">
-                          <a class="nav-link" href="/services/abnormal-uterinebleeding.html">Abnormal Uterine Bleeding</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/uterine-fibroids.html">Uterine Fibroids</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/hysteroscopy.html">Hysteroscopy</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/laparoscopy.html">Laparoscopy</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/vaginal-infection.html">Vaginal Infection</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/urinary-tractinfection.html">Urinary Tract Infection</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/pregnancy.html">Pregnancy</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Pregnancy -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="/services/pregnancy.html">Pregnancy</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item highlighted-menu">
-                  <a class="nav-link" href="/appointment-page.html">Appointment</a>
-                </li>
-              </ul>
+          <div class="header-actions">
+            <div class="header-location-pill">
+              <i class="fa fa-map-marker"></i> Baner, Pune
             </div>
-            <div class="header-btn">
-              <a href="/appointment-page.html" class="btn-default btn-highlighted">Book an Appointment</a>
-            </div>
+            <a href="#appointment-section" class="r-btn-primary">
+              <span class="btn-text-desktop">Book Consultation</span>
+              <span class="btn-text-mobile">Book Now</span>
+            </a>
           </div>
-          <div class="navbar-toggle"></div>
         </div>
-      </nav>
-      <div class="responsive-menu"></div>
-    </div>
-  </header>  
-  <!-- Header End -->
+      </div>
+    </header>
 
-  <!-- Page Header Section Start -->
-  <div class="page-header bg-section parallaxie">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <!-- Page Header Box Start -->
-          <div class="page-header-box">
-            <h1 class="text-anime-style-2" data-cursor="-opaque">
-              Contact<span>us</span>
-            </h1>
-            <nav class="wow fadeInUp" data-wow-delay="0.25s">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./">home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  contact us
-                </li>
-              </ol>
-            </nav>
+    <!-- ==========================================================================
+       1.3. Header Proof Strip (below nav)
+       ========================================================================== -->
+    <div class="proof-strip-redesign">
+      <div class="r-container">
+        <div class="proof-strip-grid proof-strip-grid-5">
+          <div class="proof-item">
+            <i class="fa fa-stethoscope proof-icon"></i>
+            <span class="proof-text"><strong class="highlight">15+</strong> Years of Expertise</span>
           </div>
-          <!-- Page Header Box End -->
+          <div class="proof-item">
+            <i class="fa fa-trophy proof-icon"></i>
+            <span class="proof-text"><strong class="highlight">70%</strong> IVF Success Rate</span>
+          </div>
+          <div class="proof-item">
+            <i class="fa fa-child proof-icon"></i>
+            <span class="proof-text"><strong class="highlight">2000+</strong> Successful Pregnancies</span>
+          </div>
+          <div class="proof-item">
+            <i class="fa fa-star proof-icon"></i>
+            <span class="proof-text"><strong class="highlight">4.9&#9733;</strong> Google Rating</span>
+          </div>
+          <div class="proof-item">
+            <i class="fa fa-map-marker proof-icon"></i>
+            <span class="proof-text">Baner, Pune &middot; Mon&ndash;Sun: 10am&ndash;7pm</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Page Header Section End -->
 
-  <!-- Hero Info Section Start -->
-  <div class="page-contact-us">
-    <div class="container">
-      <div class="col-lg-12">
-        <!-- Hero Info List Start -->
-        <div class="contact-info-list">
-          <!-- Hero Info Item Start -->
-          <div class="hero-info-item">
-            <div class="hero-info-header">
-              <h3>Schedule hours</h3>
-              <img loading="lazy" src="images/icon-clock.svg" alt="Icon Clock" >
+
+    <main>
+      <section class="contact-page-hero">
+        <div class="r-container">
+          <div class="contact-hero-grid">
+            <div class="contact-hero-copy">
+              <span class="r-section-subtitle">Contact Us</span>
+              <h1 class="r-section-title" style="font-size: clamp(34px, 5vw, 56px);">Contact <span>us</span></h1>
+              <p class="r-section-desc">Contact us to book appointments for IVF treatment, fertility care, pregnancy care, and women&rsquo;s health services in Pune. Call or visit our clinic today.</p>
+              <div class="contact-cta-row">
+                <a href="#appointment-section" class="r-btn-primary">Send Message <i class="fa fa-arrow-right"></i></a>
+                <a href="tel:+917058658711" class="r-btn-secondary"><i class="fa fa-phone"></i> +91 7058658711</a>
+              </div>
             </div>
-            <div class="hero-info-body">
-              <ul>
-                <li><span>Monday - thursday</span>08:00 - 18:00</li>
-                <li><span>Friday</span>08:00 - 18:00</li>
-                <li><span>Saturday</span>08:00 - 18:00</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Hero Info Item End -->
-
-          <!-- Hero Info Item Start -->
-       <div class="hero-info-item" style="position:relative;">
-  <a href="https://www.maps.app.goo.gl/iFk9TBnLfwoBGy5KA"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="position:absolute; inset:0; z-index:5; text-decoration:none;"
-     aria-label="Open location in Google Maps"></a>
-
-  <div class="hero-info-header">
-    <h3>Our locations</h3>
-    <img loading="lazy" src="images/icon-location.svg" alt="Icon Location">
-  </div>
-
-  <div class="hero-info-body">
-    <p>Providing expert IVF care locally technology.</p>
-    <h3>
-      Office 101, Chaitanya High Point, Dasara Chowk, Balewadi
-      Gaon, Baner, Pune 411045
-    </h3>
-  </div>
-</div>
-
-          <!-- Hero Info Item End -->
-
-          <!-- Hero Info Item Start -->
-          <div class="hero-info-item">
-            <div class="hero-info-header">
-              <h3>contact us</h3>
-              <img loading="lazy" src="images/icon-phone.svg" alt="Icon Phone" >
-            </div>
-            <div class="hero-info-body">
-              <p>Reach out for personalized IVF support.</p>
-              <h3><a href="tel:+91 7058658711">+91 7058658711</a></h3>
-              <h3>
-                <a href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a>
-              </h3>
+            <div class="contact-quick-grid">
+              <div class="contact-info-card">
+                <div class="contact-icon-box"><i class="fa fa-clock-o"></i></div>
+                <h3>Schedule hours</h3>
+                <ul>
+                  <li><span>Monday - thursday</span>08:00 - 18:00</li>
+                  <li><span>Friday</span>08:00 - 18:00</li>
+                  <li><span>Saturday</span>08:00 - 18:00</li>
+                </ul>
+              </div>
+              <div class="contact-info-card" style="position:relative;">
+                <a href="https://www.maps.app.goo.gl/iFk9TBnLfwoBGy5KA" target="_blank" rel="noopener noreferrer" style="position:absolute; inset:0; z-index:5; text-decoration:none;" aria-label="Open location in Google Maps"></a>
+                <div class="contact-icon-box"><i class="fa fa-map-marker"></i></div>
+                <h3>Our locations</h3>
+                <p>Providing expert IVF care locally technology.</p>
+                <p><strong>Office 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon, Baner, Pune 411045</strong></p>
+              </div>
+              <div class="contact-info-card">
+                <div class="contact-icon-box"><i class="fa fa-phone"></i></div>
+                <h3>contact us</h3>
+                <p>Reach out for personalized IVF support.</p>
+                <p><a href="tel:+91 7058658711">+91 7058658711</a></p>
+                <p><a href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a></p>
+              </div>
             </div>
           </div>
-          <!-- Hero Info Item End -->
         </div>
-        <!-- Hero Info List End -->
-      </div>
+      </section>
 
-      <div class="col-lg-12">
-        <!-- Contact Form Section Start -->
-        <div class="contact-form-section">
-          <!-- Google Map Start -->
-          <div class="google-map-iframe">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15019.93670204625!2d73.76641574372357!3d18.583404533225732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b94ae67c6b6b%3A0x8eca33edd6de52e2!2sNakshatra%20Ivf%20%26%20Fertility%20Clinic%20Baner%20Pune%3A%20IVF%20Treatment%20In%20Pune%20%7C%20IVF%20Doctor%20%7C%20IVF%20clinic%20%7C%20Pune!5e1!3m2!1sen!2sus!4v1763530501758!5m2!1sen!2sus"
-              width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <!-- Google Map End -->
-
-          <!-- Contact Us Form Start -->
-          <div class="contact-us-form">
-            <!-- Section Title Start -->
-            <div class="section-title">
-              <h2 class="text-anime-style-2" data-cursor="-opaque">
-                Send us a <span>message</span>
-              </h2>
+      <section class="r-section" id="appointment-section">
+        <div class="r-container">
+          <div class="contact-main-grid">
+            <div class="contact-map-card reveal-left">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15019.93670204625!2d73.76641574372357!3d18.583404533225732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b94ae67c6b6b%3A0x8eca33edd6de52e2!2sNakshatra%20Ivf%20%26%20Fertility%20Clinic%20Baner%20Pune%3A%20IVF%20Treatment%20In%20Pune%20%7C%20IVF%20Doctor%20%7C%20IVF%20clinic%20%7C%20Pune!5e1!3m2!1sen!2sus!4v1763530501758!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <!-- Section Title End -->
-
-            <!-- Contact Form Start -->
-            <div class="contact-form">
-              <!-- Contact Form Start -->
-              <form id="contactForm" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="row">
-                  <div class="form-group col-md-6 mb-4">
-                    <input type="text" name="fname" class="form-control" id="fname" placeholder="First name" required >
+            <div class="contact-form-card reveal-right">
+              <div class="r-section-title-wrapper" style="margin-bottom: 28px;">
+                <span class="r-section-subtitle">Write To Us</span>
+                <h2 class="r-section-title">Send us a <span>message</span></h2>
+              </div>
+              <form id="contactForm" method="POST" data-toggle="validator">
+                <div class="redesign-form-grid">
+                  <div class="r-form-group">
+                    <label class="r-form-label" for="fname">First name</label>
+                    <input type="text" name="fname" class="r-form-control" id="fname" placeholder="First name" required>
                     <div class="help-block with-errors"></div>
                   </div>
-
-                  <div class="form-group col-md-6 mb-4">
-                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Last name" required >
+                  <div class="r-form-group">
+                    <label class="r-form-label" for="lname">Last name</label>
+                    <input type="text" name="lname" class="r-form-control" id="lname" placeholder="Last name" required>
                     <div class="help-block with-errors"></div>
                   </div>
-
-                  <div class="form-group col-md-6 mb-4">
-                    <input type="email" name="email" class="form-control" id="email" placeholder="E-mail"  >
+                  <div class="r-form-group">
+                    <label class="r-form-label" for="email">E-mail</label>
+                    <input type="email" name="email" class="r-form-control" id="email" placeholder="E-mail">
                     <div class="help-block with-errors"></div>
                   </div>
-
-                  <div class="form-group col-md-6 mb-4">
-                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone" required >
+                  <div class="r-form-group">
+                    <label class="r-form-label" for="phone">Phone</label>
+                    <input type="text" name="phone" class="r-form-control" id="phone" placeholder="Phone" required>
                     <div class="help-block with-errors"></div>
                   </div>
-
-                  <div class="form-group col-md-12 mb-5">
-                    <textarea name="message" class="form-control" id="message" rows="3"
-                      placeholder="Write Message..."></textarea>
+                  <div class="r-form-group form-full-width">
+                    <label class="r-form-label" for="message">Write Message</label>
+                    <textarea name="message" class="r-form-control" id="message" rows="3" placeholder="Write Message..."></textarea>
                     <div class="help-block with-errors"></div>
                   </div>
-
-                  <div class="col-md-12">
-                    <button type="submit" class="btn-default">
-                      submit message
-                    </button>
+                  <div class="form-full-width">
+                    <button type="submit" class="r-btn-primary r-form-submit-btn">submit message</button>
                     <div id="msgSubmit" class="h3 hidden"></div>
                   </div>
                 </div>
               </form>
-              <!-- Contact Form End -->
-            </div>
-            <!-- Contact Form End -->
-          </div>
-          <!-- Contact Us Form End -->
-        </div>
-        <!-- Contact Form Section End -->
-      </div>
-    </div>
-  </div>
-  <!-- Hero Info Section End -->
-
-  <!-- Footer Start -->
-  <footer class="main-footer">
-      <div class="main-footer-box bg-section dark-section">
-        <div class="container">
-          <!--  Hero strip  -->
-          <div class="row align-items-center">
-            <div class="col-lg-12">
-              <div class="footer-header">
-                <div class="section-title">
-                  <h2 class="text-anime-style-2" data-cursor="-opaque">
-                    Schedule your consultation today!
-                  </h2>
-                  <p>
-                    Book your consultation with our fertility experts—the first
-                    step toward your parenthood journey.
-                  </p>
-                </div>
-                <div class="book-consult-circle accent-circle">
-                  <a href="/appointment-page.html"
-                    ><img loading="lazy" src="/images/book-consultation-circle.svg" alt="Book Consultation Circle" ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--  Links  -->
-          <div class="row">
-            <!-- About + Social  -->
-
-            <!-- Quick-links (narrower) -->
-            <div
-              class="col-lg-2 col-md-6"
-              style="border-right: 1px solid !important"
-            >
-              <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../about-us.html">About Us</a></li>
-                  <li><a href="../contact.html">Contact Us</a></li>
-                  <!-- <li><a href="../appointment-page.html">Appointment</a></li> -->
-                </ul>
-              </div>
-            </div>
-
-            <!-- Services (heading spans 2 columns) -->
-            <div
-              class="col-lg-5 col-md-12"
-              style="border-right: 1px solid !important"
-            >
-              <div class="footer-links">
-                <h3>Services</h3>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="/services/embroys-freezing-vitrification.html"
-                          >Female Infertility</a
-                        >
-                      </li>
-                      <li><a href="/services/female-infertility-surgeries.html">Female Infertility Surgeries</a></li>
-                      <li>
-                        <a href="/services/male-infertility-treatment.html"
-                          >Male Infertility</a
-                        >
-                      </li>
-                      <li><a href="/services/ivf-specialties.html">IVF Specialties</a></li>
-                      <li><a href="/services/ivf-options.html">IVF Options</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li><a href="/services/intrauterine-insemination.html">Intrauterine Insemination</a></li>
-                      <li><a href="/services/ovulation-induction.html">Ovulation Induction</a></li>
-                      <li>
-                        <a href="/services/obstetrics.html"
-                          >Obstetrics & Gynecology Care</a
-                        >
-                      </li>
-                      <li><a href="/services/pregnancy.html">Pregnancy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- IVF Specialties (wider block) -->
-            <div
-              class="col-lg-5 col-md-12"
-              style="border-right: 1px solid !important"
-            >
-              <div class="footer-links">
-                <h3>IVF Specialties</h3>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="/services/detailed-female-infertility-analysis.html"
-                          >Detailed Female Analysis</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/services/endometrial-receptivity-analysis.html"
-                          >Endometrial Receptivity</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/services/follicular-study.html">Follicular Study</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="/services/male-infertility-analysis.html"
-                          >Male Infertility Analysis</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/services/preimplantation-genetic-testing.html">PGT</a>
-                      </li>
-                      <li>
-                        <a href="/services/blastocyst-formation.html"
-                          >Blastocyst Formation</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/services/icsi-treatment.html">ICSI Treatment</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="/services/laser-assisted-hatching.html"
-                          >Laser-Assisted Hatching</a
-                        >
-                      </li>
-                      <li><a href="/services/micro-tese.html">Micro TESE</a></li>
-                      <li>
-                        <a href="/services/testicular-sperm-aspiration.html"
-                          >TESA & Sperm Retrieval</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <!--  Copyright bar  -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="footer-copyright-text">
-              <p>Copyright © 2026 Nakshatra Clinic. All Rights Reserved.</p>
+      </section>
+    </main>
+    <!-- ==========================================================================
+       11. Footer
+       ========================================================================== -->
+    <footer class="footer-redesign">
+      <div class="r-container">
+        
+        <div class="footer-top-grid">
+          
+          <!-- Column 1: Brand -->
+          <div class="footer-brand-column">
+            <a href="index.html">
+              <img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo" style="height: 52px; background: white; border-radius: 8px; padding: 4px;">
+            </a>
+            <p>
+              Nakshatra Fertility & IVF Center is Baner's leading boutique fertility clinic dedicated to supporting parents on their journey with medical integrity.
+            </p>
+            <div class="footer-socials">
+              <a href="https://www.facebook.com/NakshatraClinic" class="footer-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/nakshatra.clinic" class="footer-social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@nakshatraivfandintimacycli5653" class="footer-social-icon" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
+          
+          <!-- Column 2: Quick Links -->
+          <div>
+            <h3 class="footer-column-title">Quick Links</h3>
+            <ul class="footer-links-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="services.html">Services & Treatments</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="appointment-page.html">Direct Appointment</a></li>
+            </ul>
+          </div>
+          
+          <!-- Column 3: Contact & Map Info -->
+          <div>
+            <h3 class="footer-column-title">Contact Us</h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <i class="fa fa-map-marker"></i>
+                <div>
+                  <a href="https://www.maps.app.goo.gl/iFk9TBnLfwoBGy5KA" target="_blank" rel="noopener noreferrer">
+                    Office 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon, Baner 411045
+                  </a>
+                </div>
+              </li>
+              <li class="footer-contact-item">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+917058658711">+91 7058658711</a>
+              </li>
+              <li class="footer-contact-item">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a>
+              </li>
+              <li class="footer-contact-item">
+                <i class="fa fa-clock-o"></i>
+                <span>Mon - Sun: 10:00 AM - 07:00 PM</span>
+              </li>
+            </ul>
+          </div>
+          
         </div>
+        
+        <div class="footer-bottom-bar">
+          <p>Copyright © 2025 Nakshatra IVF. All Rights Reserved.</p>
+        </div>
+        
       </div>
     </footer>
 
-  <!-- Footer End -->
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="mobile-sticky-bar">
+      <a href="#appointment-section" class="msb-btn msb-primary" onclick="document.querySelector('.mobile-sticky-bar').style.display='none'">
+        <i class="fa fa-calendar-check-o"></i>
+        <span>Book Consult</span>
+      </a>
+      <a href="tel:+917058658711" class="msb-btn">
+        <i class="fa fa-phone"></i>
+        <span>Call</span>
+      </a>
+      <a href="https://wa.me/917058658711" class="msb-btn msb-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
 
-  <!-- Jquery Library File -->
-  <script src="https://www.assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
-  <script type="module">
-    TaskadeEmbed.AgentPublicChatPopup.init({
-      publicAgentId: '01KAJAMN85JQRMS1JQNC5FEKQP',
-    });
-  </script>
-
-
-  <!-- Bootstrap js file -->
-  <script src="https://www.assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
-  <script type="module">
-    TaskadeEmbed.AgentPublicChatPopup.init({
-      publicAgentId: '01KAJAMN85JQRMS1JQNC5FEKQP',
-    });
-  </script>
-  <script src="/js/jquery-3.7.1.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <!-- Validator js file -->
-  <script src="/js/validator.min.js"></script>
-  <!-- SlickNav js file -->
-  <script src="/js/jquery.slicknav.js"></script>
-  <!-- Swiper js file -->
-  <script src="/js/swiper-bundle.min.js"></script>
-  <!-- Counter js file -->
-  <script src="/js/jquery.waypoints.min.js"></script>
-  <script src="/js/jquery.counterup.min.js"></script>
-  <!-- Magnific js file -->
-  <script src="/js/jquery.magnific-popup.min.js"></script>
-  <!-- SmoothScroll -->
-
-  <!-- Parallax js -->
-  <script src="/js/parallaxie.js"></script>
-  <!-- MagicCursor js file -->
-  <script src="/js/gsap.min.js"></script>
-  <script src="/js/magiccursor.js"></script>
-  <!-- Text Effect js file -->
-
-
-  
-  <!-- Wow js file -->
-  <script src="/js/wow.min.js"></script>
-  <!-- Main Custom js file -->
-  <script src="/js/function.js"></script>
-  
-  <script>
-  (function () {
-  const API_ENDPOINT = "https://hms.celiyo.com/api/nakshatra/submit/";
-
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    const form = event.target;
-
-    // Prevent double submission
-    if (form.dataset.submitting === "true") {
-      return;
-    }
-    form.dataset.submitting = "true";
-
-    if (form.checkValidity && !form.checkValidity()) {
-      form.reportValidity();
-      form.dataset.submitting = "false";
-      return;
-    }
-
-    const submitButton = form.querySelector(
-      'button[type="submit"], input[type="submit"], button:not([type]), #realSubmitBtn'
-    );
-    if (submitButton) {
-      submitButton.disabled = true;
-      if (submitButton.innerText.trim().length > 0) {
-        submitButton.setAttribute(
-          "data-original-text",
-          submitButton.innerText
-        );
-        submitButton.innerText = "Sending...";
+    <!-- Taskade Chatbot Integration -->
+    <script src="https://www.assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
+    <script type="module">
+      if (window.TaskadeEmbed) {
+        TaskadeEmbed.AgentPublicChatPopup.init({
+          publicAgentId: '01KAJAMN85JQRMS1JQNC5FEKQP',
+        });
       }
-    }
+    </script>
 
-    const formData = new FormData(form);
-    formData.append("client_event_id", crypto.randomUUID());
+    <!-- Script Integrations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.8/hls.min.js"></script>
+    <script>
+      // HLS Video
+      const heroVideo = document.getElementById('hero-player');
+      if (heroVideo) {
+        if (typeof Hls !== 'undefined' && Hls.isSupported()) {
+          const hls = new Hls({ startLevel: 0, capLevelToPlayerSize: true });
+          hls.loadSource('./video/nakshatra_mid.m3u8');
+          hls.attachMedia(heroVideo);
+        } else if (heroVideo.canPlayType('application/vnd.apple.mpegurl')) {
+          heroVideo.src = './video/nakshatra_mid.m3u8';
+        }
+      }
 
-    fetch(API_ENDPOINT, {
-      method: "POST",
-      headers: {
-        "X-TENANT-ID": "d2bcd1ee-e5c5-4c9f-bff2-aaf901d40440",
-      },
-      body: formData,
-    })
-      .then((response) => {
-        if (response.ok) {
-          // Track Facebook Pixel
-          if (typeof window.fbq === "function") {
-            window.fbq("track", "Lead");
+      // Scroll Progress Bar
+      const progressBar = document.getElementById('scrollProgressBar');
+      function updateProgress() {
+        if (!progressBar) return;
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        progressBar.style.width = (total > 0 ? (window.scrollY / total) * 100 : 0) + '%';
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+
+      // Sticky header
+      window.addEventListener('scroll', () => {
+        const h = document.querySelector('.site-header-redesign');
+        if (h) h.classList.toggle('scrolled', window.scrollY > 50);
+      }, { passive: true });
+
+      // Nav
+      const navToggle = document.getElementById('navToggle');
+      const navMenu   = document.getElementById('navMenu');
+      const navClose  = document.getElementById('navClose');
+      const navOverlay = document.getElementById('navOverlay');
+
+      function openMenu() {
+        navMenu && navMenu.classList.add('active');
+        navToggle && navToggle.classList.add('active');
+        if (navOverlay) { navOverlay.style.display = 'block'; requestAnimationFrame(() => navOverlay.classList.add('active')); }
+        document.body.style.overflow = 'hidden';
+      }
+      function closeMenu() {
+        navMenu && navMenu.classList.remove('active');
+        navToggle && navToggle.classList.remove('active');
+        if (navOverlay) { navOverlay.classList.remove('active'); setTimeout(() => { navOverlay.style.display = 'none'; }, 400); }
+        document.body.style.overflow = '';
+      }
+      if (navToggle && navMenu) navToggle.addEventListener('click', () => navMenu.classList.contains('active') ? closeMenu() : openMenu());
+      if (navClose) navClose.addEventListener('click', closeMenu);
+      if (navOverlay) navOverlay.addEventListener('click', closeMenu);
+      document.querySelectorAll('.nav-link-item:not(.mega-trigger)').forEach(l => l.addEventListener('click', closeMenu));
+
+      // Mobile mega-menu
+      const megaTrigger = document.querySelector('.mega-trigger');
+      const megaPanel   = document.getElementById('megaMenuPanel');
+      if (megaTrigger && megaPanel) {
+        megaTrigger.addEventListener('click', function(e) {
+          if (window.innerWidth <= 992) {
+            e.preventDefault(); e.stopPropagation();
+            const isOpen = megaPanel.classList.toggle('mobile-open');
+            this.closest('.nav-item-treatments').classList.toggle('mega-open', isOpen);
           }
-          
-          const isContactForm = form.id === "contactForm";
-          
-          if (isContactForm) {
-            // Track direct conversion via gtag
-            if (typeof window.gtag === "function") {
-              window.gtag("event", "conversion", {
-                send_to: "AW-338713549/69GcCKrHo9gbEM23waEB",
-                event_callback: function() {
-                  console.log('Contact form conversion tracked successfully');
-                }
-              });
-            }
-          }
-          
-          // Reset form after successful submission
-          setTimeout(() => {
-            form.reset();
-            form.dataset.submitting = "false";
-          }, 100);
-          
-          showMessage(form, "Message Sent Successfully!", "success");
-        } else {
-          form.dataset.submitting = "false";
-          showMessage(form, "Submission failed. Please retry.", "error");
-        }
-      })
-      .catch((error) => {
-        console.error("Form submission error:", error);
-        form.dataset.submitting = "false";
-        showMessage(
-          form,
-          "Error submitting form. Please try again later.",
-          "error"
-        );
-      })
-      .finally(() => {
-        if (submitButton) {
-          submitButton.disabled = false;
-          if (submitButton.getAttribute("data-original-text")) {
-            submitButton.innerText =
-              submitButton.getAttribute("data-original-text");
-          }
-        }
+        });
+      }
+
+      // FAQ Accordion
+      document.querySelectorAll('.faq-accordion-header-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const wrap = btn.nextElementSibling;
+          const isExp = btn.classList.contains('expanded');
+          document.querySelectorAll('.faq-accordion-header-btn').forEach(b => {
+            b.classList.remove('expanded');
+            b.nextElementSibling.style.maxHeight = null;
+          });
+          if (!isExp) { btn.classList.add('expanded'); wrap.style.maxHeight = wrap.scrollHeight + 'px'; }
+        });
       });
-  }
 
-  function showMessage(form, message, type) {
-    let msgContainer = form.querySelector("#msgSubmit");
-    if (!msgContainer) {
-      msgContainer = document.createElement("div");
-      msgContainer.id = "msgSubmit";
-      msgContainer.className = "h3 hidden";
-      form.appendChild(msgContainer);
-    }
-    msgContainer.innerText = message;
-    msgContainer.classList.remove("hidden", "d-none");
-    msgContainer.style.display = "block";
-    msgContainer.classList.remove("text-success", "text-danger");
-    if (type === "success") {
-      msgContainer.classList.add("text-success");
-    } else {
-      msgContainer.classList.add("text-danger");
-    }
-  }
+      // Section Reveal (IntersectionObserver) - low threshold + rootMargin ensures early trigger
+      const revealObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); } });
+      }, { threshold: 0.04, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-stagger').forEach(el => revealObs.observe(el));
 
-  function init() {
-    // Check if already initialized to prevent double-binding
-    if (window.nakshatraFormHandlerInitialized) {
-      console.log("Form handler already initialized, skipping...");
-      return;
-    }
-    window.nakshatraFormHandlerInitialized = true;
+      // r-fade-up legacy observer
+      const legacyObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); legacyObs.unobserve(e.target); } });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.r-fade-up').forEach(el => legacyObs.observe(el));
 
-    const forms = document.querySelectorAll("form");
-    console.log(`Attaching submit handler to ${forms.length} form(s)`);
-    
-    forms.forEach((form) => {
-      // Make sure we don't attach multiple listeners to the same form
-      if (!form.dataset.handlerAttached) {
-        form.addEventListener("submit", handleFormSubmit);
-        form.dataset.handlerAttached = "true";
-        console.log(`Handler attached to form: ${form.id || 'unnamed'}`);
+      // Service card clip-path reveal
+      const cardObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('card-revealed'); cardObs.unobserve(e.target); } });
+      }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
+      document.querySelectorAll('.service-card-reveal').forEach(el => cardObs.observe(el));
+
+      // Hero tilt
+      (function() {
+        const card = document.querySelector('.hero-main-card');
+        if (!card || window.matchMedia('(max-width:992px)').matches) return;
+        const wrap = card.parentElement;
+        wrap.addEventListener('mousemove', (e) => {
+          const r = wrap.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width - 0.5;
+          const y = (e.clientY - r.top) / r.height - 0.5;
+          card.style.transform = 'perspective(800px) rotateY(' + (x*8) + 'deg) rotateX(' + (-y*6) + 'deg) scale(1.02)';
+        });
+        wrap.addEventListener('mouseleave', () => { card.style.transform = ''; });
+      })();
+    </script>
+
+    <!-- Original HMS API Form Submission JavaScript Logic -->
+    <script>
+    (function () {
+      const API_ENDPOINT = "https://hms.celiyo.com/api/nakshatra/submit/";
+
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+
+        // Prevent double submission
+        if (form.dataset.submitting === "true") {
+          return;
+        }
+        form.dataset.submitting = "true";
+
+        if (form.checkValidity && !form.checkValidity()) {
+          form.reportValidity();
+          form.dataset.submitting = "false";
+          return;
+        }
+
+        const submitButton = form.querySelector(
+          'button[type="submit"], input[type="submit"], button:not([type]), #realSubmitBtn'
+        );
+        if (submitButton) {
+          submitButton.disabled = true;
+          if (submitButton.innerText.trim().length > 0) {
+            submitButton.setAttribute(
+              "data-original-text",
+              submitButton.innerText
+            );
+            submitButton.innerText = "Sending...";
+          }
+        }
+
+        const formData = new FormData(form);
+        formData.append("client_event_id", crypto.randomUUID());
+
+        fetch(API_ENDPOINT, {
+          method: "POST",
+          headers: {
+            "X-TENANT-ID": "d2bcd1ee-e5c5-4c9f-bff2-aaf901d40440",
+          },
+          body: formData,
+        })
+          .then((response) => {
+            if (response.ok) {
+              // Track Facebook Pixel
+              if (typeof window.fbq === "function") {
+                window.fbq("track", "Lead");
+              }
+              
+              const isAppointmentForm = form.id === "appointmentForm" || form.id === "contactForm";
+              
+              if (isAppointmentForm) {
+                // Direct conversion via gtag
+                if (typeof window.gtag === "function") {
+                  window.gtag("event", "conversion", {
+                    send_to: "AW-338713549/69GcCKrHo9gbEM23waEB",
+                    event_callback: function() {
+                      console.log('Direct conversion tracked successfully');
+                    }
+                  });
+                }
+              }
+              
+              // Reset form after successful submission
+              setTimeout(() => {
+                form.reset();
+                form.dataset.submitting = "false";
+              }, 100);
+              
+              showMessage(form, "Message Sent Successfully!", "success");
+            } else {
+              form.dataset.submitting = "false";
+              showMessage(form, "Submission failed. Please retry.", "error");
+            }
+          })
+          .catch((error) => {
+            console.error("Form submission error:", error);
+            form.dataset.submitting = "false";
+            showMessage(
+              form,
+              "Error submitting form. Please try again later.",
+              "error"
+            );
+          })
+          .finally(() => {
+            if (submitButton) {
+              submitButton.disabled = false;
+              if (submitButton.getAttribute("data-original-text")) {
+                submitButton.innerText =
+                  submitButton.getAttribute("data-original-text");
+              }
+            }
+          });
       }
-    });
-  }
 
-  // Run initialization only once
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
+      function showMessage(form, message, type) {
+        let msgContainer = form.querySelector("#msgSubmit");
+        if (!msgContainer) {
+          msgContainer = document.createElement("div");
+          msgContainer.id = "msgSubmit";
+          msgContainer.className = "h3 hidden";
+          form.appendChild(msgContainer);
+        }
+        msgContainer.innerText = message;
+        msgContainer.classList.remove("hidden", "d-none");
+        msgContainer.style.display = "block";
+        msgContainer.classList.remove("text-success", "text-danger");
+        if (type === "success") {
+          msgContainer.classList.add("text-success");
+        } else {
+          msgContainer.classList.add("text-danger");
+        }
+      }
 
-</script>
+      function init() {
+        if (window.nakshatraFormHandlerInitialized) {
+          console.log("Form handler already initialized, skipping...");
+          return;
+        }
+        window.nakshatraFormHandlerInitialized = true;
+
+        const forms = document.querySelectorAll("form");
+        console.log(`Attaching submit handler to ${forms.length} form(s)`);
+        
+        forms.forEach((form) => {
+          if (!form.dataset.handlerAttached) {
+            form.addEventListener("submit", handleFormSubmit);
+            form.dataset.handlerAttached = "true";
+            console.log(`Handler attached to form: ${form.id || 'unnamed'}`);
+          }
+        });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+      } else {
+        init();
+      }
+    })();
+    </script>
+
+    <!-- Instagram Embed -->
+    <script async src="https://www.instagram.com/embed.js"></script>
 </body>
 
 </html>
