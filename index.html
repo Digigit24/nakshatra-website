@@ -77,7 +77,7 @@
     
     <!-- Custom Redesign Stylesheet & Essential CDNs -->
     <link href="css/all.min.css" rel="stylesheet">
-    <link href="css/nakshatra-redesign.css?v=2.5" rel="stylesheet">
+    <link href="css/nakshatra-redesign.css?v=17.0" rel="stylesheet">
     
     <link rel="stylesheet" href="https://www.maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -166,7 +166,7 @@
               "name": "Which is the best IVF center in Baner?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Nakshatra Fertility & IVF Center in Baner is recognized as one of the top fertility clinics offering comprehensive IVF treatment with a 70% success rate. Located conveniently in Baner near Aundh and Pashan, the clinic provides: Advanced IVF, IUI, and ICSI treatments, Experienced fertility specialists with 15+ years expertise, State-of-the-art embryology lab, Affordable treatment packages starting from ₹1,20,000, Free initial consultation and fertility assessment."
+                "text": "Nakshatra Fertility & IVF Center in Baner is recognized as one of the top fertility clinics offering comprehensive IVF treatment with a 70% success rate. Located conveniently in Baner near Aundh and Pashan, the clinic provides: Advanced IVF, IUI, and ICSI treatments, Experienced fertility specialists with 15+ years expertise, State-of-the-art embryology lab, Affordable treatment packages starting from ₹1,20,000, IUI starting from ₹2,900, comprehensive initial consultation and fertility assessment."
               }
             },
             {
@@ -251,6 +251,12 @@
 </head>
 
 <body class="redesign-body">
+    <!-- Scroll Reading Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- Nav Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBZ7VJCT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -274,34 +280,142 @@
             <img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo">
           </a>
           
-          <div class="header-right">
-            <nav class="navigation-menu-redesign">
-              <button class="nav-toggle-btn" aria-label="Toggle Menu" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              
-              <ul class="nav-links-list" id="navMenu">
-                <li><a class="nav-link-item" href="index.html">Home</a></li>
-                <li><a class="nav-link-item" href="about-us.html">About Us</a></li>
-                <li><a class="nav-link-item" href="services.html">Treatments</a></li>
-                <li><a class="nav-link-item" href="about-us.html#founder">Doctors</a></li>
-                <li><a class="nav-link-item" href="#testimonials-section">Success Stories</a></li>
-                <li><a class="nav-link-item" href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
+          <nav class="navigation-menu-redesign">
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" id="navToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            
+            <ul class="nav-links-list" id="navMenu">
+              <button class="nav-close-btn" id="navClose" aria-label="Close Menu">&times;</button>
+              <li><a class="nav-link-item" href="index.html">Home</a></li>
+              <li><a class="nav-link-item" href="about-us.html">About Us</a></li>
+              <li class="nav-item-treatments">
+                <a class="nav-link-item mega-trigger" href="services.html">
+                  Treatments <i class="fa fa-angle-down mega-arrow"></i>
+                </a>
+                <div class="mega-menu-panel" id="megaMenuPanel">
+                  <div class="r-container">
+                    <div class="mega-menu-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-header"><i class="fa fa-flask"></i> IVF &amp; ART</div>
+                        <ul class="mega-links">
+                          <li><a href="services/ivf-options.html">IVF Options</a></li>
+                          <li><a href="services/advanced-ivf-treatment.html">IVF Treatment</a></li>
+                          <li><a href="services/icsi-treatment.html">ICSI Treatment</a></li>
+                          <li><a href="services/intrauterine-insemination.html">IUI Insemination</a></li>
+                          <li><a href="services/blastocyst-formation.html">Blastocyst Formation</a></li>
+                          <li><a href="services/laser-assisted-hatching.html">Laser Hatching</a></li>
+                          <li><a href="services/embroys-freezing-vitrification.html">Embryos Freezing</a></li>
+                          <li><a href="services/ovum-donation.html">Ovum Donation</a></li>
+                          <li><a href="services/ovulation-induction.html">Ovulation Induction</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-header"><i class="fa fa-search-plus"></i> Diagnostics</div>
+                        <ul class="mega-links">
+                          <li><a href="services/advanced-ivf-tests.html">Advanced IVF Tests</a></li>
+                          <li><a href="services/detailed-female-infertility-analysis.html">Female Infertility Analysis</a></li>
+                          <li><a href="services/endometrial-receptivity-analysis.html">Endometrial Receptivity</a></li>
+                          <li><a href="services/follicular-study.html">Follicular Study</a></li>
+                          <li><a href="services/male-infertility-analysis.html">Male Infertility Analysis</a></li>
+                          <li><a href="services/dna-fragmentation.html">DNA Fragmentation</a></li>
+                          <li><a href="services/preimplantation-genetic-testing.html">PGT Genetic Testing</a></li>
+                          <li><a href="services/micro-tese.html">Micro TESE</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-header"><i class="fa fa-female"></i> Female Fertility</div>
+                        <ul class="mega-links">
+                          <li><a href="services/female-infertility-treatment.html">Female Infertility</a></li>
+                          <li><a href="services/low-amh-treatment.html">Low AMH Treatment</a></li>
+                          <li><a href="services/polycystic-ovary-syndrome-treatment.html">PCOS Treatment</a></li>
+                          <li><a href="services/repeated-implantation-failure.html">Repeated Implantation Failure</a></li>
+                          <li><a href="services/ovarian-drilling-for-pcod-treatment.html">Ovarian Drilling (PCOD)</a></li>
+                          <li><a href="services/female-infertility-surgeries.html">Blocked Fallopian Tubes</a></li>
+                          <li><a href="services/endometrial-polyp-removal.html">Endometrial Polyp Removal</a></li>
+                          <li><a href="services/endometriosis-treatment.html">Endometriosis Treatment</a></li>
+                          <li><a href="services/ovarian-cysts-removal.html">Ovarian Cysts Removal</a></li>
+                          <li><a href="services/removal-of-adhesions-in-uterus.html">Uterine Adhesions Removal</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-header"><i class="fa fa-male"></i> Male Fertility</div>
+                        <ul class="mega-links">
+                          <li><a href="services/male-infertility-treatment.html">Male Infertility</a></li>
+                          <li><a href="services/oligospermia-low-sperm-count-treatment.html">Oligospermia (Low Sperm)</a></li>
+                          <li><a href="services/oligo-astheno-teratozoospermia.html">OAT Syndrome</a></li>
+                          <li><a href="services/testicular-sperm-aspiration.html">TESA (Sperm Aspiration)</a></li>
+                        </ul>
+                        <div class="mega-col-header mega-col-header-sub"><i class="fa fa-heart"></i> OB &amp; Pregnancy</div>
+                        <ul class="mega-links">
+                          <li><a href="services/obstetrics-gynecology.html">Obstetrics &amp; Gynecology</a></li>
+                          <li><a href="services/pregnancy.html">Pregnancy Care</a></li>
+                          <li><a href="services/preconception-counseling.html">Preconception Counseling</a></li>
+                          <li><a href="services/abnormal-uterinebleeding.html">Abnormal Uterine Bleeding</a></li>
+                          <li><a href="services/uterine-fibroids.html">Uterine Fibroids</a></li>
+                          <li><a href="services/vaginal-infection.html">Vaginal Infection</a></li>
+                          <li><a href="services/urinary-tractinfection.html">Urinary Tract Infection</a></li>
+                          <li><a href="services/hysteroscopy.html">Hysteroscopy</a></li>
+                          <li><a href="services/laparoscopy.html">Laparoscopy</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="mega-footer-bar">
+                      <a href="services.html" class="mega-view-all-btn">
+                        Explore All Treatments <i class="fa fa-long-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a class="nav-link-item" href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
 
-            <div class="header-actions">
-              <div class="header-location-pill">
-                <i class="fa fa-map-marker"></i> Baner, Pune
-              </div>
-              <a href="#appointment-section" class="r-btn-primary">Book Consultation</a>
+          <div class="header-actions">
+            <div class="header-location-pill">
+              <i class="fa fa-map-marker"></i> Baner, Pune
             </div>
+            <a href="#appointment-section" class="r-btn-primary">
+              <span class="btn-text-desktop">Book Consultation</span>
+              <span class="btn-text-mobile">Book Now</span>
+            </a>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- ==========================================================================
+       1.3. Header Proof Strip (below nav)
+       ========================================================================== -->
+    <div class="proof-strip-redesign">
+      <div class="r-container">
+        <div class="proof-strip-grid proof-strip-grid-5">
+          <div class="proof-item">
+            <i class="fa fa-stethoscope proof-icon"></i>
+            <span class="proof-text"><strong class="highlight">15+</strong> Years of Expertise</span>
+          </div>
+          <div class="proof-item">
+            <i class="fa fa-trophy proof-icon"></i>
+            <span class="proof-text"><strong class="highlight">70%</strong> IVF Success Rate</span>
+          </div>
+          <div class="proof-item">
+            <i class="fa fa-child proof-icon"></i>
+            <span class="proof-text"><strong class="highlight">2000+</strong> Successful Pregnancies</span>
+          </div>
+          <div class="proof-item">
+            <i class="fa fa-star proof-icon"></i>
+            <span class="proof-text"><strong class="highlight">4.9&#9733;</strong> Google Rating</span>
+          </div>
+          <div class="proof-item">
+            <i class="fa fa-map-marker proof-icon"></i>
+            <span class="proof-text">Baner, Pune &middot; Mon&ndash;Sun: 10am&ndash;7pm</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ==========================================================================
        2. Hero Section
@@ -309,64 +423,53 @@
     <section class="hero-redesign">
       <div class="r-container">
         <div class="hero-redesign-grid">
-          
-          <!-- Hero Left Content -->
-          <div class="hero-left-content">
+
+          <div class="hero-left-content reveal">
             <div class="hero-pills">
-              <div class="r-badge-pill">15+ Years of Trust & Care</div>
-              <div class="header-location-pill"><i class="fa fa-map-marker"></i> Baner, Pune</div>
+              <div class="r-badge-pill"><i class="fa fa-map-marker" style="color:#D91B72;font-size:10px;"></i> Baner, Pune &nbsp;|&nbsp; <i class="fa fa-clock-o" style="color:#D91B72;font-size:10px;"></i> Mon&ndash;Sun: 10am&ndash;7pm</div>
             </div>
-            
+
             <h1 class="hero-h1">
-              Best IVF Center in <span>Baner</span> | Test Tube Baby Treatment
+              The fertility doctor you'll actually meet &mdash; <span>every visit.</span>
             </h1>
-            
+
             <p class="hero-description">
-              Advanced IVF, IUI, ICSI & infertility treatment with expert doctors, high success rate, affordable cost, and personalized care.
+              Quoted upfront. Reviewed with you, not at you. Treated by Dr. Ramit &mdash; not a rotating team. Start with one conversation.
             </p>
-            
-            <div class="hero-chips">
-              <div class="hero-chip-item"><i class="fa fa-check-circle"></i> Expert Doctors</div>
-              <div class="hero-chip-item"><i class="fa fa-check-circle"></i> High Success Rate</div>
-              <div class="hero-chip-item"><i class="fa fa-check-circle"></i> Personalized Care</div>
-              <div class="hero-chip-item"><i class="fa fa-check-circle"></i> Affordable Treatment</div>
-            </div>
-            
+
             <div class="hero-cta-buttons">
               <a href="#appointment-section" class="r-btn-primary">
-                Book Consultation <i class="fa fa-calendar-check-o"></i>
+                Talk to Dr. Ramit <i class="fa fa-arrow-right"></i>
               </a>
               <a href="tel:+917058658711" class="r-btn-secondary">
-                Call Now <i class="fa fa-phone"></i>
+                <i class="fa fa-phone"></i> +91 70586 58711
               </a>
             </div>
           </div>
-          
-          <!-- Hero Right Video Visual Frame -->
+
           <div class="hero-right-visuals">
             <div class="hero-main-card">
-              <!-- HLS Video Player Integration -->
               <video id="hero-player" autoplay muted loop playsinline poster="images/appointment-image.jpg"></video>
               <div class="hero-video-overlay">
+                <div class="hero-video-label">Dr. Ramit in the IVF lab &mdash; 38 seconds</div>
                 <div class="play-icon-btn"><i class="fa fa-play"></i></div>
               </div>
             </div>
-            
-            <!-- Floating Trust Cards -->
+
             <div class="hero-floating-card">
               <div class="floating-icon"><i class="fa fa-heart"></i></div>
               <div class="floating-text">
-                <h4>70% success rate</h4>
-                <p>Advanced IVF care</p>
+                <h4>70% IVF success rate</h4>
+                <p>Above national average</p>
               </div>
             </div>
 
-
-            <!-- Soft Heart Silhouette Line Art Accent -->
-            <div class="hero-line-art">
-              <svg width="200" height="200" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#D91B72" fill-opacity="0.08"/>
-              </svg>
+            <div class="hero-floating-card hero-floating-card-2">
+              <div class="floating-icon" style="background:var(--color-lavender);"><i class="fa fa-user-md" style="color:#7C3AED;"></i></div>
+              <div class="floating-text">
+                <h4>15+ years experience</h4>
+                <p>Baner, Pune</p>
+              </div>
             </div>
           </div>
 
@@ -375,69 +478,626 @@
     </section>
 
     <!-- ==========================================================================
-       3. Trust Strip
+       2.5. Hero Proof Band
        ========================================================================== -->
-    <section class="trust-strip-section">
+    <section class="hero-proof-band">
       <div class="r-container">
-        <div class="trust-strip-wrapper">
-          <div class="trust-item-redesign">
-            <div class="trust-number">70%</div>
-            <div class="trust-label">IVF Success Rate</div>
-            <p class="trust-desc">Higher than national avg</p>
+        <div class="hero-proof-band-grid">
+
+          <div class="hero-proof-item">
+            <div class="hero-proof-icon"><i class="fa fa-user-md"></i></div>
+            <div class="hero-proof-stat">15+</div>
+            <div class="hero-proof-label">Years of Expertise</div>
           </div>
-          <div class="trust-item-redesign">
-            <div class="trust-number">2000+</div>
-            <div class="trust-label">Happy Families</div>
-            <p class="trust-desc">Spreading smiles since 2010</p>
+
+          <div class="hero-proof-divider"></div>
+
+          <div class="hero-proof-item">
+            <div class="hero-proof-icon"><i class="fa fa-child"></i></div>
+            <div class="hero-proof-stat">2000+</div>
+            <div class="hero-proof-label">Successful Pregnancies</div>
           </div>
-          <div class="trust-item-redesign">
-            <div class="trust-number">4.9 ★</div>
-            <div class="trust-label">Google Rating</div>
-            <p class="trust-desc">Highly trusted clinic</p>
+
+          <div class="hero-proof-divider"></div>
+
+          <div class="hero-proof-item">
+            <div class="hero-proof-icon"><i class="fa fa-trophy"></i></div>
+            <div class="hero-proof-stat">70%</div>
+            <div class="hero-proof-label">IVF Success Rate</div>
           </div>
-          <div class="trust-item-redesign">
-            <div class="trust-number">150+</div>
-            <div class="trust-label">Verified Reviews</div>
-            <p class="trust-desc">From genuine patients</p>
+
+          <div class="hero-proof-divider"></div>
+
+          <div class="hero-proof-item">
+            <div class="hero-proof-icon"><i class="fa fa-star"></i></div>
+            <div class="hero-proof-stat">4.9&#9733;</div>
+            <div class="hero-proof-label">Google Rating</div>
           </div>
-          <div class="trust-item-redesign">
-            <div class="trust-number">15+</div>
-            <div class="trust-label">Years Experience</div>
-            <p class="trust-desc">Expert medical leadership</p>
+
+          <div class="hero-proof-divider"></div>
+
+          <div class="hero-proof-item">
+            <div class="hero-proof-icon"><i class="fa fa-user-circle"></i></div>
+            <div class="hero-proof-stat">Same</div>
+            <div class="hero-proof-label">Doctor, Every Visit</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       3. We Hear This Every Week
+       ========================================================================== -->
+    <section class="r-section fears-section">
+      <div class="r-container">
+        <div class="r-section-title-wrapper reveal" style="max-width:800px;margin:0 auto 56px;text-align:center;">
+          <span class="r-section-subtitle">You Are Not Alone</span>
+          <h2 class="r-section-title">We hear this <span>every week.</span></h2>
+          <p class="r-section-desc">The questions you're scared to ask out loud &mdash; we answer them honestly, every day.</p>
+        </div>
+        <div class="fears-grid reveal-stagger">
+          <div class="fear-card">
+            <div class="fear-quote">&ldquo;I'm 36 and the last clinic just said &lsquo;do IVF&rsquo; without explaining why.&rdquo;</div>
+            <div class="fear-answer">
+              <i class="fa fa-reply"></i>
+              We open your reports in front of you. We walk through every viable option before recommending IVF.
+            </div>
+          </div>
+          <div class="fear-card">
+            <div class="fear-quote">&ldquo;My AMH is 0.5. Is it too late?&rdquo;</div>
+            <div class="fear-answer">
+              <i class="fa fa-reply"></i>
+              No. We've treated dozens of patients with AMH under 1.0 and seen them through to pregnancy. Let's look at your specific case.
+            </div>
+          </div>
+          <div class="fear-card">
+            <div class="fear-quote">&ldquo;My last IVF failed and I don't know why.&rdquo;</div>
+            <div class="fear-answer">
+              <i class="fa fa-reply"></i>
+              A second opinion is okay. Bring your reports &mdash; our first consult reviews them thoroughly. We look at embryo, lining, and sperm DNA.
+            </div>
+          </div>
+          <div class="fear-card">
+            <div class="fear-quote">&ldquo;My husband refuses to get tested.&rdquo;</div>
+            <div class="fear-answer">
+              <i class="fa fa-reply"></i>
+              Half of infertility is male factor. We see this often. We'll handle it gently and privately &mdash; no awkwardness.
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:48px;">
+          <a href="tel:+917058658711" class="r-btn-primary">Talk to us &mdash; it's confidential <i class="fa fa-phone"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       4. Doctor / Expert Section
+       ========================================================================== -->
+    <section class="r-section doctor-redesign">
+      <div class="r-container">
+        <div style="text-align:center;margin-bottom:48px;" class="reveal">
+          <span class="r-section-subtitle">Your Doctor</span>
+          <h2 class="r-section-title" style="max-width:600px;margin:0 auto;">Meet <span>Dr. Ramit Kamate</span></h2>
+        </div>
+        <div class="doctor-grid-redesign">
+          <div class="doctor-photo-card reveal-left">
+            <img loading="lazy" src="images/dr-ramit-raosaheb-kamate.jpg" alt="Dr. Ramit Raosaheb Kamate &mdash; Fertility Specialist Baner Pune">
+            <div class="doctor-experience-tag">15+ Years Experience</div>
+          </div>
+          <div class="doctor-details-right reveal-right">
+            <span class="doctor-specialty">Reproductive Medicine Consultant &amp; Sexologist</span>
+            <h2 class="doctor-name">Dr. Ramit Kamate</h2>
+            <p class="doctor-bio">
+              I'm Ramit. I started Nakshatra in 2010 after training in Pune, the UK, Dubai, and the US. Since then I've worked with over 2,000 couples &mdash; and I still see every patient myself, from the first consult to the pregnancy ultrasound. I open your reports with you, walk through every option, and give you a written plan to take home. No rotating team. No &ldquo;let's try it and see.&rdquo; That's the only way I know how to practise medicine.
+            </p>
+            <p class="doctor-bio" style="margin-top:12px;">
+              MBBS, B.J. Medical College Pune &middot; Masters in Reproductive Medicine, Hamilton University UK &middot; IBCME Dubai &middot; Fellowship in Cosmetic Gynecology &amp; Sexual Medicine, USA
+            </p>
+            <div class="doctor-credentials-strip">
+              <span>ISAR Member</span><span>FOGSI Member</span><span>ICOG Member</span><span>IFS Member</span>
+            </div>
+            <ul class="doctor-bullets reveal-stagger">
+              <li><i class="fa fa-check"></i> Personally handles every case &mdash; from scan 1 to pregnancy confirmation</li>
+              <li><i class="fa fa-check"></i> Advanced IVF, IUI, ICSI, Low AMH &amp; PCOS protocols</li>
+              <li><i class="fa fa-check"></i> Male infertility &mdash; andrology, micro-TESE, DNA fragmentation</li>
+              <li><i class="fa fa-check"></i> Cosmetic Gynecology &amp; confidential Sexual Medicine</li>
+              <li><i class="fa fa-check"></i> Minimally invasive surgery: laparoscopy, hysteroscopy</li>
+            </ul>
+            <a href="#appointment-section" class="r-btn-primary" style="margin-top:20px;">
+              Book with Dr. Ramit <i class="fa fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-       4. Appointment Section
+       5. Pricing Transparency
+       ========================================================================== -->
+    <section class="r-section pricing-section">
+      <div class="r-container">
+        <div class="pricing-wrapper reveal">
+          <div class="pricing-header">
+            <span class="r-section-subtitle">Transparent Pricing</span>
+            <h2 class="r-section-title">What treatment actually <span>costs at Nakshatra</span></h2>
+            <p class="r-section-desc">Every quote is itemised. No &ldquo;lab charges extra&rdquo; surprises after you've started.</p>
+          </div>
+          <div class="pricing-grid reveal-stagger">
+            <div class="pricing-card pricing-card-featured">
+              <div class="pricing-card-label">Start Here</div>
+              <h3 class="pricing-card-name">Initial Consultation</h3>
+              <div class="pricing-card-price" style="font-size:18px;line-height:1.3;">In-Clinic<span class="pricing-card-from"> with Dr. Ramit</span></div>
+              <p class="pricing-card-desc">45 minutes with Dr. Ramit. Bring your reports. Get a written plan to take home.</p>
+              <a href="#appointment-section" class="r-btn-primary pricing-card-btn">Book Consultation <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="pricing-card">
+              <h3 class="pricing-card-name">Online Consultation</h3>
+              <div class="pricing-card-price" style="font-size:20px;line-height:1.2;">Video Call<span class="pricing-card-from"> with Dr. Ramit</span></div>
+              <p class="pricing-card-desc">Your reports, your questions, his answers. No travel needed. Book via our online portal.</p>
+              <a href="#booka-online" class="r-btn-secondary pricing-card-btn">Book Online Consult</a>
+            </div>
+            <div class="pricing-card">
+              <h3 class="pricing-card-name">IUI Cycle</h3>
+              <div class="pricing-card-price">&#8377;2,900<span class="pricing-card-from">+ onwards</span></div>
+              <p class="pricing-card-desc">Starting price. No hidden top-ups. Medications quoted separately in writing before you start.</p>
+            </div>
+            <div class="pricing-card">
+              <h3 class="pricing-card-name">IVF Cycle</h3>
+              <div class="pricing-card-price">&#8377;1,20,000<span class="pricing-card-from">+</span></div>
+              <p class="pricing-card-desc">Base cycle. Medications average &#8377;40,000&ndash;&#8377;80,000 depending on protocol. Itemised quote upfront.</p>
+            </div>
+            <div class="pricing-card">
+              <h3 class="pricing-card-name">ICSI</h3>
+              <div class="pricing-card-price">&#8377;1,50,000<span class="pricing-card-from">+</span></div>
+              <p class="pricing-card-desc">For male factor infertility. Sperm injection directly into egg under high magnification.</p>
+            </div>
+            <div class="pricing-card pricing-card-emi">
+              <div class="pricing-card-emi-icon"><i class="fa fa-credit-card"></i></div>
+              <h3 class="pricing-card-name">EMI Available</h3>
+              <div class="pricing-card-price" style="font-size:22px;">&#8377;9,999<span class="pricing-card-from">/month</span></div>
+              <p class="pricing-card-desc">No-cost EMI via Bajaj Finserv &amp; Tata Capital. 12&ndash;24 month plans. Partner credit cards accepted.</p>
+            </div>
+          </div>
+          <div class="pricing-disclaimer">
+            <i class="fa fa-info-circle"></i>
+            All prices are indicative. Your exact treatment plan and costs will be discussed with Dr. Ramit at your first consultation, in writing, before any procedure begins.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       6. Treatments / Services (Problem-First)
+       ========================================================================== -->
+    <section class="r-section treatments-redesign" id="treatments-section">
+      <div class="r-container">
+        <div class="treatments-header-row reveal">
+          <div class="r-section-title-wrapper">
+            <span class="r-section-subtitle">Treatments by Your Situation</span>
+            <h2 class="r-section-title">Start with <span>your problem</span> &mdash; not a procedure name.</h2>
+            <p class="r-section-desc">We treat the person, not the diagnosis. Click what describes your situation.</p>
+          </div>
+          <a href="services.html" class="r-btn-secondary">View All Treatments</a>
+        </div>
+
+        <div class="service-grid-redesign">
+
+          <div class="service-card-redesign service-card-reveal">
+            <div class="service-card-icon-wrapper"><i class="fa fa-line-chart"></i></div>
+            <div class="service-card-info">
+              <h3>Low AMH or &ldquo;Diminished Reserve&rdquo;</h3>
+              <p>When your reports say your time is short. We have treated dozens of patients with AMH under 1.0 through to a healthy pregnancy.</p>
+              <div class="service-card-tag">Low AMH Protocol &rarr; IVF</div>
+            </div>
+            <a href="services/low-amh-treatment.html" class="service-card-learn-link">Get specific answers <i class="fa fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card-redesign service-card-reveal">
+            <div class="service-card-icon-wrapper"><i class="fa fa-refresh"></i></div>
+            <div class="service-card-info">
+              <h3>2 or More Failed IVF Cycles</h3>
+              <p>Why it failed, and what we would test differently. ERA, PGT, DNA fragmentation &mdash; the tests most clinics skip before round two.</p>
+              <div class="service-card-tag">Second Opinion &rarr; Personalised Protocol</div>
+            </div>
+            <a href="services/repeated-implantation-failure.html" class="service-card-learn-link">Bring your reports <i class="fa fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card-redesign service-card-reveal">
+            <div class="service-card-icon-wrapper"><i class="fa fa-female"></i></div>
+            <div class="service-card-info">
+              <h3>PCOS &amp; Irregular Cycles</h3>
+              <p>From &ldquo;no period for months&rdquo; to ovulation. We treat PCOS at the root &mdash; not just the symptom &mdash; before considering assisted reproduction.</p>
+              <div class="service-card-tag">Ovulation Induction &rarr; IUI / IVF</div>
+            </div>
+            <a href="services/polycystic-ovary-syndrome-treatment.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card-redesign service-card-reveal">
+            <div class="service-card-icon-wrapper"><i class="fa fa-male"></i></div>
+            <div class="service-card-info">
+              <h3>Male Factor &mdash; Low Count, DNA Damage</h3>
+              <p>Half the cases. Often the missed half. Full semen analysis including DNA fragmentation &mdash; the test most clinics skip.</p>
+              <div class="service-card-tag">Andrology Workup &rarr; ICSI / TESA</div>
+            </div>
+            <a href="services/male-infertility-treatment.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card-redesign service-card-reveal">
+            <div class="service-card-icon-wrapper"><i class="fa fa-snowflake-o"></i></div>
+            <div class="service-card-info">
+              <h3>Egg Freezing for Career-Planning Women</h3>
+              <p>Decide now. Use later. Single-cycle vitrification with transparent pricing. Your eggs, your timeline.</p>
+              <div class="service-card-tag">Vitrification &rarr; Freeze &amp; Store</div>
+            </div>
+            <a href="services/embroys-freezing-vitrification.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card-redesign service-card-reveal">
+            <div class="service-card-icon-wrapper"><i class="fa fa-heart-o"></i></div>
+            <div class="service-card-info">
+              <h3>Thin Endometrium / Lining Issues</h3>
+              <p>The diagnosis most clinics miss. If your embryo is good but transfer keeps failing, the lining is often the answer.</p>
+              <div class="service-card-tag">ERA Testing &rarr; Personalised Transfer</div>
+            </div>
+            <a href="services/endometrial-receptivity-analysis.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       7. Male Fertility Band
+       ========================================================================== -->
+    <section class="male-fertility-band">
+      <div class="r-container">
+        <div class="male-band-content reveal">
+          <div class="male-band-text">
+            <div class="male-band-eyebrow"><i class="fa fa-male"></i> For the Husband</div>
+            <h2 class="male-band-title">Half of fertility problems involve the man.<br>Most go undiagnosed.</h2>
+            <p class="male-band-desc">
+              Because nobody talked to him directly. We do &mdash; privately, without awkwardness.
+            </p>
+            <ul class="male-band-list">
+              <li><i class="fa fa-check-circle"></i> Full semen analysis including DNA fragmentation (most clinics skip this)</li>
+              <li><i class="fa fa-check-circle"></i> Andrology consult with Dr. Ramit &mdash; privately</li>
+              <li><i class="fa fa-check-circle"></i> From medical management to micro-TESE for zero-count cases</li>
+              <li><i class="fa fa-check-circle"></i> No stigma. No lecture. Just answers.</li>
+            </ul>
+            <div class="male-band-cta-row">
+              <a href="#booka-widget" class="r-btn-primary"><i class="fa fa-calendar-check-o"></i> Book A Appointment</a>
+              <a href="#booka-online" class="r-btn-secondary"><i class="fa fa-video-camera"></i> Book Online Consultation</a>
+            </div>
+          </div>
+          <div class="male-stat-col">
+            <div class="male-stat-card">
+              <div class="male-stat-number">50%</div>
+              <div class="male-stat-label">of infertility cases have a male factor</div>
+            </div>
+            <div class="male-stat-card">
+              <div class="male-stat-number">80%</div>
+              <div class="male-stat-label">of male factor cases respond to treatment when caught early</div>
+            </div>
+            <div class="male-stat-card">
+              <div class="male-stat-number">1 in 3</div>
+              <div class="male-stat-label">couples have male-only infertility &mdash; often missed elsewhere</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       8. Testimonials (Patient Stories)
+       ========================================================================== -->
+    <section class="r-section success-redesign" id="testimonials-section">
+      <div class="r-container">
+
+        <div class="success-header-redesign">
+          <div class="r-section-title-wrapper">
+            <span class="r-section-subtitle">Patient Stories</span>
+            <h2 class="r-section-title">Real patients. <span>Real clinical details.</span></h2>
+            <p class="r-section-desc">Specific stories from couples who came with real diagnoses and left with real results.</p>
+          </div>
+          <div class="rating-stars" style="font-size: 18px; align-items: center;">
+            <span style="color: var(--color-deep-navy); font-weight: 700; font-size: 16px; margin-right: 8px;">Google Rating 4.9/5</span>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+        </div>
+
+        <div class="testimonials-grid-redesign">
+
+          <div class="testimonial-card-redesign">
+            <span class="testimonial-quote-redesign">"</span>
+            <div class="rating-stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p class="testimonial-quote-text">
+              "I came to Nakshatra after one failed IVF at a chain clinic in Wakad. Dr. Ramit was the first doctor who actually opened my reports in front of me. He spotted that my lining was the issue &mdash; not the embryo. Pregnant in our next cycle."
+            </p>
+            <div class="testimonial-author-wrapper">
+              <div class="author-pic"><img loading="lazy" src="images/nakshatra-author-one.jpg" alt="Priya K."></div>
+              <div class="author-meta">
+                <h4>Priya K., 34</h4>
+                <p>Aundh, Pune &middot; IVF after 1 failed cycle</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card-redesign">
+            <span class="testimonial-quote-redesign">"</span>
+            <div class="rating-stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p class="testimonial-quote-text">
+              "My AMH was 0.6 and three other clinics told me to consider donor eggs immediately. Dr. Ramit said &mdash; let's look at everything first. 14 months later, I have a healthy daughter. He was calm when I was panicking. That mattered."
+            </p>
+            <div class="testimonial-author-wrapper">
+              <div class="author-pic"><img loading="lazy" src="images/nakshatra-author-two.jpg" alt="Sunita M."></div>
+              <div class="author-meta">
+                <h4>Sunita M., 37</h4>
+                <p>Baner, Pune &middot; AMH 0.6 &middot; Own eggs IVF</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card-redesign">
+            <span class="testimonial-quote-redesign">"</span>
+            <div class="rating-stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p class="testimonial-quote-text">
+              "My husband was the one with the issue &mdash; high DNA fragmentation, which nobody had tested before. Dr. Ramit treated him first, three months of antioxidant protocol. IUI worked on the first try after that. The pricing was transparent and the EMI helped enormously."
+            </p>
+            <div class="testimonial-author-wrapper">
+              <div class="author-pic"><img loading="lazy" src="images/nakshatra-author-three.jpg" alt="Kavya R."></div>
+              <div class="author-meta">
+                <h4>Kavya R., 31</h4>
+                <p>Pashan, Pune &middot; Male factor &middot; IUI success</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── Video Testimonials ─────────────────────────────────────── -->
+        <div class="video-testimonials-section reveal">
+          <div class="video-testimonials-heading">
+            <i class="fa fa-play-circle"></i> Watch their stories
+          </div>
+          <div class="video-testimonials-grid">
+
+            <!-- Video 1: Landscape -->
+            <div class="video-testimonial-card">
+              <div class="video-wrapper">
+                <video controls preload="metadata" playsinline>
+                  <source src="video/testimonials/nakshatra_testimonial_1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-testimonial-meta">
+                <div class="video-stars">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p class="video-testimonial-caption-text">Nakshatra IVF Patient - Shares her fertility journey and experience with Dr. Ramit Kamate</p>
+              </div>
+            </div>
+
+            <!-- Video 2: Portrait -->
+            <div class="video-testimonial-card video-testimonial-portrait">
+              <div class="video-wrapper video-wrapper-portrait">
+                <video controls preload="metadata" playsinline>
+                  <source src="video/testimonials/nakshatra_testimonial_2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-testimonial-meta">
+                <div class="video-stars">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p class="video-testimonial-caption-text">Nakshatra IVF Patient - Her success story after years of trying to conceive</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- ── End Video Testimonials ──────────────────────────────────── -->
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       8.5. Instagram Reels Section
+       ========================================================================== -->
+    <section class="insta-reels-section">
+
+      <div class="insta-reels-deco-circle insta-deco-1"></div>
+      <div class="insta-reels-deco-circle insta-deco-2"></div>
+
+      <div class="r-container" style="position:relative;z-index:2;">
+
+        <div class="insta-reels-header reveal">
+          <div class="insta-eyebrow">
+            <i class="fab fa-instagram"></i>
+            <span>@nakshatra.clinic</span>
+          </div>
+          <h2 class="insta-title">Watch Us in Action</h2>
+          <p class="insta-desc">Real conversations. Real procedures. Real hope &mdash; straight from our Instagram.</p>
+        </div>
+
+        <div class="insta-reels-track-wrapper">
+          <div class="insta-reels-track">
+
+            <div class="insta-reel-card">
+              <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DV8letxk7Is/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+            <div class="insta-reel-card">
+              <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DYMsyulEt1s/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+            <div class="insta-reel-card">
+              <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DXJyLHVDJeT/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+            <div class="insta-reel-card">
+              <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DViZJmhj6K7/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+            <div class="insta-reel-card">
+              <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DYmcvv1CfMp/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="insta-follow-row reveal">
+          <a href="https://www.instagram.com/nakshatra.clinic" target="_blank" rel="noopener" class="insta-follow-btn">
+            <i class="fab fa-instagram"></i> Follow @nakshatra.clinic
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       9. What Happens at Your First Visit
+       ========================================================================== -->
+    <section class="r-section first-visit-section">
+      <div class="r-container">
+        <div class="r-section-title-wrapper reveal" style="text-align:center;margin-inline:auto;max-width:700px;">
+          <span class="r-section-subtitle">No Surprises</span>
+          <h2 class="r-section-title">What happens at your <span>first visit</span></h2>
+          <p class="r-section-desc">The biggest fear is the unknown. Here's exactly what to expect.</p>
+        </div>
+        <div class="first-visit-steps reveal-stagger">
+          <div class="first-visit-step">
+            <div class="fv-step-number">01</div>
+            <div class="fv-step-content">
+              <h3>You arrive (or video call)</h3>
+              <p>Tea, a chair. No waiting-room theatre. If you've booked online, Dr. Ramit will already have read your intake notes.</p>
+            </div>
+          </div>
+          <div class="first-visit-step">
+            <div class="fv-step-number">02</div>
+            <div class="fv-step-content">
+              <h3>Dr. Ramit reviews your history with you</h3>
+              <p>Not at you. 45 minutes. He opens every report, explains every number. You can ask anything. Nothing is stupid.</p>
+            </div>
+          </div>
+          <div class="first-visit-step">
+            <div class="fv-step-number">03</div>
+            <div class="fv-step-content">
+              <h3>Tests if needed &mdash; done in-house</h3>
+              <p>Usually a scan, blood work, a semen analysis. All in-house. Results usually same day or next morning.</p>
+            </div>
+          </div>
+          <div class="first-visit-step">
+            <div class="fv-step-number">04</div>
+            <div class="fv-step-content">
+              <h3>You leave with a written plan</h3>
+              <p>Treatment options, timelines, costs &mdash; itemised, in writing. Yours to take home and discuss. <strong>No pressure to decide on the day.</strong></p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:48px;">
+          <a href="#appointment-section" class="r-btn-primary">Book your first visit <i class="fa fa-calendar-check-o"></i></a>
+          <p style="font-size:13px;color:var(--color-muted);margin-top:12px;">In-clinic &middot; Online booking available &middot; No commitment</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       10. Why Choose Us Section
+       ========================================================================== -->
+    <section class="r-section why-choose-redesign">
+      <div class="r-container">
+        <div class="why-grid-redesign">
+
+          <div class="why-cards-container">
+            <div class="r-section-title-wrapper">
+              <span class="r-section-subtitle">Why Choose Us</span>
+              <h2 class="r-section-title">One doctor. <span>Transparent costs. Advanced science.</span></h2>
+              <p class="r-section-desc">The three things our patients tell us they couldn't find anywhere else.</p>
+            </div>
+
+            <div class="why-card-horizontal reveal">
+              <div class="why-card-icon"><i class="fa fa-user-md"></i></div>
+              <div class="why-card-content">
+                <h3>One Doctor. The Whole Way Through.</h3>
+                <p>Dr. Ramit handles your case personally &mdash; from the first scan to the pregnancy confirmation. No rotating team, no hand-offs mid-cycle.</p>
+              </div>
+            </div>
+
+            <div class="why-card-horizontal reveal">
+              <div class="why-card-icon"><i class="fa fa-file-text-o"></i></div>
+              <div class="why-card-content">
+                <h3>Pricing in Writing. Before You Start.</h3>
+                <p>Every cost is itemised and handed to you before any procedure begins. IVF from &#8377;1,20,000. IUI from &#8377;2,900. No surprises.</p>
+              </div>
+            </div>
+
+            <div class="why-card-horizontal reveal">
+              <div class="why-card-icon"><i class="fa fa-cogs"></i></div>
+              <div class="why-card-content">
+                <h3>Modular Lab. Advanced Science.</h3>
+                <p>State-of-the-art cleanroom embryology laboratory. ERA, PGT, DNA fragmentation, micro-TESE &mdash; the tests that change outcomes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-right-visuals">
+            <div class="why-right-badge-card">
+              <h3>70%</h3>
+              <h4>IVF Success Rate</h4>
+              <p>Higher than average metrics driven by scientific precision, advanced genetics screening, and modular labs.</p>
+              <a href="#appointment-section" class="r-btn-primary">Book Consultation</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       11. Appointment Section
        ========================================================================== -->
     <section class="r-section appointment-redesign" id="appointment-section">
       <div class="r-container">
         <div class="appointment-redesign-grid">
-          
-          <!-- Left Text and Benefits -->
+
           <div class="appointment-info-left">
             <div class="r-section-title-wrapper">
-              <span class="r-section-subtitle">Book Appointment</span>
-              <h2 class="r-section-title">Begin Your Parenthood Journey with <span>Nakshatra IVF</span></h2>
+              <span class="r-section-subtitle">First Step</span>
+              <h2 class="r-section-title">Start with one <span>conversation</span></h2>
               <p class="r-section-desc">
-                Take the first step towards your dream of parenthood. Our fertility experts are here to guide you with care, compassion, and advanced treatment.
+                In-clinic consultation with Dr. Ramit. Bring your reports. No commitment. Or book an online consultation if you'd prefer to start from home.
               </p>
             </div>
-            
+
             <div class="appointment-benefits-list">
               <div class="appointment-benefit-item">
                 <div class="benefit-icon-box"><i class="fa fa-bolt"></i></div>
                 <div class="benefit-texts">
-                  <h4>Quick & Easy Booking</h4>
+                  <h4>Quick &amp; Easy Booking</h4>
                   <p>Book online under 60 seconds with instant confirmation.</p>
                 </div>
               </div>
               <div class="appointment-benefit-item">
                 <div class="benefit-icon-box"><i class="fa fa-shield"></i></div>
                 <div class="benefit-texts">
-                  <h4>Confidential & Secure</h4>
+                  <h4>Confidential &amp; Secure</h4>
                   <p>Your details and clinical history are 100% private.</p>
                 </div>
               </div>
@@ -450,35 +1110,33 @@
               </div>
             </div>
           </div>
-          
-          <!-- Right Appointment Form Card -->
+
           <div class="appointment-card-wrapper">
-            <h3 class="appointment-card-title">Book Your Slot Today</h3>
-            
-            <!-- Standard validated form integrated directly with the API Submit script -->
+            <h3 class="appointment-card-title">Book Your Consultation</h3>
+
             <form id="appointmentForm" action="#" method="POST" data-toggle="validator">
               <div class="redesign-form-grid">
-                
+
                 <div class="r-form-group">
                   <label for="fname" class="r-form-label">First Name *</label>
                   <input type="text" name="fname" class="r-form-control" id="fname" placeholder="Enter first name" required>
                 </div>
-                
+
                 <div class="r-form-group">
                   <label for="lname" class="r-form-label">Last Name *</label>
                   <input type="text" name="lname" class="r-form-control" id="lname" placeholder="Enter last name" required>
                 </div>
-                
+
                 <div class="r-form-group form-full-width">
                   <label for="email" class="r-form-label">Email Address (Optional)</label>
                   <input type="email" name="email" class="r-form-control" id="email" placeholder="example@gmail.com">
                 </div>
-                
+
                 <div class="r-form-group form-full-width">
                   <label for="phone" class="r-form-label">Phone Number *</label>
                   <input type="text" name="phone" class="r-form-control" id="phone" placeholder="Enter mobile number" required>
                 </div>
-                
+
                 <div class="r-form-group form-full-width">
                   <label for="services" class="r-form-label">Select Treatment *</label>
                   <select name="services" class="r-form-control" id="services" required>
@@ -493,408 +1151,49 @@
                     <option value="Genetic_Testing">PGT (Genetic Testing)</option>
                   </select>
                 </div>
-                
+
                 <div class="r-form-group form-full-width">
                   <label for="date" class="r-form-label">Preferred Date *</label>
                   <input type="date" name="date" class="r-form-control" id="date" required>
                 </div>
-                
+
+                <div class="form-full-width" style="text-align:center;font-size:12px;color:var(--color-muted);display:flex;align-items:center;gap:8px;justify-content:center;">
+                  <i class="fa fa-lock" style="color:var(--color-primary);"></i>
+                  Your details are confidential and never shared. Not even with family.
+                </div>
+
                 <div class="form-full-width">
                   <button type="submit" class="r-btn-primary r-form-submit-btn" id="realSubmitBtn">
-                    Book Appointment Now <i class="fa fa-angle-right"></i>
+                    Send my details to Dr. Ramit <i class="fa fa-angle-right"></i>
                   </button>
                   <div id="msgSubmit" class="h3 hidden"></div>
                 </div>
-                
+
               </div>
             </form>
           </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-       5. Treatments / Services
-       ========================================================================== -->
-    <section class="r-section treatments-redesign">
-      <div class="r-container">
-        
-        <div class="treatments-header-row">
-          <div class="r-section-title-wrapper">
-            <span class="r-section-subtitle">Our Treatments</span>
-            <h2 class="r-section-title">Comprehensive <span>Fertility Solutions</span></h2>
-            <p class="r-section-desc">Advanced treatments tailored to your unique journey to parenthood.</p>
-          </div>
-          <a href="services.html" class="r-btn-secondary">View All Treatments</a>
-        </div>
-        
-        <div class="service-grid-redesign">
-          
-          <!-- Card 1: IVF -->
-          <div class="service-card-redesign">
-            <div class="service-card-icon-wrapper"><i class="fa fa-stethoscope"></i></div>
-            <div class="service-card-info">
-              <h3>IVF Treatment</h3>
-              <p>In Vitro Fertilization (IVF) is the most effective form of assisted reproductive technology, utilizing state-of-the-art laboratory standards.</p>
-            </div>
-            <a href="services.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-          
-          <!-- Card 2: IUI -->
-          <div class="service-card-redesign">
-            <div class="service-card-icon-wrapper"><i class="fa fa-heartbeat"></i></div>
-            <div class="service-card-info">
-              <h3>IUI Treatment</h3>
-              <p>Intrauterine Insemination (IUI) is a minor and affordable fertility procedure that places sperm directly inside a woman’s uterus.</p>
-            </div>
-            <a href="services/intrauterine-insemination.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-          
-          <!-- Card 3: ICSI -->
-          <div class="service-card-redesign">
-            <div class="service-card-icon-wrapper"><i class="fa fa-user-md"></i></div>
-            <div class="service-card-info">
-              <h3>ICSI Treatment</h3>
-              <p>Intracytoplasmic Sperm Injection (ICSI) is an advanced micro-fertilization technology designed to treat severe male factor infertility.</p>
-            </div>
-            <a href="services/icsi-treatment.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-          
-          <!-- Card 4: Fertility Care -->
-          <div class="service-card-redesign">
-            <div class="service-card-icon-wrapper"><i class="fa fa-hospital-o"></i></div>
-            <div class="service-card-info">
-              <h3>Fertility Care & Surgeries</h3>
-              <p>Minimally invasive diagnostic laparoscopy and hysteroscopy to identify and correct structural concerns blocking natural reproduction.</p>
-            </div>
-            <a href="services/female-infertility-surgeries.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-          
-          <!-- Card 5: Egg & Sperm Freezing -->
-          <div class="service-card-redesign">
-            <div class="service-card-icon-wrapper"><i class="fa fa-snowflake-o"></i></div>
-            <div class="service-card-info">
-              <h3>Egg & Sperm Freezing</h3>
-              <p>Preserve your reproductive options for the future with advanced cryogenic freezing and vitrification under strict medical controls.</p>
-            </div>
-            <a href="services/embroys-freezing-vitrification.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-          
-          <!-- Card 6: Pregnancy Care -->
-          <div class="service-card-redesign">
-            <div class="service-card-icon-wrapper"><i class="fa fa-child"></i></div>
-            <div class="service-card-info">
-              <h3>Pregnancy Care</h3>
-              <p>Compassionate, end-to-end maternity care, diagnostic scans, and post-natal planning for a safe and healthy pregnancy experience.</p>
-            </div>
-            <a href="services/pregnancy.html" class="service-card-learn-link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
 
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-       5b. Scrub-to-Learn Interactive Video Explainer Section — DISABLED
-       ========================================================================== -->
-    <!--
-    <section class="r-section ivf-explainer-section" id="scrub-to-learn">
-      <!-- Background Ambient Glowing Orb and Micro-Particles -->
-      <div class="explainer-bg-glowing-orb"></div>
-      <div class="explainer-bg-particle" style="left: 15%; width: 12px; height: 12px; animation-delay: 0s; animation-duration: 22s;"></div>
-      <div class="explainer-bg-particle" style="left: 45%; width: 8px; height: 8px; animation-delay: 4s; animation-duration: 18s;"></div>
-      <div class="explainer-bg-particle" style="left: 75%; width: 16px; height: 16px; animation-delay: 8s; animation-duration: 25s;"></div>
-      <div class="explainer-bg-particle" style="left: 90%; width: 10px; height: 10px; animation-delay: 12s; animation-duration: 20s;"></div>
-
-      Native Background Video container
-      <!-- <div class="explainer-video-bg-container">
-        Intermediate wrapper handles translate/scale scroll transforms, child handles continuous CSS idle float
-        <div class="explainer-video-scroll-wrapper" id="explainerVideoScrollWrapper">
-          <video id="explainer-scrub-video" playsinline muted preload="auto" class="explainer-bg-video"></video>
-        </div>
-        <div class="explainer-video-overlay-gradient"></div>
-      </div> -->
-
-      <div class="r-container explainer-content-container">
-        Minimalist Progress Timeline Tracker (Moved inside container to prevent screen overlap)
-        <div class="explainer-progress-timeline">
-          <div class="timeline-line">
-            <div class="timeline-progress-bar" id="timelineProgressBar"></div>
-          </div>
-          <div class="timeline-dots">
-            <div class="timeline-dot-item active" data-index="0">
-              <span class="dot-number">01</span>
-              <span class="dot-label">Foundation</span>
-            </div>
-            <div class="timeline-dot-item" data-index="1">
-              <span class="dot-number">02</span>
-              <span class="dot-label">ICSI Precision</span>
-            </div>
-            <div class="timeline-dot-item" data-index="2">
-              <span class="dot-number">03</span>
-              <span class="dot-label">Blastocyst</span>
-            </div>
-            <div class="timeline-dot-item" data-index="3">
-              <span class="dot-number">04</span>
-              <span class="dot-label">Embryo Transfer</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="ivf-explainer-grid">
-
-          Left Column: Contextual transitions
-          <div class="ivf-explainer-left">
-
-            Milestone 1
-            <div class="explainer-milestone active" data-milestone="1">
-              <div class="r-badge-pill">Baner, Pune</div>
-              <h2 class="explainer-heading">Every journey begins with a single cell.</h2>
-              <p class="explainer-body">
-                Infertility is a deeply personal concern among couples of various ages, often bringing emotional stress and lowered confidence. At Nakshatra Clinic, we believe that parenthood is a dream worth pursuing—and with the right medical support, it is absolutely achievable. In Vitro Fertilisation (IVF) is a carefully structured path designed to help individuals or couples safely conceive and experience the pure joy of parenthood.
-              </p>
-            </div>
-
-            Milestone 2
-            <div class="explainer-milestone" data-milestone="2">
-              <div class="r-badge-pill">Advanced Precision Embryology</div>
-              <h2 class="explainer-heading">ICSI: Overcoming Male Infertility Barriers</h2>
-              <p class="explainer-body">
-                For couples navigating challenges like low sperm count, poor motility, or unexplained infertility, our specialists implement ICSI (Intracytoplasmic Sperm Injection). Under expert embryologist supervision, a single healthy sperm is selected with micro-fine precision and injected directly into the egg, vastly increasing the absolute probability of successful fertilization.
-              </p>
-            </div>
-
-            Milestone 3
-            <div class="explainer-milestone" data-milestone="3">
-              <div class="r-badge-pill">Modern Reproductive Tech</div>
-              <h2 class="explainer-heading">Blastocyst Culture & ICM Selection</h2>
-              <p class="explainer-body">
-                We grow embryos for 5 to 6 days until they reach the advanced Blastocyst stage. Utilizing specialized Inner Cell Mass (ICM) analysis techniques, we closely evaluate cellular health and structural viability. By transferring only the healthiest, most resilient embryos, we substantially improve implantation outcomes while lowering pregnancy risks.
-              </p>
-            </div>
-
-            Milestone 4
-            <div class="explainer-milestone" data-milestone="4">
-              <div class="r-badge-pill">Optimized Outcomes</div>
-              <h2 class="explainer-heading">Frozen Embryo Transfer & Success</h2>
-              <p class="explainer-body">
-                Timing is everything. Frozen Embryo Transfer allows preserved embryos from previous cycles to be safely introduced when your body is naturally resting and at its absolute physical peak. By combining personalized treatment plans, compassionate care, and evidence-based protocols, Nakshatra Clinic achieves a powerful 50% to 70% average IVF success rate per cycle.
-              </p>
-            </div>
-
-          </div>
-
-          Right Column: Kept empty on desktop to let the background video scrub clearly on the right side
-          <div class="ivf-explainer-right"></div>
-
-        </div>
-      </div>
-    </section>
-    -->
-
-    <!-- ==========================================================================
-       6. Why Choose Us Section
-       ========================================================================== -->
-    <section class="r-section why-choose-redesign">
-      <div class="r-container">
-        <div class="why-grid-redesign">
-          
-          <!-- Left list of why choose items -->
-          <div class="why-cards-container">
-            <div class="r-section-title-wrapper">
-              <span class="r-section-subtitle">Why Choose Us</span>
-              <h2 class="r-section-title">Trusted Care. <span>Proven Results.</span></h2>
-              <p class="r-section-desc">We combine premium medical expertise with highly personalized, empathetic fertility planning.</p>
-            </div>
-            
-            <div class="why-card-horizontal">
-              <div class="why-card-icon"><i class="fa fa-cogs"></i></div>
-              <div class="why-card-content">
-                <h3>Advanced Technology</h3>
-                <p>Equipped with state-of-the-art modular cleanroom laboratories and high-magnification micromanipulators.</p>
-              </div>
-            </div>
-            
-            <div class="why-card-horizontal">
-              <div class="why-card-icon"><i class="fa fa-user-md"></i></div>
-              <div class="why-card-content">
-                <h3>Experienced Specialists</h3>
-                <p>Guided by Dr. Ramit Kamate and senior embryologists with 15+ years of combined reproductive medicine leadership.</p>
-              </div>
-            </div>
-            
-            <div class="why-card-horizontal">
-              <div class="why-card-icon"><i class="fa fa-heart"></i></div>
-              <div class="why-card-content">
-                <h3>Personalized & Compassionate Care</h3>
-                <p>No cookie-cutter templates. We craft customizable fertility plans tailored to your specific physical baseline.</p>
-              </div>
-            </div>
-            
-            <div class="why-card-horizontal">
-              <div class="why-card-icon"><i class="fa fa-money"></i></div>
-              <div class="why-card-content">
-                <h3>Affordable & Transparent Treatment</h3>
-                <p>No hidden variables. Easy EMI plan support and clear pricing models designed to ease your financial concerns.</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Right visual box -->
-          <div class="why-right-visuals">
-            <div class="why-right-badge-card">
-              <h3>70%</h3>
-              <h4>IVF Success Rate</h4>
-              <p>Higher than average metrics driven by scientific precision, advanced genetics screening, and modular labs.</p>
-              <a href="#appointment-section" class="r-btn-primary">Connect with Experts</a>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-       7. Doctor / Expert Section
-       ========================================================================== -->
-    <section class="r-section doctor-redesign">
-      <div class="r-container">
-        <div class="doctor-grid-redesign">
-          
-          <!-- Left Photo Card -->
-          <div class="doctor-photo-card">
-            <img loading="lazy" src="images/dr-ramit-raosaheb-kamate.jpg" alt="Dr. Ramit Raosaheb Kamate">
-            <div class="doctor-experience-tag">12+ Years Experience</div>
-          </div>
-          
-          <!-- Right Details -->
-          <div class="doctor-details-right">
-            <span class="doctor-specialty">Expert Fertility Consultant</span>
-            <h2 class="doctor-name">Dr. Ramit Kamate</h2>
-            <p class="doctor-bio">
-              Dr. Ramit Raosaheb Kamate is a Reproductive Medicine Consultant and Sexologist with over 12 years of specialized clinical experience. He completed his MBBS from the prestigious B J Medical College, Pune, before pursuing Masters in Reproductive Medicine from Hamilton University, UK & IBCME Dubai. Furthermore, he completed his Fellowship in Cosmetic Gynecology and Sexual Medicine from the USA, making him an authoritative expert in addressing complex male & female infertility concerns.
-            </p>
-            
-            <h3 class="doctor-bullets-title">Clinical Expertise:</h3>
-            <ul class="doctor-bullets">
-              <li><i class="fa fa-check"></i> Advanced IVF, IUI, and ICSI Treatment planning</li>
-              <li><i class="fa fa-check"></i> Cosmetic Gynecology & Sexual Medicine for Male & Female</li>
-              <li><i class="fa fa-check"></i> Non-invasive and Natural Cycle IVF solutions</li>
-              <li><i class="fa fa-check"></i> Tubectomy, Tubal Ligation & minimally invasive surgeries</li>
-              <li><i class="fa fa-check"></i> Safe, confidential and legal MTP Services</li>
-            </ul>
-            
-            <a href="#appointment-section" class="r-btn-primary" style="margin-top: 10px;">
-              Book Consultation with Dr. Kamate
-            </a>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-       8. Success Stories
-       ========================================================================== -->
-    <section class="r-section success-redesign" id="testimonials-section">
-      <div class="r-container">
-        
-        <div class="success-header-redesign">
-          <div class="r-section-title-wrapper">
-            <span class="r-section-subtitle">Success Stories</span>
-            <h2 class="r-section-title">Real Stories. <span>Real Happiness.</span></h2>
-            <p class="r-section-desc">Hear directly from couples who successfully became parents under our medical care.</p>
-          </div>
-          <div class="rating-stars" style="font-size: 18px; align-items: center;">
-            <span style="color: var(--color-deep-navy); font-weight: 700; font-size: 16px; margin-right: 8px;">Google Rating 4.9/5</span>
-            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-          </div>
-        </div>
-        
-        <div class="testimonials-grid-redesign">
-          
-          <!-- Testimonial 1 -->
-          <div class="testimonial-card-redesign">
-            <span class="testimonial-quote-redesign">“</span>
-            <div class="rating-stars">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-            <p class="testimonial-quote-text">
-              “I was struggling with PCOS and irregular periods for years. Dr. Ramit Kamate guided me with the right treatment and lifestyle changes. Within a few months, my cycles improved and I successfully conceived. Very thankful to Nakshatra Clinic!”
-            </p>
-            <div class="testimonial-author-wrapper">
-              <div class="author-pic">
-                <img loading="lazy" src="images/nakshatra-author-one.jpg" alt="Jenny Wilson">
-              </div>
-              <div class="author-meta">
-                <h4>Jenny Wilson</h4>
-                <p>Baner, Pune</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Testimonial 2 -->
-          <div class="testimonial-card-redesign">
-            <span class="testimonial-quote-redesign">“</span>
-            <div class="rating-stars">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-            <p class="testimonial-quote-text">
-              “We had an amazing experience at Nakshatra Clinic. Dr. Ramit Kamate is truly one of the best IVF specialists in Pune. After struggling for years, we finally conceived through IVF here. The entire team is supportive and transparent.”
-            </p>
-            <div class="testimonial-author-wrapper">
-              <div class="author-pic">
-                <img loading="lazy" src="images/nakshatra-author-two.jpg" alt="Theresa Webb">
-              </div>
-              <div class="author-meta">
-                <h4>Theresa Webb</h4>
-                <p>Baner, Pune</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Testimonial 3 -->
-          <div class="testimonial-card-redesign">
-            <span class="testimonial-quote-redesign">“</span>
-            <div class="rating-stars">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-            <p class="testimonial-quote-text">
-              “Nakshatra Clinic offers very transparent pricing and even EMI options, which made IVF treatment affordable for us. Dr. Kamate and his team are very supportive and always available. Highly recommended!”
-            </p>
-            <div class="testimonial-author-wrapper">
-              <div class="author-pic">
-                <img loading="lazy" src="images/nakshatra-author-three.jpg" alt="Darlene Robertson">
-              </div>
-              <div class="author-meta">
-                <h4>Darlene Robertson</h4>
-                <p>Aundh, Pune</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-       9. FAQ Section
+       12. FAQ Section
        ========================================================================== -->
     <section class="r-section faq-redesign">
       <div class="r-container">
         <div class="faq-grid-redesign">
-          
+
           <!-- Left CTA Box -->
           <div class="faq-left-cta">
-            <h3>Curious About IVF? Let's Talk.</h3>
-            <p>Find clear, trusted answers to the most common questions about IVF—designed to guide and support you every step of the way.</p>
-            
+            <h3>Questions we get every day.</h3>
+            <p>Honest answers. No sales pitch. If yours isn't here, call or WhatsApp &mdash; we'll answer directly.</p>
+
             <div class="faq-cta-item">
               <div class="faq-cta-icon"><i class="fa fa-phone"></i></div>
               <div class="faq-cta-texts">
                 <h4>Call Us Today:</h4>
-                <p><a href="tel:+917058658711">+91 7058658711</a></p>
+                <p><a href="tel:+917058658711">+91 70586 58711</a></p>
               </div>
             </div>
 
@@ -906,78 +1205,90 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Right Accordions -->
           <div class="faq-accordion-redesign">
-            
+
             <div class="faq-accordion-item">
-              <button class="faq-accordion-header-btn expanded">Which is the best IVF center in Baner?</button>
+              <button class="faq-accordion-header-btn expanded">Will I see the same doctor every visit?</button>
               <div class="faq-accordion-body-wrapper" style="max-height: 200px;">
                 <div class="faq-accordion-body">
-                  Nakshatra Fertility & IVF Center in Baner is recognized as one of the top fertility clinics offering comprehensive IVF treatment with a 70% success rate. Located conveniently in Baner near Aundh and Pashan, the clinic provides: Advanced IVF, IUI, and ICSI treatments, Experienced fertility specialists with 15+ years expertise, State-of-the-art embryology lab, Affordable treatment packages starting from ₹1,20,000, Free initial consultation and fertility assessment.
+                  Yes. Dr. Ramit personally handles your case from the first consultation to your pregnancy confirmation. We do not use a rotating team or hand you off to a junior after your first appointment. This is the central promise of Nakshatra &mdash; and the reason most of our patients come via referrals from previous patients.
                 </div>
               </div>
             </div>
 
             <div class="faq-accordion-item">
-              <button class="faq-accordion-header-btn">What is the IVF success rate in Baner?</button>
+              <button class="faq-accordion-header-btn">What does IVF actually cost &mdash; all-in?</button>
               <div class="faq-accordion-body-wrapper">
                 <div class="faq-accordion-body">
-                  Our IVF success rate in Baner ranges from 60-75% depending on age and individual factors: Under 35 years: 70% success rate, 35-40 years: 55-60% success rate, Over 40 years: 40-50% success rate. These success rates are higher than national averages due to our advanced technology, experienced team, and personalized treatment protocols at our IVF center in Baner.
+                  The base IVF cycle at Nakshatra starts at &#8377;1,20,000. Medications average &#8377;40,000&ndash;&#8377;80,000 depending on your protocol &mdash; and this is quoted to you in writing, itemised, before you start. There are no &ldquo;lab charges extra&rdquo; surprises. IUI cycles start at &#8377;2,900. ICSI starts at &#8377;1,50,000. EMI is available from &#8377;9,999/month via Bajaj Finserv and Tata Capital. Book a consultation to discuss your specific case.
                 </div>
               </div>
             </div>
 
             <div class="faq-accordion-item">
-              <button class="faq-accordion-header-btn">What is the best age for IVF treatment?</button>
+              <button class="faq-accordion-header-btn">I had a failed IVF cycle elsewhere. What would you do differently?</button>
               <div class="faq-accordion-body-wrapper">
                 <div class="faq-accordion-body">
-                  Ideal age for IVF varies, but key considerations: Under 35: Highest success rates (70%), best egg quality. 35-40: Good success rates (55-60%) with timely treatment. Over 40: Lower success rates (40-50%), may need donor eggs. Don't delay! Female fertility declines with age. Visit our IVF center in Baner for evaluation regardless of age. We've helped women across all age groups achieve successful pregnancies.
+                  The most common reasons IVF fails that go undiagnosed: thin endometrium, poor embryo quality from sperm DNA damage (not checked at most clinics), off-window transfer timing (ERA test shows this), or an immunological factor. Our first consult includes a thorough review of your previous cycle records. Bring everything &mdash; embryo grading sheets, protocol notes, transfer photos if you have them. We will tell you exactly what we see.
                 </div>
               </div>
             </div>
 
             <div class="faq-accordion-item">
-              <button class="faq-accordion-header-btn">Is IVF safe? Are there any side effects?</button>
+              <button class="faq-accordion-header-btn">I'm 38. Is it too late?</button>
               <div class="faq-accordion-body-wrapper">
                 <div class="faq-accordion-body">
-                  IVF is very safe when performed at accredited centers like our fertility clinic. Our WHO-standard protocols minimize risks. Common (mild): Bloating and cramping, Mood swings from hormones, Injection site tenderness. Rare (serious): OHSS (Ovarian Hyperstimulation) - &lt; 5% risk, preventable, Ectopic pregnancy - &lt; 2% risk, Multiple pregnancy - controlled with single embryo transfer. Our experienced team at Nakshatra IVF monitors you closely to prevent complications.
+                  No. Success rates do fall with age &mdash; under 35 we see 70%, 35&ndash;40 around 55&ndash;60%, over 40 around 40&ndash;50%. But those are averages. Your individual AMH, antral follicle count, and sperm quality matter more than your age alone. We treat patients up to 45+ and give you honest, specific data about your case at the first consult &mdash; not a generic answer.
                 </div>
               </div>
             </div>
 
             <div class="faq-accordion-item">
-              <button class="faq-accordion-header-btn">Which is the best IVF center near Baner?</button>
+              <button class="faq-accordion-header-btn">Is everything confidential?</button>
               <div class="faq-accordion-body-wrapper">
                 <div class="faq-accordion-body">
-                  Nakshatra Fertility & IVF Center is widely regarded as the best IVF clinic in Baner based on: ★ 4.9/5 Google rating with 150+ positive reviews, 2000+ successful pregnancies since 2010, 15+ years of expertise in reproductive medicine, State-of-the-art IVF laboratory with advanced technology, Affordable pricing with transparent cost structure, Convenient location in Baner near Aundh and Pashan.
+                  Yes. Completely. We see sexual medicine, MTP, and male infertility cases regularly &mdash; confidentiality is medical standard, not optional. Your records are not shared. No one in your family will be contacted. Your intake form data is seen only by Dr. Ramit and his immediate clinical team. If you prefer to start with a WhatsApp message rather than calling, that works too.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-accordion-item">
+              <button class="faq-accordion-header-btn">Do you accept walk-ins?</button>
+              <div class="faq-accordion-body-wrapper">
+                <div class="faq-accordion-body">
+                  Yes, but appointments are recommended &mdash; Dr. Ramit gives each patient 45 minutes, so walk-ins may wait. Same-week appointments are usually available. If you're travelling from outside Pune, an online consultation first is often the best use of your time before committing to the journey.
                 </div>
               </div>
             </div>
 
           </div>
-          
+
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-       10. Final CTA Section
+       13. Final CTA Section
        ========================================================================= -->
     <section class="final-cta-redesign">
       <div class="r-container">
-        <div class="final-cta-wrapper">
-          <h2 class="final-cta-title">Ready to Start Your Parenthood Journey?</h2>
+        <div class="final-cta-wrapper reveal">
+          <div class="final-cta-credential-strip">
+            <span>ISAR Member</span><span>FOGSI Member</span><span>15+ Years</span><span>2000+ Pregnancies</span><span>4.9&#9733; Google</span>
+          </div>
+          <h2 class="final-cta-title">Bring your reports.<br>Get specific answers.</h2>
           <p class="final-cta-desc">
-            Our experts are here to guide you with care, compassion, and advanced fertility treatments.
+            In-clinic and online consultations available. No pressure on the day. Written plan to take home.
+            <br><span style="font-size:14px;opacity:0.7;">&#2350;&#2352;&#2366;&#2336;&#2368;&#2340;&#2370;&#2344; &#2348;&#2379;&#2354;&#2370;&#2351;&#2366; &middot; Hindi &amp; English friendly</span>
           </p>
-          
           <div class="final-cta-buttons">
             <a href="#appointment-section" class="r-btn-primary">
-              Book Consultation Now <i class="fa fa-calendar-check-o"></i>
+              Book Consultation <i class="fa fa-calendar-check-o"></i>
             </a>
             <a href="tel:+917058658711" class="r-btn-secondary">
-              Call Now <i class="fa fa-phone"></i>
+              <i class="fa fa-phone"></i> +91 70586 58711
             </a>
           </div>
         </div>
@@ -1055,6 +1366,22 @@
       </div>
     </footer>
 
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="mobile-sticky-bar">
+      <a href="#appointment-section" class="msb-btn msb-primary" onclick="document.querySelector('.mobile-sticky-bar').style.display='none'">
+        <i class="fa fa-calendar-check-o"></i>
+        <span>Book Consult</span>
+      </a>
+      <a href="tel:+917058658711" class="msb-btn">
+        <i class="fa fa-phone"></i>
+        <span>Call</span>
+      </a>
+      <a href="https://wa.me/917058658711" class="msb-btn msb-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+
     <!-- Taskade Chatbot Integration -->
     <script src="https://www.assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
     <script type="module">
@@ -1062,329 +1389,119 @@
           publicAgentId: '01KAJAMN85JQRMS1JQNC5FEKQP',
         });
     </script>
-    
+
     <!-- Script Integrations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.8/hls.min.js"></script>
     <script>
-      // Load HLS video for Hero
+      // HLS Video
       const heroVideo = document.getElementById('hero-player');
       if (heroVideo) {
         if (typeof Hls !== 'undefined' && Hls.isSupported()) {
           const hls = new Hls({ startLevel: 0, capLevelToPlayerSize: true });
           hls.loadSource('./video/nakshatra_mid.m3u8');
           hls.attachMedia(heroVideo);
-          console.log("Hero HLS video initialized via Hls.js.");
         } else if (heroVideo.canPlayType('application/vnd.apple.mpegurl')) {
           heroVideo.src = './video/nakshatra_mid.m3u8';
-          console.log("Hero HLS video loaded via native Safari engine.");
-        } else {
-          console.warn("HLS streaming is not natively supported, and Hls.js is not loaded.");
         }
       }
 
-      // ==========================================================================
-      // Scrub-to-Learn Interactive Video Scroll Explainer — DISABLED
-      // ==========================================================================
-      /*
-      (function() {
-        const MUX_PLAYBACK_ID = 'bf3sLVj9G01cIoILxZCNVf9kVswDT6BkBGa7giV9rBpA';
-
-        const scrubSection = document.querySelector('.ivf-explainer-section');
-        const scrubVideo = document.getElementById('explainer-scrub-video');
-        const explainerMilestones = document.querySelectorAll('.explainer-milestone');
-
-        if (!scrubSection || !scrubVideo) return;
-
-        const scrollWrapper = document.getElementById('explainerVideoScrollWrapper');
-        const timelineProgressBar = document.getElementById('timelineProgressBar');
-        const timelineDots = document.querySelectorAll('.timeline-dot-item');
-
-        explainerMilestones.forEach((milestone) => {
-          const heading = milestone.querySelector('.explainer-heading');
-          const body = milestone.querySelector('.explainer-body');
-
-          if (heading) {
-            const originalText = heading.textContent.trim();
-            heading.innerHTML = originalText.split('').map(char => {
-              if (char === ' ') {
-                return '<span class="char">&nbsp;</span>';
-              }
-              return '<span class="char">' + char + '</span>';
-            }).join('');
-          }
-
-          if (body) {
-            const originalText = body.textContent.trim();
-            const words = originalText.split(/\s+/);
-            body.innerHTML = words.map(word => {
-              return '<span class="word">' + word + '</span>';
-            }).join(' ');
-          }
-        });
-
-        const hlsUrl = 'https://stream.mux.com/' + MUX_PLAYBACK_ID + '.m3u8';
-        let hlsInstance = null;
-
-        try {
-          if (typeof Hls !== 'undefined' && Hls.isSupported()) {
-            hlsInstance = new Hls({
-              maxMaxBufferLength: 30,
-              enableWorker: true,
-              lowLatencyMode: false,
-              backBufferLength: 30,
-              maxBufferLength: 15
-            });
-            hlsInstance.loadSource(hlsUrl);
-            hlsInstance.attachMedia(scrubVideo);
-            hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
-              scrubVideo.pause();
-              scrubVideo.currentTime = 0.01;
-            });
-            hlsInstance.on(Hls.Events.ERROR, function (event, data) {
-              console.warn("Hls.js Error in Explainer: ", data);
-            });
-          } else if (scrubVideo.canPlayType('application/vnd.apple.mpegurl')) {
-            scrubVideo.src = hlsUrl;
-            scrubVideo.pause();
-            scrubVideo.currentTime = 0.01;
-          }
-        } catch (hlsError) {
-          console.error("Failed to initialize HLS in explainer section: ", hlsError);
-        }
-
-        scrubVideo.addEventListener('loadedmetadata', () => {
-          scrubVideo.pause();
-          scrubVideo.currentTime = 0.01;
-        });
-
-        let targetProgress = 0;
-        let currentProgress = 0;
-        let rafActive = false;
-
-        function updateVideoSeek() {
-          const diff = targetProgress - currentProgress;
-          if (Math.abs(diff) > 0.0005) {
-            currentProgress += diff * 0.12;
-            if (scrubVideo && scrubVideo.duration) {
-              const seekTime = currentProgress * scrubVideo.duration;
-              scrubVideo.currentTime = Math.min(Math.max(0, seekTime), scrubVideo.duration - 0.05);
-            }
-            requestAnimationFrame(updateVideoSeek);
-          } else {
-            currentProgress = targetProgress;
-            if (scrubVideo && scrubVideo.duration) {
-              const seekTime = currentProgress * scrubVideo.duration;
-              scrubVideo.currentTime = Math.min(Math.max(0, seekTime), scrubVideo.duration - 0.05);
-            }
-            rafActive = false;
-          }
-        }
-
-        function seekVideo(progress) {
-          targetProgress = progress;
-          if (!rafActive) {
-            rafActive = true;
-            requestAnimationFrame(updateVideoSeek);
-          }
-        }
-
-        window.addEventListener('load', () => {
-          if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
-            return;
-          }
-
-          gsap.registerPlugin(ScrollTrigger);
-
-          ScrollTrigger.create({
-            trigger: scrubSection,
-            start: "top top",
-            end: "+=3000px",
-            pin: true,
-            scrub: 1.0,
-            onUpdate: (self) => {
-              const progress = self.progress;
-
-              seekVideo(progress);
-
-              if (timelineProgressBar) {
-                timelineProgressBar.style.height = (progress * 100) + '%';
-              }
-
-              let xOffset = 160;
-              let scaleFactor = 1.25;
-
-              if (progress < 0.42) {
-                xOffset = 160;
-                scaleFactor = 1.25;
-              } else if (progress > 0.52) {
-                xOffset = -160;
-                scaleFactor = 1.25;
-              } else {
-                const t = (progress - 0.42) / 0.1;
-                const xFactor = Math.cos(t * Math.PI);
-                xOffset = xFactor * 160;
-                scaleFactor = 1.075 + Math.cos(t * Math.PI * 2) * 0.175;
-              }
-
-              const yOffset = -30 + progress * 50;
-              const rot = Math.sin(progress * Math.PI * 2) * 4;
-
-              if (scrollWrapper) {
-                scrollWrapper.style.transform = 'translate(' + xOffset + 'px, ' + yOffset + 'px) scale(' + scaleFactor + ') rotate(' + rot + 'deg)';
-              }
-
-              let activeIdx = 0;
-              if (progress >= 0.75) {
-                activeIdx = 3;
-              } else if (progress >= 0.5) {
-                activeIdx = 2;
-              } else if (progress >= 0.25) {
-                activeIdx = 1;
-              } else {
-                activeIdx = 0;
-              }
-
-              if (timelineDots) {
-                timelineDots.forEach((dot, dotIdx) => {
-                  if (dotIdx === activeIdx) {
-                    dot.classList.add('active');
-                  } else {
-                    dot.classList.remove('active');
-                  }
-                });
-              }
-
-              explainerMilestones.forEach((milestone, idx) => {
-                if (idx === activeIdx) {
-                  milestone.classList.add('active');
-                  milestone.classList.remove('past');
-
-                  const rangeStart = idx * 0.25;
-                  const p = Math.max(0, Math.min(1, (progress - rangeStart) / 0.25));
-
-                  const charSpans = milestone.querySelectorAll('.char');
-                  if (charSpans.length > 0) {
-                    const charProgress = Math.max(0, Math.min(1, p / 0.45));
-                    const highlightCount = Math.floor(charProgress * charSpans.length);
-                    charSpans.forEach((span, cIdx) => {
-                      if (cIdx < highlightCount) {
-                        span.style.opacity = '1';
-                        span.style.color = 'var(--color-deep-navy)';
-                        span.style.fontWeight = '700';
-                        span.style.transform = 'translateY(0px)';
-                      } else {
-                        span.style.opacity = '0.15';
-                        span.style.color = 'inherit';
-                        span.style.fontWeight = 'normal';
-                        span.style.transform = 'translateY(4px)';
-                      }
-                    });
-                  }
-
-                  const wordSpans = milestone.querySelectorAll('.word');
-                  if (wordSpans.length > 0) {
-                    const wordProgress = Math.max(0, Math.min(1, (p - 0.3) / 0.65));
-                    const highlightCount = Math.floor(wordProgress * wordSpans.length);
-                    wordSpans.forEach((span, wIdx) => {
-                      if (wIdx < highlightCount) {
-                        span.style.color = 'var(--color-deep-navy)';
-                        span.style.fontWeight = '600';
-                        span.style.opacity = '1';
-                        span.style.transform = 'translateY(0px)';
-                      } else {
-                        span.style.color = '#a8a0b5';
-                        span.style.fontWeight = 'normal';
-                        span.style.opacity = '0.4';
-                        span.style.transform = 'translateY(4px)';
-                      }
-                    });
-                  }
-
-                } else if (idx < activeIdx) {
-                  milestone.classList.remove('active');
-                  milestone.classList.add('past');
-                  milestone.querySelectorAll('.char').forEach(span => {
-                    span.style.opacity = '1';
-                    span.style.color = 'var(--color-deep-navy)';
-                    span.style.fontWeight = '700';
-                    span.style.transform = 'translateY(0px)';
-                  });
-                  milestone.querySelectorAll('.word').forEach(span => {
-                    span.style.color = 'var(--color-deep-navy)';
-                    span.style.fontWeight = '600';
-                    span.style.opacity = '1';
-                    span.style.transform = 'translateY(0px)';
-                  });
-                } else {
-                  milestone.classList.remove('active');
-                  milestone.classList.remove('past');
-                  milestone.querySelectorAll('.char').forEach(span => {
-                    span.style.opacity = '0.15';
-                    span.style.color = 'inherit';
-                    span.style.fontWeight = 'normal';
-                    span.style.transform = 'translateY(4px)';
-                  });
-                  milestone.querySelectorAll('.word').forEach(span => {
-                    span.style.color = '#a8a0b5';
-                    span.style.fontWeight = 'normal';
-                    span.style.opacity = '0.4';
-                    span.style.transform = 'translateY(4px)';
-                  });
-                }
-              });
-            }
-          });
-
-          setTimeout(() => {
-            ScrollTrigger.refresh();
-          }, 600);
-        });
-      })();
-      */
-
-      // Simple navigation toggle
-      const navToggle = document.getElementById('navToggle');
-      const navMenu = document.getElementById('navMenu');
-      if (navToggle && navMenu) {
-        navToggle.addEventListener('click', () => {
-          navMenu.classList.toggle('active');
-          navToggle.classList.toggle('active');
-        });
+      // Scroll Progress Bar
+      const progressBar = document.getElementById('scrollProgressBar');
+      function updateProgress() {
+        if (!progressBar) return;
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        progressBar.style.width = (total > 0 ? (window.scrollY / total) * 100 : 0) + '%';
       }
+      window.addEventListener('scroll', updateProgress, { passive: true });
 
-      // Accordion FAQ interaction
-      const accordionHeaders = document.querySelectorAll('.faq-accordion-header-btn');
-      accordionHeaders.forEach(header => {
-        header.addEventListener('click', () => {
-          const wrapper = header.nextElementSibling;
-          const isExpanded = header.classList.contains('expanded');
-          
-          // Collapse all others
-          accordionHeaders.forEach(otherHeader => {
-            otherHeader.classList.remove('expanded');
-            otherHeader.nextElementSibling.style.maxHeight = null;
-          });
-
-          if (!isExpanded) {
-            header.classList.add('expanded');
-            wrapper.style.maxHeight = wrapper.scrollHeight + "px";
-          }
-        });
-      });
-
-      // Sticky Header effect
+      // Sticky header
       window.addEventListener('scroll', () => {
-        const header = document.querySelector('.site-header-redesign');
-        if (header) {
-          if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-          } else {
-            header.classList.remove('scrolled');
+        const h = document.querySelector('.site-header-redesign');
+        if (h) h.classList.toggle('scrolled', window.scrollY > 50);
+      }, { passive: true });
+
+      // Nav
+      const navToggle = document.getElementById('navToggle');
+      const navMenu   = document.getElementById('navMenu');
+      const navClose  = document.getElementById('navClose');
+      const navOverlay = document.getElementById('navOverlay');
+
+      function openMenu() {
+        navMenu && navMenu.classList.add('active');
+        navToggle && navToggle.classList.add('active');
+        if (navOverlay) { navOverlay.style.display = 'block'; requestAnimationFrame(() => navOverlay.classList.add('active')); }
+        document.body.style.overflow = 'hidden';
+      }
+      function closeMenu() {
+        navMenu && navMenu.classList.remove('active');
+        navToggle && navToggle.classList.remove('active');
+        if (navOverlay) { navOverlay.classList.remove('active'); setTimeout(() => { navOverlay.style.display = 'none'; }, 400); }
+        document.body.style.overflow = '';
+      }
+      if (navToggle && navMenu) navToggle.addEventListener('click', () => navMenu.classList.contains('active') ? closeMenu() : openMenu());
+      if (navClose) navClose.addEventListener('click', closeMenu);
+      if (navOverlay) navOverlay.addEventListener('click', closeMenu);
+      document.querySelectorAll('.nav-link-item:not(.mega-trigger)').forEach(l => l.addEventListener('click', closeMenu));
+
+      // Mobile mega-menu
+      const megaTrigger = document.querySelector('.mega-trigger');
+      const megaPanel   = document.getElementById('megaMenuPanel');
+      if (megaTrigger && megaPanel) {
+        megaTrigger.addEventListener('click', function(e) {
+          if (window.innerWidth <= 992) {
+            e.preventDefault(); e.stopPropagation();
+            const isOpen = megaPanel.classList.toggle('mobile-open');
+            this.closest('.nav-item-treatments').classList.toggle('mega-open', isOpen);
           }
-        }
+        });
+      }
+
+      // FAQ Accordion
+      document.querySelectorAll('.faq-accordion-header-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const wrap = btn.nextElementSibling;
+          const isExp = btn.classList.contains('expanded');
+          document.querySelectorAll('.faq-accordion-header-btn').forEach(b => {
+            b.classList.remove('expanded');
+            b.nextElementSibling.style.maxHeight = null;
+          });
+          if (!isExp) { btn.classList.add('expanded'); wrap.style.maxHeight = wrap.scrollHeight + 'px'; }
+        });
       });
+
+      // Section Reveal (IntersectionObserver) - low threshold + rootMargin ensures early trigger
+      const revealObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); } });
+      }, { threshold: 0.04, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-stagger').forEach(el => revealObs.observe(el));
+
+      // r-fade-up legacy observer
+      const legacyObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); legacyObs.unobserve(e.target); } });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.r-fade-up').forEach(el => legacyObs.observe(el));
+
+      // Service card clip-path reveal
+      const cardObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('card-revealed'); cardObs.unobserve(e.target); } });
+      }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
+      document.querySelectorAll('.service-card-reveal').forEach(el => cardObs.observe(el));
+
+      // Hero tilt
+      (function() {
+        const card = document.querySelector('.hero-main-card');
+        if (!card || window.matchMedia('(max-width:992px)').matches) return;
+        const wrap = card.parentElement;
+        wrap.addEventListener('mousemove', (e) => {
+          const r = wrap.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width - 0.5;
+          const y = (e.clientY - r.top) / r.height - 0.5;
+          card.style.transform = 'perspective(800px) rotateY(' + (x*8) + 'deg) rotateX(' + (-y*6) + 'deg) scale(1.02)';
+        });
+        wrap.addEventListener('mouseleave', () => { card.style.transform = ''; });
+      })();
     </script>
 
     <!-- Original HMS API Form Submission JavaScript Logic -->
@@ -1530,6 +1647,9 @@
       }
     })();
     </script>
+
+    <!-- Instagram Embed -->
+    <script async src="https://www.instagram.com/embed.js"></script>
 </body>
 
 </html>
