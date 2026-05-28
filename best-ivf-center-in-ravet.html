@@ -47,12 +47,9 @@
     <link rel="stylesheet" href="css/mousecursor.css">
     <meta name="google-site-verification" content="LkRkd3DZexsry6MZ0z3kFIwaeA_R3QL7yQPI-IcEw5g" />
     <link href="css/custom.css" rel="stylesheet" media="screen">
+     <link href="css/nakshatra-redesign.css?v=17.0" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-<a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
 
  <script type="application/ld+json">
 {
@@ -239,531 +236,70 @@
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        .page-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/about-hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 120px 0 80px;
-            color: white;
-            text-align: center;
-        }
-
-        .page-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .page-hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .about-section {
-            padding: 80px 0;
-        }
-
-        .about-image {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .mission-vision {
-            background-color: #f9f9f9;
-            padding: 80px 0;
-        }
-
-        .mission-box,
-        .vision-box {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            height: 100%;
-        }
-
-        .team-section {
-            padding: 80px 0;
-        }
-
-        .team-member {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .team-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 20px;
-            border: 5px solid #f0f0f0;
-        }
-
-        .team-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .values-section {
-            background-color: #f9f9f9;
-            padding: 80px 0;
-        }
-
-        .value-item {
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        .value-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 20px;
-            background: #e6f7ff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .value-icon img {
-            max-width: 40px;
-        }
-
-        .stats-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #4a90e2, #6c5ce7);
-            color: white;
-        }
-
-        .stat-item {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .breadcrumb {
-            background: transparent;
-            padding: 0;
-            margin-bottom: 20px;
-        }
-
-        .breadcrumb-item a {
-            color: #fff;
-        }
-
-        .breadcrumb-item.active {
-            color: rgba(255, 255, 255, 0.7);
-        }
-        .main-header{
-          background-color: #20296E;
-        }
-        #header{
-          border-radius: 20px;
-        }
-                .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-  bottom: 90px;
-	/* bottom:20px; */
-	right:35px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-/* --- SECTION WRAPPER --- */
-.nks-hero-section {
-    margin-top: -150px; /* Pulls section up on Desktop */
-    padding-bottom: 30px;
-    position: relative;
-    z-index: 5;
-}
-
-/* --- LEFT SIDE TEXT --- */
-.nks-left-content {
-    padding-right: 40px; /* Space between text and form on Desktop */
-    text-align: left;
-}
-
-.nks-title {
-    font-size: 3rem; 
-    font-weight: 800;
-    line-height: 1.2;
-    color: #ffffff;
-    margin-bottom: 25px;
-}
-
-.nks-highlight {
-    color: #FF70A3;
-}
-
-.nks-desc {
-    font-size: 1.2rem;
-    color: #f0f0f0;
-    line-height: 1.6;
-    margin-bottom: 35px;
-    max-width: 95%;
-    font-weight: 500;
-}
-
-/* --- BUTTON STYLES --- */
-.nks-btn-wrapper {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.nks-cta-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.15);
-    border: 2px solid #FF70A3;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    backdrop-filter: blur(5px);
-}
-
-.nks-cta-btn .icon {
-    margin-right: 10px;
-    font-size: 1.2rem;
-}
-
-.nks-cta-btn:hover {
-    background: #FF70A3;
-    color: #fff;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(255, 112, 163, 0.4);
-}
-
-/* Pulse Animation */
-@keyframes pulse-pink {
-    0% { box-shadow: 0 0 0 0 rgba(255, 112, 163, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(255, 112, 163, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(255, 112, 163, 0); }
-}
-
-.btn-pulse {
-    background: #FF70A3;
-    border-color: #FF70A3;
-    animation: pulse-pink 2s infinite;
-}
-
-/* --- FORM STYLES (Padding & Layout) --- */
-.nks-form-wrapper {
-    background: rgba(20, 20, 20, 0.65); /* Darker glass for readability */
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    
-    /* PERFECT PADDING FOR DESKTOP */
-    padding: 40px 25px; 
-    
-    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-    width: 550px;
-}
-
-.nks-form-header h3 {
-    color: #ffffff;
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-bottom: 25px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.nks-input {
-    width: 100%;
-    height: 55px;
-    background: rgba(255, 255, 255, 0.95);
-    border: none;
-    border-radius: 8px;
-    padding: 0 15px;
-    font-size: 1rem;
-    color: #333;
-    outline: none;
-    transition: 0.3s;
-}
-
-.nks-input:focus {
-    background: #fff;
-    box-shadow: 0 0 0 3px rgba(255, 112, 163, 0.5);
-}
-
-.nks-select {
-    color: #444;
-    cursor: pointer;
-}
-
-.nks-submit-btn {
-    width: 100%;
-    padding: 15px;
-    background: linear-gradient(135deg, #FF70A3 0%, #ff3d85 100%);
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(255, 77, 141, 0.4);
-    transition: transform 0.2s;
-    margin-top: 10px;
-}
-
-.nks-submit-btn:hover {
-    transform: scale(1.02);
-}
-
-/* --- MOBILE RESPONSIVE CODE --- */
-@media (max-width: 991px) {
-    .nks-hero-section {
-        margin-top: 0; /* Reset desktop negative margin */
-        padding-top: 100px;
-        padding-bottom: 60px;
-    }
-
-    .nks-left-content {
-        padding-right: 0;
-        text-align: center;
-        margin-bottom: 40px; /* Space between text and form */
-    }
-
-    .nks-title {
-        font-size: 2.4rem;
-    }
-    
-    .nks-desc {
-        font-size: 1.1rem;
-        margin: 0 auto 30px auto;
-    }
-
-    /* Stack buttons on mobile */
-    .nks-btn-wrapper {
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nks-cta-btn {
-        width: 100%;
-    }
-
-    /* FORM MOBILE ADJUSTMENTS */
-    .nks-form-wrapper {
-        /* Adjusted padding for mobile screens */
-        height: 550px;
-        width: 370px;
-        padding: 30px 20px; 
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .nks-title {
-        font-size: 1.8rem;
-    }
-    
-    .nks-form-header h3 {
-        font-size: 1.3rem;
-    }
-    
-    /* Ensure inputs don't zoom on iPhone */
-    .nks-input {
-        font-size: 16px; 
-        height: 50px;
-    }
-    
-    .nks-form-wrapper {
-        padding: 25px 15px; /* Maximum width on very small screens */
-    }
-}
-
-/* About section style */
-/* --- SECTION WRAPPER --- */
-.nks-founder-section {
-    padding: 80px 0;
-    background-color: #ffffff; /* Clean background */
-    overflow: hidden;
-}
-
-/* --- TEXT CONTENT STYLING --- */
-.nks-founder-content {
-    padding-right: 30px; /* Space between text and image on desktop */
-}
-
-.nks-subtitle {
-    color: #FF70A3;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.nks-heading {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
-
-.nks-degrees {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #555;
-    margin-bottom: 20px;
-    /* font-style: italic; */
-}
-
-.nks-text {
-    font-size: 1.05rem;
-    color: #444;
-    line-height: 1.7;
-    margin-bottom: 20px;
-    text-align: justify; /* Makes text blocks look neat */
-}
-
-/* --- BUTTONS --- */
-.nks-btn-group {
-    margin-top: 30px;
-    display: flex;
-    gap: 15px;
-}
-
-.nks-btn-default {
-    background-color: #FF70A3;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 5px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 2px solid #FF70A3;
-    display: inline-block;
-}
-
-.nks-btn-default:hover {
-    background-color: #ff4d8d;
-    border-color: #ff4d8d;
-    color: #fff;
-    transform: translateY(-3px);
-}
-
-.btn-outline {
-    background-color: transparent;
-    color: #FF70A3;
-}
-
-.btn-outline:hover {
-    background-color: #FF70A3;
-    color: #fff;
-}
-
-/* --- IMAGE STYLING --- */
-.nks-founder-img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.nks-founder-img {
-    max-width: 100%;
-    height: 550px;
-    border-radius: 10px; /* Slight curve for modern look */
-    /* Ensures no background box appears behind image */
-    background: transparent; 
-    box-shadow: none; 
-    display: block;
-}
-
-/* --- RESPONSIVE MEDIA QUERIES --- */
-@media (max-width: 991px) {
-    .nks-founder-section {
-        padding: 60px 0;
-    }
-
-    .nks-founder-content {
-        padding-right: 0;
-        text-align: center; /* Center text on tablet/mobile */
-        margin-bottom: 40px;
-    }
-
-    .nks-text {
-        text-align: center; /* Center paragraphs on mobile */
-    }
-
-    .nks-btn-group {
-        justify-content: center;
-    }
-
-    .nks-founder-img-wrapper {
-        margin-top: 20px;
-    }
-    
-    .nks-heading {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .nks-heading {
-        font-size: 1.8rem;
-    }
-    
-    .nks-btn-default {
-        padding: 10px 20px;
-        font-size: 0.95rem;
-    }
-}
-
+      .location-ivf-hero{background:var(--gradient-hero);padding:78px 0 88px;overflow:hidden}
+      .location-ivf-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);gap:42px;align-items:center}
+      .location-ivf-hero h1{font-family:var(--font-heading);font-size:clamp(36px,5vw,62px);line-height:1.06;margin:16px 0;color:var(--color-deep-navy)}
+      .location-ivf-hero h1 span,.location-ivf-highlight{color:var(--color-primary)}
+      .location-ivf-lead{font-size:18px;max-width:650px;color:var(--color-body);margin-bottom:26px}
+      .location-ivf-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:28px}
+      .location-ivf-proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:680px}
+      .location-ivf-proof-card,.location-ivf-form-card,.location-ivf-card,.location-ivf-doctor-card,.location-ivf-location-card,.location-ivf-testimonial,.location-ivf-step,.location-ivf-faq-contact{background:rgba(255,255,255,.94);border:1px solid rgba(217,27,114,.13);box-shadow:var(--shadow-card);border-radius:var(--radius-lg)}
+      .location-ivf-proof-card{padding:16px}
+      .location-ivf-proof-card strong{display:block;color:var(--color-primary);font-size:24px;line-height:1}
+      .location-ivf-proof-card span{display:block;color:var(--color-purple);font-size:13px;font-weight:700;margin-top:6px}
+      .location-ivf-media{position:relative;border-radius:var(--radius-xl);padding:14px;background:var(--color-white);box-shadow:var(--shadow-soft);border:1px solid rgba(217,27,114,.12)}
+      .location-ivf-media img{width:100%;min-height:440px;object-fit:contain;object-position:center;background:var(--color-blush);border-radius:24px;display:block}
+      .location-ivf-media-badge{position:absolute;left:28px;right:28px;bottom:28px;display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.96);border:1px solid rgba(217,27,114,.13);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow-card)}
+      .location-ivf-media-badge i,.location-ivf-icon{width:42px;height:42px;border-radius:14px;display:inline-grid;place-items:center;background:var(--color-primary-soft);color:var(--color-primary);flex-shrink:0}
+      .location-ivf-form-card{padding:28px;margin-top:24px}
+      .location-ivf-form-card h3,.location-ivf-card h3,.location-ivf-doctor-card h3,.location-ivf-location-card h3,.location-ivf-testimonial h3{font-size:20px;margin-bottom:10px;color:var(--color-deep-navy)}
+      .location-ivf-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+      .location-ivf-field,.location-ivf-form-card .form-control,.location-ivf-form-card .form-select{width:100%;min-height:50px;border:1px solid var(--color-border);border-radius:14px;background:var(--color-white);padding:12px 14px;color:var(--color-body);font-family:var(--font-body)}
+      .location-ivf-form-card textarea.form-control{min-height:110px}
+      .location-ivf-form-card .r-btn-primary{width:100%;margin-top:14px}
+      .location-ivf-split{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:34px;align-items:center}
+      .location-ivf-doctor-card{padding:32px}
+      .location-ivf-doctor-image img,.location-ivf-appointment-image img{width:100%;border-radius:var(--radius-xl);object-fit:cover;box-shadow:var(--shadow-soft)}
+      .location-ivf-doctor-meta{display:inline-flex;gap:8px;align-items:center;margin:6px 0 18px;padding:8px 14px;border-radius:999px;background:var(--color-primary-soft);color:var(--color-primary);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+      .location-ivf-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+      .location-ivf-card{padding:24px;transition:var(--transition-smooth)}
+      .location-ivf-card .location-ivf-icon{margin-bottom:18px}
+      .location-ivf-card h3{margin-top:0;margin-bottom:12px}
+      .location-ivf-card:hover,.location-ivf-location-card:hover,.location-ivf-testimonial:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+      .location-ivf-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+      .location-ivf-stat{padding:30px;border-radius:var(--radius-lg);background:linear-gradient(135deg,var(--color-deep-navy),var(--color-purple));color:var(--color-white);box-shadow:var(--shadow-soft)}
+      .location-ivf-stat strong{display:block;color:var(--color-white);font-size:clamp(34px,5vw,52px);line-height:1}
+      .location-ivf-stat h3{color:var(--color-white);font-size:20px;margin:12px 0 8px}
+      .location-ivf-stat p{color:rgba(255,255,255,.76);margin:0}
+      .location-ivf-process{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:42px}
+      .location-ivf-step{padding:26px;display:flex;gap:20px;align-items:flex-start}
+      .location-ivf-step span{width:46px;height:46px;border-radius:50%;background:var(--color-primary);color:#fff;display:inline-grid;place-items:center;font-weight:800;flex-shrink:0}
+      .location-ivf-step h3{font-size:13px;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+      .location-ivf-step h4{font-size:20px;color:var(--color-deep-navy);margin:0 0 10px}
+      .location-ivf-step p{margin:0}
+      .location-ivf-locations{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+      .location-ivf-location-card{padding:22px;display:flex;flex-direction:column;gap:10px}
+      .location-ivf-location-card a{color:var(--color-primary);font-weight:800}
+      .location-ivf-testimonials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+      .location-ivf-testimonial{padding:24px}
+      .location-ivf-author{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+      .location-ivf-avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--color-primary);color:#fff;font-weight:800}
+      .location-ivf-faq-grid{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(0,1.2fr);gap:32px;align-items:start}
+      .location-ivf-faq-contact{padding:28px;position:sticky;top:112px}
+      .location-ivf-contact-line{display:flex;gap:12px;align-items:flex-start;margin-top:14px;color:var(--color-body)}
+      .location-ivf-contact-line i{color:var(--color-primary);margin-top:5px}
+      .redesign-body .accordion-item{border:1px solid var(--color-border);border-radius:18px!important;overflow:hidden;margin-bottom:14px;background:#fff;box-shadow:var(--shadow-card)}
+      .redesign-body .accordion-button{font-weight:800;color:var(--color-deep-navy);background:#fff;padding:20px 22px;box-shadow:none}
+      .redesign-body .accordion-button:not(.collapsed){color:var(--color-primary);background:var(--color-primary-soft)}
+      .redesign-body .accordion-body{padding:20px 22px;color:var(--color-body)}
+      .location-ivf-final-cta{background:linear-gradient(135deg,var(--color-deep-navy),var(--color-purple));color:#fff;text-align:center}
+      .location-ivf-final-cta .r-section-title,.location-ivf-final-cta .r-section-title span{color:#fff}
+      .location-ivf-final-cta .r-section-desc{color:rgba(255,255,255,.74);margin-inline:auto}
+      @media(max-width:992px){.location-ivf-grid,.location-ivf-split,.location-ivf-faq-grid{grid-template-columns:1fr}.location-ivf-services,.location-ivf-testimonials{grid-template-columns:repeat(2,minmax(0,1fr))}.location-ivf-locations{grid-template-columns:repeat(2,minmax(0,1fr))}.location-ivf-faq-contact{position:static}.location-ivf-media{order:-1}}
+      @media(max-width:768px){.redesign-body{padding-bottom:104px}}
+      @media(max-width:700px){.location-ivf-hero{padding:52px 0 70px}.location-ivf-grid{gap:26px}.location-ivf-proof,.location-ivf-stats,.location-ivf-process,.location-ivf-services,.location-ivf-testimonials,.location-ivf-locations,.location-ivf-form-grid{grid-template-columns:1fr}.location-ivf-media{padding:10px}.location-ivf-media img{min-height:0;aspect-ratio:4/3;padding:8px}.location-ivf-actions .r-btn-primary,.location-ivf-actions .r-btn-secondary{width:100%}.location-ivf-form-card{padding:22px;margin-top:18px}.location-ivf-doctor-card,.location-ivf-card,.location-ivf-testimonial,.location-ivf-faq-contact{padding:22px}.location-ivf-step{display:block}.location-ivf-step span{margin-bottom:16px}.location-ivf-media-badge{position:static;margin-top:12px;padding:13px 14px}.location-ivf-card .location-ivf-icon{margin-bottom:16px}}
     </style>
-    
-
-<style>
-.nks-author-avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #fff;
-  flex-shrink: 0;
-  letter-spacing: 0;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.18);
-}
-</style>
 </head>
-
-<!-- Google tag (gtag.js) -->
 <script async src="https://googletagmanager.com/gtag/js?id=G-G3JF3BY7JN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -772,2026 +308,303 @@
 
   gtag('config', 'G-G3JF3BY7JN');
 </script>
-<body>
- <a href="tel:+917058658711" class="phone-float" target="_blank">
-      <i class="fa fa-phone phone-icon"></i>
-    </a>
- <!-- Preloader Start -->
-    <div class="preloader">
-      <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img loading="lazy" src="images/nakshatra-logo-loader.png" alt="Nakshatra Logo Loader" ></div>
-      </div>
-    </div>
-    <!-- Topbar Section Start -->
-    <div class="topbar">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-9">
-          <div class="topbar-contact-info">
-            <ul>
-               <li><img loading="lazy" src="images/icon-phone-accent.svg" alt="Icon Phone Accent"><a href="tel:+91 7058658711">+91 7058658711</a>
-              </li>
-              <li><img loading="lazy" src="images/icon-mail-accent.svg" alt="Icon Mail Accent"><a
-                  href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a></li>
-  
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="topbar-social-links">
-            <ul>
-              <li>
-                <a href="https://youtube.com/@nakshatraivfandintimacycli5653"><i class="fa-brands fa-youtube"></i></i></a>
-              </li>
-               <li>
-                <a href="https://instagram.com/nakshatra.clinic"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://facebook.com/NakshatraClinic"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-            </ul>
-          </div>
+<body class="redesign-body">
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <a href="tel:+917058658711" class="phone-float-redesign" target="_blank" aria-label="Call Nakshatra Clinic"><i class="fa fa-phone"></i></a>
+  <a href="https://wa.me/917058658711" class="whatsapp-float-redesign" target="_blank" aria-label="WhatsApp Nakshatra Clinic"><i class="fab fa-whatsapp"></i></a>
+
+  <header class="site-header-redesign">
+    <div class="r-container">
+      <div class="header-container-redesign">
+        <a class="logo-link" href="index.html"><img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo"></a>
+        <nav class="navigation-menu-redesign">
+          <button class="nav-toggle-btn" aria-label="Toggle Menu" id="navToggle"><span></span><span></span><span></span></button>
+          <ul class="nav-links-list" id="navMenu">
+            <button class="nav-close-btn" id="navClose" aria-label="Close Menu">&times;</button>
+            <li><a class="nav-link-item" href="index.html">Home</a></li>
+            <li><a class="nav-link-item" href="about-us.html">About Us</a></li>
+            <li><a class="nav-link-item" href="services.html">Treatments</a></li>
+            <li><a class="nav-link-item" href="blog.html">Blog</a></li>
+            <li><a class="nav-link-item" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="header-location-pill"><i class="fa fa-map-marker"></i> Ravet, PCMC</div>
+          <a href="appointment-page.html" class="r-btn-primary"><span class="btn-text-desktop">Book Appointment</span><span class="btn-text-mobile">Book Now</span></a>
         </div>
       </div>
     </div>
-  </div>
-    <!-- Topbar Section End -->
+  </header>
 
-
-   <!-- Header Start -->
-  <header class="main-header bg-section">
-    <div class="header-sticky">
-     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img loading="lazy" src="/images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo"
-              style="width: 2rem;    width: 11rem;
-    background-color: white;
-    object-fit: contain;
-    border-radius: 0.3rem;
-    padding: 8px;" ></a>
-          <div class="collapse navbar-collapse main-menu">
-            <div class="nav-menu-wrapper">
-              <ul class="navbar-nav mr-auto" id="menu">
-                <!-- Home -->
-                <li class="nav-item">
-                  <a class="nav-link" href="/index.html">Home</a>
-                </li>
-
-               
-
-                <!-- Rest of top-level items -->
-                <li class="nav-item">
-                  <a class="nav-link" href="/about-us.html">About Us</a>
-                </li>
-                 <!-- Services  –  multi-level dropdown -->
-                <li class="nav-item submenu">
-                  <a class="nav-link" href="/services.html">Services</a>
-                  <ul>
-                    <!-- Female Infertility -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/female-infertility-treatment.html">Female Infertility</a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/female-infertility-treatment.html">Female Infertility
-                            Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/low-amh-treatment.html">Low AMH Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/ovarian-drilling-for-pcod-treatment.html">Ovarian Drilling for
-                            PCOD Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/polycystic-ovary-syndrome-treatment.html">Polycystic Ovary
-                            Syndrome Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/repeated-implantation-failure.html">Repeated Implantation
-                            Failure</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Female Infertility Surgeries -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/female-infertility-surgeries.html">Female Infertility Surgeries
-                      </a>
-                      <ul>
-                         <li class="nav-item">
-                          <a class="nav-link" href="/services/blocked-fallopian-tubes.html">Blocked Fallopian Tubes</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/endometrial-polyp-removal.html">Endometrial Polyp Removal</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/endometriosis-treatment.html">Endometriosis Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/ovarian-cysts-removal.html">Ovarian Cysts Removal</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/removal-of-adhesions-in-uterus.html">Removal of Adhesions in
-                            Uterus</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Male Infertility -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/male-infertility-treatment.html">Male Infertility</a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/male-infertility-treatment.html">Male Infertility</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/oligospermia-low-sperm-count-treatment.html">Oligospermia (Low
-                            Sperm Count) Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/oligo-astheno-teratozoospermia.html">Oligo Astheno
-                            Teratozoospermia</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/dna-fragmentation.html">DNA Fragmentation</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- IVF Specialties -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/ivf-specialties.html">IVF Specialties</a>
-                      <ul>
-                        <!-- Advanced IVF Tests -->
-                        <li class="nav-item submenu">
-                          <a class="nav-link" href="/services/advanced-ivf-tests.html">Advanced IVF Tests </a>
-                          <ul>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/detailed-female-infertility-analysis.html">Detailed Female
-                                Infertility Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/endometrial-receptivity-analysis.html">Endometrial Receptivity
-                                Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/follicular-study.html">Follicular Study</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/male-infertility-analysis.html">Male Infertility Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/preimplantation-genetic-testing.html">Preimplantation Genetic
-                                Testing</a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <!-- Advanced IVF Treatment -->
-                        <li class="nav-item submenu">
-                       <a class="nav-link" href="/services/advanced-ivf-treatment.html">Advanced IVF Treatment</a>
-                          <ul>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/blastocyst-formation.html">Blastocyst Formation</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/icsi-treatment.html">ICSI Treatment</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/laser-assisted-hatching.html">Laser-Assisted Hatching</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/micro-tese.html">Micro TESE</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/services/testicular-sperm-aspiration.html">Testicular Sperm Aspiration
-                                (TESA) & Sperm
-                                Retrieval</a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <!-- Donor Services -->
-                            <li class="nav-item">
-                          <a class="nav-link" href="/services/ovum-donation.html">Ovum Donation</a>
-                        </li>
-
-                        <!-- Fertility Services -->
-                          <li class="nav-item">
-                          <a class="nav-link" href="/services/embroys-freezing-vitrification.html">Embryos Freezing & Vitrification</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Single-link services -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="/services/ivf-options.html">IVF Options</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/services/intrauterine-insemination.html">Intrauterine Insemination</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/services/ovulation-induction.html">Ovulation Induction</a>
-                    </li>
-
-                    <!-- Obstetrics & Gynecology Care -->
-                  <li class="nav-item submenu">
-                      <a class="nav-link" href="/services/obstetrics-gynecology.html">Obstetrics & Gynecology Care
-                      </a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/obstetrics-gynecology.html">Obstetrics & Gynecology</a>
-                        </li>
-                            <li class="nav-item">
-                          <a class="nav-link" href="/services/preconception-counseling.html">Preconception Counseling</a>
-                        </li>
-                     <li class="nav-item">
-                          <a class="nav-link" href="/services/abnormal-uterinebleeding.html">Abnormal Uterine Bleeding</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/uterine-fibroids.html">Uterine Fibroids</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/hysteroscopy.html">Hysteroscopy</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/laparoscopy.html">Laparoscopy</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/vaginal-infection.html">Vaginal Infection</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/urinary-tractinfection.html">Urinary Tract Infection</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services/pregnancy.html">Pregnancy</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Pregnancy -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="/services/pregnancy.html">Pregnancy</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/blog.html">Blog</a>
-                </li>
-                <li class="nav-item highlighted-menu">
-                  <a class="nav-link" href="/appointment-page.html">Appointment</a>
-                </li>
-              </ul>
+  <main>
+    <section class="location-ivf-hero">
+      <div class="r-container">
+        <div class="location-ivf-grid">
+          <div>
+            <span class="r-badge-pill"><i class="fa fa-star"></i> Best IVF Center in Ravet</span>
+            <h1>Your Struggle Ends Here at the <span>Best IVF Center in Ravet, PCMC</span> with 70% Success Rate</h1>
+            <p class="location-ivf-lead">Looking for a trusted IVF clinic in Ravet, PCMC known for ethical practices and high success rates? Our fertility experts use advanced IVF techniques to deliver outcomes you can trust.</p>
+            <div class="location-ivf-actions">
+              <a href="contact.html" class="r-btn-primary">Book IVF Consultation <i class="fa fa-arrow-right"></i></a>
+              <a href="tel:+917058658711" class="r-btn-secondary"><i class="fa fa-phone"></i> Talk to Specialist</a>
             </div>
-            <div class="header-btn">
-              <a href="/appointment-page.html" class="btn-default btn-highlighted">Book an Appointment</a>
+            <div class="location-ivf-proof">
+              <div class="location-ivf-proof-card"><strong>70%+</strong><span>IVF success rate</span></div>
+              <div class="location-ivf-proof-card"><strong>2000+</strong><span>Successful pregnancies</span></div>
+              <div class="location-ivf-proof-card"><strong>4.9/5</strong><span>Google rating</span></div>
             </div>
           </div>
-          <div class="navbar-toggle"></div>
-        </div>
-      </nav>
-      <div class="responsive-menu"></div>
-    </div>
-  </header> 
-    <!-- Header End -->
-
-<div class="hero hero-video hero-slider-layout bg-section dark-section">
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="hero-slide">
-
-<!-- 2. SPLIT SECTION (Left Content / Right Form) -->
-<div class="hero-section nks-hero-section">
-  <div class="container"> <!-- Changed to container for better centering on mobile -->
-    <div class="row align-items-center">
-      
-      <!-- LEFT SIDE: TEXT CONTENT (Order 1 on Mobile) -->
-      <div class="col-lg-7 col-md-12 order-1 order-lg-1">
-        <div class="nks-left-content">
-          <h1 class="nks-title wow fadeInUp" data-wow-delay="0.2s">
-            Your Struggle Ends Here at the <span class="nks-highlight">Best IVF Center in Ravet, PCMC</span> with 70% Success Rate
-          </h1>
-          
-          <p class="nks-desc wow fadeInUp" data-wow-delay="0.4s">
-            Looking for a trusted IVF clinic in Ravet, PCMC known for ethical practices and high success rates? Our fertility experts use advanced IVF techniques to deliver outcomes you can trust.
-          </p>
-
-          <!-- CONVERTED LIST TO BUTTONS -->
-          <div class="nks-btn-wrapper wow fadeInUp" data-wow-delay="0.6s">
-            <a href="contact.html" class="nks-cta-btn btn-pulse">
-              <span class="icon"><i class="fa-solid fa-phone"></i></span> Book IVF Consultation
-            </a>
-            <a href="tel:+917058658711" class="nks-cta-btn btn-slide">
-              <span class="icon"><i class="fa-solid fa-calendar-days"></i></span> Talk to Specialist
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- RIGHT SIDE: FORM (Order 2 on Mobile) -->
-      <div class="col-lg-5 col-md-12 order-2 order-lg-2 mt-5">
-        <div class="nks-form-wrapper wow fadeInRight" data-wow-delay="0.4s">
-          <div class="nks-form-header">
-            <h3>Book Free Consultation</h3>
-          </div>
-          <form action="#" method="POST" class="nks-form">
-            <div class="row">
-              <!-- First Name -->
-              <div class="col-md-6 col-12 mb-3">
-                <input type="text" class="nks-input" name="firstname" placeholder="First Name" required>
-              </div>
-              <!-- Last Name -->
-              <div class="col-md-6 col-12 mb-3">
-                <input type="text" class="nks-input" name="lastname" placeholder="Last Name" required>
-              </div>
-              <!-- Email -->
-              <div class="col-12 mb-3">
-                <input type="email" class="nks-input" name="email" placeholder="Email Address" required>
-              </div>
-              <!-- Phone -->
-              <div class="col-12 mb-3">
-                <input type="tel" class="nks-input" name="phone" placeholder="Phone Number" required>
-              </div>
-              <!-- Services -->
-              <div class="col-12 mb-3">
-                <select class="nks-input nks-select" name="service" required>
-                  <option value="" disabled selected>Choose Services</option>
-                  <option value="IVF">IVF Treatment</option>
-                  <option value="IUI">IUI Treatment</option>
-                  <option value="ICSI">ICSI</option>
-                  <option value="Infertility">Infertility Checkup</option>
-                </select>
-              </div>
-              <!-- Date -->
-              <div class="col-12 mb-3">
-                <input type="text" class="nks-input" name="date" placeholder="DD-MM-YYYY" onfocus="(this.type='date')" onblur="(this.type='text')" required>
-              </div>
-              <!-- Submit Button -->
-              <div class="col-12">
-                <button type="submit" class="nks-submit-btn">Book Appointment</button>
-              </div>
+          <div>
+            <div class="location-ivf-media">
+              <img loading="lazy" src="images/best-ivf-center-in-ravet.jpg" alt="Best IVF center in Ravet">
+              <div class="location-ivf-media-badge"><i class="fa fa-map-marker"></i><div><strong>Ravet fertility care</strong><br><span>Accessible for couples from Ravet, Wakad, PCMC and nearby areas</span></div></div>
             </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Doctor Information -->
-    <div class="nks-founder-section">
-    <div class="container">
-        <div class="row align-items-center">
-            
-            <!-- Content Side -->
-            <div class="col-lg-6 col-md-12">
-                <div class="nks-founder-content">
-                    <p class="nks-subtitle wow fadeInUp"><b>The Founder</b></p>
-                    <h2 class="nks-heading text-anime-style-2" data-cursor="-opaque">Dr. Ramit Raosaheb Kamate</h2>
-                    <p class="nks-degrees">MBBS ,DNB, DGO, FRM (UK)</p>
-                    
-                    <p class="nks-text wow fadeInUp" data-wow-delay="0.2s">
-                        Dr. Ramit Kamate is a Reproductive Medicine Consultant and Sexologist with experience of 12+ years. He specialises in Sexual Medicine for male and female, Fertility Treatment, Pre and Post Delivery Care, Normal Vaginal Delivery (NVD), Tubectomy/Tubal Ligation, Natural Cycle IVF, MTP.
-                    </p>
-                    <p class="nks-text wow fadeInUp" data-wow-delay="0.3s">
-                       Dr. Ramit Kamate finished MBBS from B J Medical College, Pune. He pursued Masters&rsquo;s In Reproductive Medicine from Hamilton University, UK & IBCME Dubai. Completed Fellowship in Cosmetic Gynaecology and Sexual Medicine from USA.
-                    </p>
-
-                    <div class="nks-btn-group wow fadeInUp" data-wow-delay="0.4s">
-                        <a href="contact.html" class="nks-btn-default">Book Now</a>
-                        <a href="tel:+917058658711" class="nks-btn-default btn-outline">Call Now</a>
-                    </div>
+            <div class="location-ivf-form-card">
+              <h3>Book Free Consultation</h3>
+              <form action="#" method="POST" class="nks-form">
+                <div class="location-ivf-form-grid">
+                  <input type="text" name="firstname" class="location-ivf-field" placeholder="First Name" required>
+                  <input type="text" name="lastname" class="location-ivf-field" placeholder="Last Name" required>
+                  <input type="email" name="email" class="location-ivf-field" placeholder="Email Address">
+                  <input type="tel" name="phone" class="location-ivf-field" placeholder="Phone Number" required>
+                  <select name="service" class="location-ivf-field" required>
+                    <option value="">Select Service</option>
+                    <option value="IVF">IVF Treatment</option>
+                    <option value="IUI">IUI Treatment</option>
+                    <option value="ICSI">ICSI Treatment</option>
+                    <option value="Infertility">Infertility Consultation</option>
+                  </select>
+                  <input type="text" name="date" class="location-ivf-field" placeholder="Preferred Date" onfocus="this.type='date'">
                 </div>
+                <button type="submit" class="r-btn-primary">Book Appointment</button>
+              </form>
             </div>
-
-            <!-- Image Side -->
-            <div class="col-lg-6 col-md-12">
-                <div class="nks-founder-img-wrapper wow fadeInRight">
-                    <img loading="lazy" src="images/dr-ramit-raosaheb-kamate.jpg" alt="Dr. Ramit Raosaheb Kamate" class="nks-founder-img">
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Appointment Section -->
-<div class="our-appointment bg-section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="appointment-form">
-          <div class="section-title">
-            <h2 class="text-anime-style-2" data-cursor="-opaque">
-              Book appointment <span>today!</span>
-            </h2>
-            <p class="wow fadeInUp" data-wow-delay="0.2s">
-              Scheduling your visit is quick and easy connect with our team
-              today and take the first step toward personalized care.
-            </p>
           </div>
-          <form id="appointmentForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
-            data-wow-delay="0.4s">
-            <div class="row">
-              <div class="form-group col-md-6 mb-4">
-                <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required >
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group col-md-6 mb-4">
-                <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name" required >
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group col-md-6 mb-4">
+        </div>
+      </div>
+    </section>
+
+    <section class="r-section">
+      <div class="r-container">
+        <div class="location-ivf-split">
+          <div class="location-ivf-doctor-image"><img loading="lazy" src="images/dr-ramit-raosaheb-kamate.jpg" alt="Dr. Ramit Raosaheb Kamate"></div>
+          <div class="location-ivf-doctor-card">
+            <span class="location-ivf-doctor-meta"><i class="fa fa-user-md"></i> Fertility Specialist</span>
+            <h2 class="r-section-title">Dr. Ramit Raosaheb Kamate</h2>
+            <h3>MBBS, DNB, DGO, FRM (UK)</h3>
+            <p>Dr. Ramit Kamate is a Reproductive Medicine Consultant and Sexologist with experience of 12+ years. He specialises in Sexual Medicine for male and female, Fertility Treatment, Pre and Post Delivery Care, Normal Vaginal Delivery (NVD), Tubectomy/Tubal Ligation, Natural Cycle IVF, MTP.</p>
+            <p>Dr. Ramit Kamate finished MBBS from B J Medical College, Pune. He pursued Master's In Reproductive Medicine from Hamilton University, UK &amp; IBCME Dubai. Completed Fellowship in Cosmetic Gynaecology and Sexual Medicine from USA.</p>
+            <a href="appointment-page.html" class="r-btn-primary">Schedule Consultation <i class="fa fa-calendar-check-o"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="r-section" style="background:var(--color-blush);">
+      <div class="r-container">
+        <div class="location-ivf-split">
+          <div>
+            <span class="r-section-subtitle">Appointment</span>
+            <h2 class="r-section-title">Start with a clear fertility consultation</h2>
+            <p class="r-section-desc">Book your appointment with Nakshatra Clinic for IVF, IUI, ICSI and fertility care near Ravet, PCMC.</p>
+            <div class="location-ivf-appointment-image"><img loading="lazy" src="images/appointment-image.jpg" alt="Book appointment at Nakshatra Clinic"></div>
+          </div>
+          <div class="location-ivf-form-card">
+            <form id="appointmentForm" action="#" method="POST" data-toggle="validator">
+              <div class="location-ivf-form-grid">
+                <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required>
+                <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name" required>
                 <input type="email" name="email" class="form-control" id="email" placeholder="Email Address">
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group col-md-6 mb-4">
-                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required >
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group col-md-12 mb-4">
+                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
                 <select name="services" class="form-control form-select" id="services" required>
-                  <option value="" disabled selected>
-                    Choose Services
-                  </option>
-                  <option value="In_Vitro_Fertilization">
-                    In Vitro Fertilization (IVF)
-                  </option>
+                  <option value="" disabled selected>Select Service</option>
+                  <option value="In_Vitro_Fertilization">In Vitro Fertilization (IVF)</option>
                   <option value="Egg_Freezing">Egg Freezing</option>
                   <option value="Embryo_Freezing">Embryo Freezing</option>
-                  <option value="Fertility_Preservation">
-                    Fertility Preservation
-                  </option>
-                  <option value="Surrogacy_Support">
-                    Surrogacy Support
-                  </option>
-                  <option value="Male_Fertility_Care">
-                    Male Fertility Care
-                  </option>
-                  <option value="Ovulation_Induction">
-                    Ovulation Induction
-                  </option>
-                  <option value="Genetic_Testing">
-                    PGT (Genetic Testing)
-                  </option>
+                  <option value="Fertility_Preservation">Fertility Preservation</option>
+                  <option value="Surrogacy_Support">Surrogacy Support</option>
+                  <option value="Male_Fertility_Care">Male Fertility Care</option>
+                  <option value="Ovulation_Induction">Ovulation Induction</option>
+                  <option value="Genetic_Testing">Genetic Testing</option>
                 </select>
-                <div class="help-block with-errors"></div>
+                <input type="date" name="date" class="form-control" id="date" required>
               </div>
-              <div class="form-group col-md-12 mb-4">
-                <input type="date" name="date" class="form-control" id="date" required >
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="col-lg-12">
-                <div class="contact-form-btn">
-                  <button type="submit" class="btn-default">
-                    book an appointment
-                  </button>
-                  <div id="msgSubmit" class="h3 hidden"></div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="our-appointment-image">
-          <figure class="image-anime">
-            <img loading="lazy" src="images/appointment-image.jpg" alt="Appointment Page" >
-          </figure>
-          <div class="open-time-box">
-            <div class="icon-box">
-              <img loading="lazy" src="images/icon-clock.svg" alt="Icon Clock" >
-            </div>
-            <div class="open-time-box-content">
-              <p>Monday - Sunday: 10:00 AM - 07:00 PM</p>
-              <p></p>
-            </div>
+              <button type="submit" class="r-btn-primary">Book Appointment</button>
+              <div id="msgSubmit" class="h3 hidden"></div>
+            </form>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="r-section">
+      <div class="r-container">
+        <div class="r-section-title-wrapper">
+          <span class="r-section-subtitle">Clinical Services</span>
+          <h2 class="r-section-title">Clinical Services <span>We Offer</span></h2>
+          <p class="r-section-desc">Comprehensive fertility and reproductive care options for couples across Ravet, PCMC.</p>
+        </div>
+        <div class="location-ivf-services">
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-heartbeat"></i></span><h3>IVF Treatment</h3><p>Struggling to conceive naturally? Our IVF program gives hope to thousands of couples. We use cutting-edge lab technology and Dr. Kamate's 12+ years expertise to help you achieve your dream of parenthood with higher success rates.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-leaf"></i></span><h3>Natural Cycle IVF</h3><p>Prefer a gentler approach? Natural Cycle IVF works with your body's own rhythm using minimal medications. It's perfect if you're concerned about hormonal side effects but still want effective treatment with excellent pregnancy outcomes.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-plus-circle"></i></span><h3>IUI Treatment (Intrauterine Insemination)</h3><p>Looking for a simpler, more affordable first step? IUI places healthy sperm directly where they need to be during your fertile window. Many couples conceive with this less invasive option before considering IVF.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-flask"></i></span><h3>ICSI Treatment (Intracytoplasmic Sperm Injection)</h3><p>Is male factor infertility your challenge? ICSI gives each egg the best chance by carefully injecting one healthy sperm directly inside. It's proven highly successful even when sperm count or quality seems discouraging.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-stethoscope"></i></span><h3>Test Tube Baby Center Services</h3><p>Curious about the complete process? We walk you through every step - from your first hormonal injection to the amazing moment of embryo transfer. You'll understand exactly what's happening and why at each stage.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-mars"></i></span><h3>Male Infertility Treatment</h3><p>Gentlemen, your fertility matters too! We address low sperm count, motility issues, and intimate concerns with sensitivity and expertise. Dr. Kamate's sexual medicine specialization means comprehensive care without embarrassment or judgment throughout treatment.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-line-chart"></i></span><h3>Oligospermia (Low Sperm Count) Treatment</h3><p>Low sperm count isn't a dead end. Through targeted hormonal therapy, lifestyle changes, antioxidant supplements, and advanced techniques, we've helped countless men improve their sperm parameters and become fathers naturally or through assisted reproduction.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-venus"></i></span><h3>Female Infertility Treatment</h3><p>Whether it's PCOS, blocked tubes, or unexplained infertility frustrating you, we investigate thoroughly and treat effectively. Our personalized approach addresses your specific condition with proven medical solutions and supportive care you deserve.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-medkit"></i></span><h3>PCOS Treatment &amp; Management</h3><p>Living with PCOS and irregular cycles? You're not alone, and pregnancy is absolutely possible. We combine smart medications, lifestyle guidance, and fertility treatments tailored to help you ovulate regularly and conceive successfully despite PCOS challenges.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-hospital-o"></i></span><h3>Ovarian Drilling for PCOD Treatment</h3><p>When medications aren't working for your PCOS, ovarian drilling offers hope. This minimally invasive laparoscopic procedure helps restore natural ovulation by resetting your ovarian function. Recovery is quick, and conception rates improve significantly afterward.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-tint"></i></span><h3>Low AMH Treatment</h3><p>Low AMH results can feel devastating, but don't lose hope yet. We specialize in maximizing your remaining egg potential through carefully customized stimulation protocols, targeted supplements, and advanced IVF techniques that work with your biology.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-comments"></i></span><h3>Fertility Counseling &amp; Support</h3><p>Feeling overwhelmed, stressed, relationship strain? Completely normal during treatment. Professional counseling addresses emotional toll, helping cope with disappointments, make decisions, maintain mental health throughout.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-user-md"></i></span><h3>High-Risk Pregnancy Management</h3><p>Over 35, carrying twins, have medical conditions? You need specialized care. Close monitoring, coordinated specialists, advanced emergency facilities keep you and baby healthy throughout.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-shield"></i></span><h3>Sperm Donation Program</h3><p>Severe male infertility or genetic concerns? Anonymous sperm donation from rigorously tested donors helps build family. Entire process remains confidential with counseling support provided.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-heart"></i></span><h3>Egg Donation Program</h3><p>Severe male infertility or genetic concerns? Anonymous sperm donation from rigorously tested donors helps build family. Entire process remains confidential with counseling support provided.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-repeat"></i></span><h3>Repeated Implantation Failure (RIF) Treatment</h3><p>Severe male infertility or genetic concerns? Anonymous sperm donation from rigorously tested donors helps build family. Entire process remains confidential with counseling support provided.</p></div>
+          <div class="location-ivf-card"><span class="location-ivf-icon"><i class="fa fa-female"></i></span><h3>Endometriosis Treatment</h3><p>Endometriosis causing painful periods and infertility? We offer medical management and expert laparoscopic surgery. Combined with IVF when needed, most women successfully achieve pregnancy.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="r-section" style="background:var(--gradient-soft);">
+      <div class="r-container">
+        <div class="r-section-title-wrapper">
+          <span class="r-section-subtitle">Why Choose Us</span>
+          <h2 class="r-section-title">Why families trust <span>our IVF experts</span></h2>
+        </div>
+        <div class="location-ivf-stats">
+          <div class="location-ivf-stat"><strong>70%</strong><h3>IVF Success Rate</h3><p>Higher than national averages due to our advanced technology, experienced team, and personalized treatment protocols.</p></div>
+          <div class="location-ivf-stat"><strong>2000+</strong><h3>Successful Pregnancies</h3><p>We've helped over 2000 couples achieve their dream of parenthood since 2010.</p></div>
+          <div class="location-ivf-stat"><strong>4.9/5</strong><h3>Google Rating</h3><p>Rated 4.9/5 by 150+ patients who trust our expertise and compassionate care.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="r-section">
+      <div class="r-container">
+        <div class="r-section-title-wrapper">
+          <span class="r-section-subtitle">Your Journey to Parenthood</span>
+          <h2 class="r-section-title">How Does IVF Work <span>Step by Step?</span></h2>
+          <p class="r-section-desc">We understand that the IVF journey can feel overwhelming. Here is a clear, step-by-step breakdown of exactly what happens during your treatment at our center.</p>
+        </div>
+        <div class="location-ivf-process">
+          <div class="location-ivf-step"><span>1</span><div><h3>Week 1</h3><h4>Initial Consultation &amp; Assessment</h4><p>The IVF journey begins with a detailed consultation where fertility evaluations for both partners are conducted, medical history is reviewed, and a personalized treatment plan is created based on individual reproductive needs.</p></div></div>
+          <div class="location-ivf-step"><span>2</span><div><h3>Week 2–3</h3><h4>Ovarian Stimulation</h4><p>Hormonal medications are prescribed to stimulate the ovaries to produce multiple eggs. Regular ultrasounds and hormone level monitoring ensure healthy follicle growth and help doctors adjust treatment for optimal results.</p></div></div>
+          <div class="location-ivf-step"><span>3</span><div><h3>Day 14–16</h3><h4>Egg Retrieval</h4><p>Egg retrieval is a minimally invasive procedure performed under anesthesia to ensure comfort. Mature eggs are collected from the ovaries and immediately transferred to the laboratory for further processing and fertilization.</p></div></div>
+          <div class="location-ivf-step"><span>4</span><div><h3>Day 1</h3><h4>Fertilization</h4><p>Collected eggs are fertilized using IVF or ICSI techniques after sperm collection and preparation. Embryologists carefully monitor fertilization and early embryo development under controlled laboratory conditions.</p></div></div>
+          <div class="location-ivf-step"><span>5</span><div><h3>Day 2–5</h3><h4>Embryo Culture</h4><p>Fertilized embryos are cultured in advanced laboratory conditions until the blastocyst stage. Each embryo is closely assessed for quality, development, and viability before selecting the best embryo for transfer.</p></div></div>
+          <div class="location-ivf-step"><span>6</span><div><h3>Day 3–5</h3><h4>Embryo Transfer</h4><p>Embryo transfer is a simple and painless procedure where the selected embryo is gently placed into the uterus. Patients receive post-transfer care instructions and supportive medications to enhance implantation success.</p></div></div>
+          <div class="location-ivf-step"><span>7</span><div><h3>2 Weeks Later</h3><h4>Pregnancy Test</h4><p>A blood test is performed two weeks after embryo transfer to confirm pregnancy. Based on the results, doctors guide patients on next steps, follow-up care, and further treatment planning if required.</p></div></div>
+          <div class="location-ivf-step"><span>8</span><div><h3>Overview</h3><h4>IVF Process at Our Center (Video)</h4><p>This video provides a step-by-step overview of the IVF process at our center, helping patients visually understand each stage of treatment, the care involved, and what to expect throughout the journey.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="r-section" style="background:var(--color-blush);">
+      <div class="r-container">
+        <div class="r-section-title-wrapper">
+          <span class="r-section-subtitle">Ravet &amp; Nearby Areas</span>
+          <h2 class="r-section-title">Convenient IVF Center for Ravet – <span>Serving Nearby Locations</span></h2>
+          <p class="r-section-desc">Nakshatra Clinic is easily accessible to patients across Ravet, PCMC and nearby regions. We regularly serve couples from the areas below.</p>
+        </div>
+        <div class="location-ivf-locations">
+          <div class="location-ivf-location-card"><h3>Ravet</h3><p>8–10 km away · 15–20 min drive</p><a href="https://www.maps.app.goo.gl/iFk9TBnLfwoBGy5KA" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
+          <div class="location-ivf-location-card"><h3>Wakad</h3><p>5–7 km away · 12–15 min drive</p><a href="https://maps.app.goo.gl/KJnXxroVMnaf1TcX6" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
+          <div class="location-ivf-location-card"><h3>Hinjewadi</h3><p>8–10 km away · 15–20 min drive</p><a href="https://maps.app.goo.gl/hg2ZgAbpD9ndeeUK9" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
+          <div class="location-ivf-location-card"><h3>Kharadi</h3><p>18–20 km away · 35–45 min drive</p><a href="https://maps.app.goo.gl/JGt4gXoyxpzEjYQu8" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
+          <div class="location-ivf-location-card"><h3>Hadapsar</h3><p>22–25 km away · 40–50 min drive</p><a href="https://maps.app.goo.gl/4FzHHEiia52oYKV79" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
+          <div class="location-ivf-location-card"><h3>Viman Nagar</h3><p>15–17 km away · 28–35 min drive</p><a href="https://maps.app.goo.gl/rN2Q96VL1FBVj8J58" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
+          <div class="location-ivf-location-card"><h3>PCMC</h3><p>10–12 km away · 20–25 min drive</p><a href="https://maps.app.goo.gl/HZ5Wrp4TucZseW218" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="r-section">
+      <div class="r-container">
+        <div class="r-section-title-wrapper">
+          <span class="r-section-subtitle">Patient Stories</span>
+          <h2 class="r-section-title">What Ravet and PCMC families <span>share about care</span></h2>
+        </div>
+        <div class="location-ivf-testimonials">
+          <div class="location-ivf-testimonial"><div class="location-ivf-author"><span class="location-ivf-avatar">R</span><div><strong>Riya Sharma</strong><br><span>Pune</span></div></div><h3>"Best IVF Experience in Pune"</h3><p>We had an amazing experience at Nakshatra Clinic. Dr. Ramit Kamate is truly one of the best IVF specialists in Pune. After struggling for years, we finally conceived through IVF here. The entire team is supportive, transparent about costs, and very professional. Highly recommended for anyone looking for the best IVF center in Pune!</p></div>
+          <div class="location-ivf-testimonial"><div class="location-ivf-author"><span class="location-ivf-avatar">R</span><div><strong>Ramesh More</strong><br><span>Pune</span></div></div><h3>"Transparent Pricing &amp; Genuine Results"</h3><p>Nakshatra Clinic offers very transparent pricing and even EMI options, which made IVF treatment affordable for us. Dr. Kamate and his team are very supportive and always available for queries. One of the best IVF centers in Pune with genuine care and results.</p></div>
+          <div class="location-ivf-testimonial"><div class="location-ivf-author"><span class="location-ivf-avatar">R</span><div><strong>Rashmi Patil</strong><br><span>Pune</span></div></div><h3>"Wonderful IUI Experience"</h3><p>I visited Nakshatra Clinic for IUI treatment and I'm very happy with the results. Dr. Kamate explained everything clearly and made us feel comfortable throughout the process. The clinic is well-equipped and staff is very caring. If you are searching for a reliable IUI center in Pune, this is the place.</p></div>
+          <div class="location-ivf-testimonial"><div class="location-ivf-author"><span class="location-ivf-avatar">M</span><div><strong>Monika Deshmukh</strong><br><span>Pune</span></div></div><h3>"Professional &amp; Caring Treatment"</h3><p>I consulted Dr. Kamate for male infertility issues. He handled everything very professionally and without any hesitation or embarrassment. His treatment plan really improved my condition. I highly recommend Nakshatra Clinic for both male and female fertility treatments.</p></div>
+          <div class="location-ivf-testimonial"><div class="location-ivf-author"><span class="location-ivf-avatar">S</span><div><strong>Sahil Shinde</strong><br><span>Pune</span></div></div><h3>"Smooth &amp; Stress-Free IVF Journey"</h3><p>The entire IVF journey at Nakshatra Clinic was smooth and stress-free. The staff is very cooperative and guides you at every step. Dr. Ramit Kamate is extremely knowledgeable and gives confidence to patients. Thank you for your excellent care and support!</p></div>
+          <div class="location-ivf-testimonial"><div class="location-ivf-author"><span class="location-ivf-avatar">S</span><div><strong>Shri Jadhav</strong><br><span>Pune</span></div></div><h3>"Step-by-Step Guidance Made It Easy"</h3><p>From consultation to treatment, everything was smooth and well-managed. The IVF process was explained step-by-step which reduced our stress. The clinic is clean, staff is polite, and doctor is very experienced. Truly the best IVF center in Pune for couples trying to conceive.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="r-section" style="background:var(--gradient-soft);">
+      <div class="r-container">
+        <div class="location-ivf-faq-grid">
+          <div class="location-ivf-faq-contact">
+            <span class="r-section-subtitle">FAQ</span>
+            <h2 class="r-section-title">Curious About IVF? <span>Let's Talk.</span></h2>
+            <p>Speak with our team for clear guidance on IVF, IUI, ICSI and fertility treatment options near Ravet, PCMC.</p>
+            <div class="location-ivf-contact-line"><i class="fa fa-phone"></i><a href="tel:+91 7058658711">+91 7058658711</a></div>
+            <div class="location-ivf-contact-line"><i class="fa fa-envelope"></i><a href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a></div>
+          </div>
+          <div class="accordion" id="faqaccordion">
+            <div class="accordion-item"><h3 class="accordion-header" id="heading1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Which is the best IVF center in Ravet?</button></h3><div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqaccordion"><div class="accordion-body"><p>The best IVF center in Ravet is one that offers advanced fertility treatments, experienced IVF specialists, high success rates, and personalized care. Leading clinics like Nakshatra Fertility Clinic are known for ethical treatment and patient-focused IVF solutions. They provide the best treatments such as IVF, IUI, ICSI, fertility preservation, egg freezing, male infertility treatment, and advanced reproductive technologies to improve pregnancy success rates.</p></div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header" id="heading2"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Is IVF treatment painful?</button></h3><div id="collapse2" class="accordion-collapse collapse show" data-bs-parent="#faqaccordion"><div class="accordion-body"><p>IVF treatment involves minimal discomfort. Stimulation injections use tiny needles and become routine quickly. Egg retrieval is performed under conscious sedation ensuring complete comfort with no procedure memory. Embryo transfer is typically painless, similar to a regular pap smear. Most patients report the emotional aspects more challenging than physical discomfort. Our compassionate team provides comprehensive support throughout your journey.</p></div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header" id="heading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">How long does the IVF process take?</button></h3><div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqaccordion"><div class="accordion-body"><p>A complete IVF cycle from stimulation start to pregnancy test takes approximately 4-6 weeks. This includes 10-14 days of ovarian stimulation, egg retrieval, 3-5 days of embryo culture, embryo transfer, and a 12-14 day wait before pregnancy testing. From your first consultation to knowing results typically requires 2-3 months, depending on cycle timing and personalized protocol requirements.</p></div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header" id="heading4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">What is the difference between IVF and ICSI?</button></h3><div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqaccordion"><div class="accordion-body"><p>IVF involves placing eggs and sperm together allowing natural fertilization, while ICSI directly injects a single selected sperm into each egg using micromanipulation. ICSI is specifically recommended for male factor infertility, low sperm count, poor motility, previous fertilization failures, or when using frozen/surgically retrieved sperm. Your doctor recommends the approach maximizing your success based on diagnostic findings.</p></div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header" id="heading5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">How many IVF cycles are needed to get pregnant?</button></h3><div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqaccordion"><div class="accordion-body"><p>The number of IVF cycles needed to get pregnant varies for each couple. Some may conceive in the first cycle, while others may require 2–3 IVF cycles depending on factors like age, fertility condition, and overall health. Consulting an experienced IVF specialist in Ravet can help determine the most effective treatment plan and improve success chances.</p></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="r-section location-ivf-final-cta">
+      <div class="r-container">
+        <span class="r-section-subtitle">Book Consultation</span>
+        <h2 class="r-section-title">Schedule your consultation <span>today!</span></h2>
+        <p class="r-section-desc">Book your consultation with our fertility experts - the first step toward your parenthood journey.</p>
+        <div class="location-ivf-actions" style="justify-content:center;margin-top:28px;">
+          <a href="appointment-page.html" class="r-btn-primary">Book Appointment <i class="fa fa-calendar-check-o"></i></a>
+          <a href="tel:+917058658711" class="r-btn-secondary"><i class="fa fa-phone"></i> Call Clinic</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-redesign">
+    <div class="r-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-column">
+          <a href="index.html"><img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo" style="height:52px;background:white;border-radius:8px;padding:4px;"></a>
+          <p>Nakshatra Fertility &amp; IVF Center is Baner's leading boutique fertility clinic dedicated to supporting parents on their journey with medical integrity.</p>
+          <div class="footer-socials"><a href="https://www.facebook.com/NakshatraClinic" class="footer-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/nakshatra.clinic" class="footer-social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com/@nakshatraivfandintimacycli5653" class="footer-social-icon" aria-label="Youtube"><i class="fab fa-youtube"></i></a></div>
+        </div>
+        <div><h3 class="footer-column-title">Quick Links</h3><ul class="footer-links-list"><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="services.html">Services &amp; Treatments</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="appointment-page.html">Direct Appointment</a></li></ul></div>
+        <div><h3 class="footer-column-title">IVF Specialties</h3><ul class="footer-links-list"><li><a href="services/advanced-ivf-treatment.html">Advanced IVF Treatment</a></li><li><a href="services/icsi-treatment.html">ICSI Treatment</a></li><li><a href="services/blastocyst-formation.html">Blastocyst Formation</a></li><li><a href="services/laser-assisted-hatching.html">Laser-Assisted Hatching</a></li><li><a href="services/preimplantation-genetic-testing.html">PGT</a></li></ul></div>
+        <div><h3 class="footer-column-title">Contact Us</h3><ul class="footer-contact-list"><li class="footer-contact-item"><i class="fa fa-map-marker"></i><div><a href="https://www.maps.app.goo.gl/iFk9TBnLfwoBGy5KA" target="_blank" rel="noopener noreferrer">Office 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon, Baner 411045</a></div></li><li class="footer-contact-item"><i class="fa fa-phone"></i><a href="tel:+917058658711">+91 7058658711</a></li><li class="footer-contact-item"><i class="fa fa-envelope"></i><a href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a></li><li class="footer-contact-item"><i class="fa fa-clock-o"></i><span>Mon - Sun: 10:00 AM - 07:00 PM</span></li></ul></div>
+      </div>
+      <div class="footer-bottom-bar"><p>Copyright &copy; 2026 Nakshatra Clinic. All Rights Reserved.</p></div>
     </div>
-  </div>
-</div>
-<!-- End Appointment Section -->
+  </footer>
 
-<!-- Services Section -->
-<div class="our-services bg-section">
-  <div class="container">
-    <div class="row section-row align-items-center">
-      <div class="col-lg-6">
-        <div class="section-title">
-          <p class="wow fadeInUp" style="color: #FF70A3;"><b>Services</b></p>
-          <h2 class="text-anime-style-2" data-cursor="-opaque">
-            Clinical Services We Offer
-          </h2>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="section-content-btn">
-          <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
-            <a href="services.html" class="btn-default">View All Services</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="mobile-sticky-bar"><a href="appointment-page.html" class="msb-btn msb-primary"><i class="fa fa-calendar-check-o"></i><span>Book</span></a><a href="tel:+917058658711" class="msb-btn"><i class="fa fa-phone"></i><span>Call</span></a><a href="https://wa.me/917058658711" class="msb-btn msb-wa" target="_blank"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a></div>
 
-   <div class="row service-item-list">
-      
-      <!-- ITEM 1: IVF Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item active wow fadeInUp">
-          <div class="service-image">
-            <img loading="lazy" src="images/nakshatra-service.jpg" alt="Natural Cycle IVF" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- DNA Helix / Science -->
-                <path d="M20 12C20 12 28 20 28 32C28 44 20 52 20 52" stroke="#009688" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M44 12C44 12 36 20 36 32C36 44 44 52 44 52" stroke="#009688" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M22 16H42" stroke="#FF70A3" stroke-width="2" stroke-linecap="round"/>
-                <path d="M26 48H38" stroke="#FF70A3" stroke-width="2" stroke-linecap="round"/>
-                <path d="M28 32H36" stroke="#FF70A3" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="32" cy="32" r="30" stroke="#009688" stroke-width="1.5" stroke-opacity="0.2"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)"> IVF Treatment </a></h3>
-                <p>
-                Struggling to conceive naturally? Our IVF program gives hope to thousands of couples. We use cutting-edge lab technology and Dr. Kamate's 12+ years expertise to help you achieve your dream of parenthood with higher success rates.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <script>
+    const progressBar = document.getElementById('scrollProgressBar');
+    window.addEventListener('scroll', () => { const h = document.documentElement; const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100; progressBar.style.width = scrolled + '%'; }, { passive: true });
+    window.addEventListener('scroll', () => { const h = document.querySelector('.site-header-redesign'); if (h) h.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
+    const navToggle = document.getElementById('navToggle'), navClose = document.getElementById('navClose'), navMenu = document.getElementById('navMenu'), navOverlay = document.getElementById('navOverlay');
+    function openNav(){ navMenu.classList.add('active'); navOverlay.classList.add('active'); document.body.style.overflow='hidden'; }
+    function closeNav(){ navMenu.classList.remove('active'); navOverlay.classList.remove('active'); document.body.style.overflow=''; }
+    if(navToggle) navToggle.addEventListener('click', openNav);
+    if(navClose) navClose.addEventListener('click', closeNav);
+    if(navOverlay) navOverlay.addEventListener('click', closeNav);
+  </script>
 
-      <!-- ITEM 2: Natural Cycle IVF -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-          <div class="service-image">
-            <img loading="lazy" src="images/donar-services-nakshatra-clinic.jpg" alt="Natural Cycle IVF" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Nature Leaf + IVF -->
-                <path d="M32 54V28" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M32 46C32 46 42 42 42 34C42 28 32 28 32 28C32 28 22 28 22 34C22 42 32 46 32 46Z" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2.5" stroke-linejoin="round"/>
-                <circle cx="32" cy="18" r="6" stroke="#FF70A3" stroke-width="2.5"/> <!-- Egg -->
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Natural Cycle IVF</a></h3>
-                <p>
-                Prefer a gentler approach? Natural Cycle IVF works with your body's own rhythm using minimal medications. It's perfect if you're concerned about hormonal side effects but still want effective treatment with excellent pregnancy outcomes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- ITEM 3: IUI Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-          <div class="service-image">
-            <img loading="lazy" src="images/nakshatra-clinic-services-icsi-treatment.jpg" alt="IUI Treatment" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Direct Path / Catheter -->
-                <path d="M16 20C16 12 24 8 32 8C40 8 48 12 48 20C48 30 32 40 32 56" stroke="#E91E63" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M32 12V34" stroke="#009688" stroke-width="2.5" stroke-linecap="round"/>
-                <circle cx="32" cy="38" r="3" fill="#009688"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">IUI Treatment (Intrauterine Insemination)</a></h3>
-                <p>
-                Looking for a simpler, more affordable first step? IUI places healthy sperm directly where they need to be during your fertile window. Many couples conceive with this less invasive option before considering IVF.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- ITEM 4: ICSI Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
-          <div class="service-image">
-            <img loading="lazy" src="images/female-infertility-treatment.jpg" alt="ICSI Treatment" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Needle Injection -->
-                <circle cx="26" cy="32" r="14" stroke="#E91E63" stroke-width="2.5"/>
-                <path d="M54 18L36 36" stroke="#009688" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M52 16L58 22" stroke="#009688" stroke-width="2.5" stroke-linecap="round"/>
-                <circle cx="30" cy="28" r="3" fill="#E91E63" fill-opacity="0.3"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">ICSI Treatment (Intracytoplasmic Sperm Injection)</a></h3>
-                <p>
-                 Is male factor infertility your challenge? ICSI gives each egg the best chance by carefully injecting one healthy sperm directly inside. It's proven highly successful even when sperm count or quality seems discouraging.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- ITEM 5: Test Tube Baby Center Services -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
-          <div class="service-image">
-            <img loading="lazy" src="images/medication-stimulation.jpg" alt="Test Tube Baby Center" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Test Tube Icon -->
-                <path d="M26 10H38" stroke="#546E7A" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M28 10V40C28 46 30 50 32 50C34 50 36 46 36 40V10" stroke="#546E7A" stroke-width="2.5" stroke-linejoin="round"/>
-                <path d="M30 38C30 38 31 36 32 36C33 36 34 38 34 38" stroke="#FF70A3" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="44" cy="46" r="2" fill="#FF70A3"/>
-                <circle cx="48" cy="40" r="1.5" fill="#FF70A3"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Test Tube Baby Center Services</a></h3>
-                <p>
-                  Curious about the complete process? We walk you through every step—from your first hormonal injection to the amazing moment of embryo transfer. You'll understand exactly what's happening and why at each stage.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ITEM 6: Male Infertility Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="1s">
-          <div class="service-image">
-            <img loading="lazy" src="images/hormonal-therapy.jpg" alt="Male Infertility Treatment" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Male Symbol -->
-                <circle cx="28" cy="36" r="12" stroke="#0277BD" stroke-width="2.5"/>
-                <path d="M38 26L48 16" stroke="#0277BD" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M48 16V24" stroke="#0277BD" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M48 16H40" stroke="#0277BD" stroke-width="2.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Male Infertility Treatment</a></h3>
-                <p>Gentlemen, your fertility matters too! We address low sperm count, motility issues, and intimate concerns with sensitivity and expertise. Dr. Kamate's sexual medicine specialization means comprehensive care without embarrassment or judgment throughout treatment.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ITEM 7: Oligospermia (Low Sperm Count) Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="1.2s">
-          <div class="service-image">
-            <img loading="lazy" src="images/medication-services-nakshatra.png" alt="Oligospermia Treatment" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Sperm Chart / Low Count -->
-                <path d="M12 52H52" stroke="#546E7A" stroke-width="2" stroke-linecap="round"/>
-                <path d="M12 52V12" stroke="#546E7A" stroke-width="2" stroke-linecap="round"/>
-                <path d="M20 44L28 36L36 40L48 20" stroke="#E91E63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="48" cy="20" r="3" fill="#E91E63"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Oligospermia (Low Sperm Count) Treatment</a></h3>
-                <p>
-                  Low sperm count isn't a dead end. Through targeted hormonal therapy, lifestyle changes, antioxidant supplements, and advanced techniques, we've helped countless men improve their sperm parameters and become fathers naturally or through assisted reproduction.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ITEM 8: Female Infertility Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="1.4s">
-          <div class="service-image">
-            <img loading="lazy" src="images/improving-egg-quality.jpg" alt="Female Infertility Treatment" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Female Symbol -->
-                <circle cx="32" cy="26" r="12" stroke="#E91E63" stroke-width="2.5"/>
-                <path d="M32 38V54" stroke="#E91E63" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M24 46H40" stroke="#E91E63" stroke-width="2.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Female Infertility Treatment</a></h3>
-                <p>
-                  Whether it's PCOS, blocked tubes, or unexplained infertility frustrating you, we investigate thoroughly and treat effectively. Our personalized approach addresses your specific condition with proven medical solutions and supportive care you deserve.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ITEM 9: PCOS Treatment & Management -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="1.6s">
-          <div class="service-image">
-            <img loading="lazy" src="images/pregnancy.jpg" alt="PCOS Treatment & Management">
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Ovary with cysts (circles) -->
-                <ellipse cx="32" cy="32" rx="20" ry="14" stroke="#E91E63" stroke-width="2.5"/>
-                <circle cx="22" cy="32" r="3" fill="#E91E63" fill-opacity="0.3"/>
-                <circle cx="28" cy="26" r="3" fill="#E91E63" fill-opacity="0.3"/>
-                <circle cx="36" cy="38" r="3" fill="#E91E63" fill-opacity="0.3"/>
-                <circle cx="42" cy="32" r="3" fill="#E91E63" fill-opacity="0.3"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">PCOS Treatment & Management</a></h3>
-                <p>
-                  Living with PCOS and irregular cycles? You're not alone, and pregnancy is absolutely possible. We combine smart medications, lifestyle guidance, and fertility treatments tailored to help you ovulate regularly and conceive successfully despite PCOS challenges.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ITEM 10: Ovarian Drilling for PCOD Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="1.8s">
-          <div class="service-image">
-            <img loading="lazy" src="images/medication.jpg" alt="Ovarian Drilling for PCOD Treatment" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Laparoscopic Tool + Ovary -->
-                <ellipse cx="24" cy="40" rx="14" ry="10" stroke="#E91E63" stroke-width="2.5"/>
-                <path d="M52 12L34 36" stroke="#546E7A" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M50 10L54 14" stroke="#546E7A" stroke-width="2.5" stroke-linecap="round"/>
-                <circle cx="34" cy="36" r="2" fill="#009688"/> <!-- drilling point -->
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Ovarian Drilling for PCOD Treatment</a></h3>
-                <p>
-                 When medications aren't working for your PCOS, ovarian drilling offers hope. This minimally invasive laparoscopic procedure helps restore natural ovulation by resetting your ovarian function. Recovery is quick, and conception rates improve significantly afterward.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ITEM 11: Low AMH Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="2.0s">
-          <div class="service-image">
-            <img loading="lazy" src="images/beautiful-fertility-concept-rendering.jpg" alt="Low AMH Treatment" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Gauge / Meter low level -->
-                <path d="M12 36C12 25 21 16 32 16C43 16 52 25 52 36" stroke="#009688" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M32 36L22 36" stroke="#E91E63" stroke-width="2.5" stroke-linecap="round"/> <!-- Needle pointing low/left -->
-                <circle cx="32" cy="36" r="3" fill="#546E7A"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Low AMH Treatment</a></h3>
-                <p>
-                  Low AMH results can feel devastating, but don't lose hope yet. We specialize in maximizing your remaining egg potential through carefully customized stimulation protocols, targeted supplements, and advanced IVF techniques that work with your biology.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- ITEM 12: Fertility Counseling & Support -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="2.0s">
-          <div class="service-image">
-            <img loading="lazy" src="images/beautiful-fertility-concept-rendering.jpg" alt="Fertility Counseling & Support" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Speech Bubbles / Support -->
-                <path d="M12 24C12 16 18 10 28 10C38 10 44 16 44 24C44 32 38 38 28 38H22L12 42V24Z" stroke="#009688" stroke-width="2.5" stroke-linejoin="round"/>
-                <path d="M36 46C36 46 36 34 36 34" stroke="#E91E63" stroke-width="2" stroke-linecap="round"/>
-                <path d="M36 34C36 28 42 24 50 24C58 24 62 28 62 34C62 42 56 46 50 46H44L36 50V46Z" stroke="#E91E63" stroke-width="2.5" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Fertility Counseling & Support</a></h3>
-                <p>
-                  Feeling overwhelmed, stressed, relationship strain? Completely normal during treatment. Professional counseling addresses emotional toll, helping cope with disappointments, make decisions, maintain mental health throughout.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- ITEM 13: High-Risk Pregnancy Management -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="2.0s">
-          <div class="service-image">
-            <img loading="lazy" src="images/beautiful-fertility-concept-rendering.jpg" alt="High-Risk Pregnancy Management" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Shield + Baby -->
-                <path d="M32 8C32 8 52 12 52 26C52 42 32 56 32 56C32 56 12 42 12 26C12 12 32 8 32 8Z" stroke="#E91E63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="32" cy="28" r="6" stroke="#009688" stroke-width="2.5"/>
-                <path d="M32 36C28 36 26 40 26 42" stroke="#009688" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M32 36C36 36 38 40 38 42" stroke="#009688" stroke-width="2.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">High-Risk Pregnancy Management</a></h3>
-                <p>
-                  Over 35, carrying twins, have medical conditions? You need specialized care. Close monitoring, coordinated specialists, advanced emergency facilities keep you and baby healthy throughout.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- ITEM 14: Sperm Donation Program -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="2.0s">
-          <div class="service-image">
-            <img loading="lazy" src="images/beautiful-fertility-concept-rendering.jpg" alt="Sperm Donation Program" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Hand Holding Sperm (Symbolic) -->
-                <path d="M12 42C12 42 22 52 32 52C42 52 52 42 52 42" stroke="#009688" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="32" cy="24" r="5" stroke="#0277BD" stroke-width="2.5"/>
-                <path d="M32 30C32 34 36 38 42 38" stroke="#0277BD" stroke-width="2.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Sperm Donation Program</a></h3>
-                <p>
-                 Severe male infertility or genetic concerns? Anonymous sperm donation from rigorously tested donors helps build family. Entire process remains confidential with counseling support provided.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-        <!-- ITEM 15: Egg Donation Program -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="2.0s">
-          <div class="service-image">
-            <img loading="lazy" src="images/beautiful-fertility-concept-rendering.jpg" alt="Egg Donation Program" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Hand Holding Egg -->
-                 <path d="M12 42C12 42 22 52 32 52C42 52 52 42 52 42" stroke="#009688" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                 <ellipse cx="32" cy="26" rx="8" ry="10" stroke="#E91E63" stroke-width="2.5"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Egg Donation Program</a></h3>
-                <p>
-                 Severe male infertility or genetic concerns? Anonymous sperm donation from rigorously tested donors helps build family. Entire process remains confidential with counseling support provided.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-        <!-- ITEM 16: Repeated Implantation Failure (RIF) Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="2.0s">
-          <div class="service-image">
-            <img loading="lazy" src="images/beautiful-fertility-concept-rendering.jpg" alt="Repeated Implantation Failure (RIF) Treatment" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Uterus + Magnifying Glass / Check -->
-                <path d="M20 20C20 14 26 10 32 10C38 10 44 14 44 20C44 28 38 34 32 38" stroke="#E91E63" stroke-width="2.5" stroke-linecap="round"/>
-                <circle cx="44" cy="44" r="10" stroke="#009688" stroke-width="2.5"/>
-                <path d="M52 52L58 58" stroke="#009688" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M40 44L42 46L48 40" stroke="#009688" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Repeated Implantation Failure (RIF) Treatment</a></h3>
-                <p>
-                 Severe male infertility or genetic concerns? Anonymous sperm donation from rigorously tested donors helps build family. Entire process remains confidential with counseling support provided.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-       <!-- ITEM 17: Endometriosis Treatment -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="service-item wow fadeInUp" data-wow-delay="2.0s">
-          <div class="service-image">
-            <img loading="lazy" src="images/beautiful-fertility-concept-rendering.jpg" alt="Endometriosis Treatment" >
-          </div>
-          <div class="service-body">
-            <div class="icon-box">
-              <svg width="64px" height="64px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Uterus + Tissue texture -->
-                <path d="M16 22C16 14 24 10 32 10C40 10 48 14 48 22C48 34 32 46 32 46C32 46 16 34 16 22Z" stroke="#E91E63" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M54 48L46 42" stroke="#546E7A" stroke-width="2.5" stroke-linecap="round"/>
-                <circle cx="24" cy="22" r="1" fill="#E91E63"/>
-                <circle cx="40" cy="22" r="1" fill="#E91E63"/>
-                <circle cx="32" cy="30" r="1" fill="#E91E63"/>
-                <circle cx="46" cy="16" r="3" stroke="#FF70A3" stroke-width="2"/> <!-- External tissue -->
-              </svg>
-            </div>
-            <div class="service-content">
-              <div class="service-content-info">
-                <h3><a href="javascript:void(0)">Endometriosis Treatment</a></h3>
-                <p>
-                Endometriosis causing painful periods and infertility? We offer medical management and expert laparoscopic surgery. Combined with IVF when needed, most women successfully achieve pregnancy.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-  </div>
-</div>
-
-
-   
-<!-- Why Choose Us Section -->
-<div class="why-choose-us">
-  <div class="container">
-    <div class="row section-row align-items-center">
-      <div class="col-lg-6">
-        <div class="section-title">
-          <p class="wow fadeInUp" style="color: #FF70A3;"><b>why choose us</b></p>
-          <h2 class="text-anime-style-2" data-cursor="-opaque">
-            Why families trust our IVF <span>experts</span>
-          </h2>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="section-content-btn">
-          <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
-            <a href="contact.html" class="btn-default">contact us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="why-choose-list">
-          <div class="why-choose-box">
-            <div class="why-choose-image">
-              <figure class="image-anime reveal">
-                <img loading="lazy" src="images/nakshatra-choose-service-one.jpg" alt="Nakshatra Choose Service One" >
-              </figure>
-            </div>
-            <div class="why-choose-item">
-              <div class="why-choose-item-content">
-                <h3><span class="counter">70</span>%</h3>
-                <h4>IVF Success Rate</h4>
-                <p>
-                  Higher than national averages due to our advanced
-                  technology, experienced team, and personalized treatment
-                  protocols.
-                </p>
-              </div>
-              <div class="why-choose-btn">
-                <a href="appointment-page.html" class="btn-default">Book a consultation</a>
-              </div>
-            </div>
-          </div>
-          <div class="why-choose-box">
-            <div class="why-choose-image">
-              <figure class="image-anime reveal">
-                <img loading="lazy" src="images/nakshatra-choose-service-two.jpg" alt="Nakshatra Choose Service Two" >
-              </figure>
-            </div>
-            <div class="why-choose-item">
-              <div class="why-choose-item-content">
-                <h3><span class="counter">2000</span>+</h3>
-                <h4>Successful Pregnancies</h4>
-                <p>
-                  We've helped over 2000 couples achieve their dream of
-                  parenthood since 2010.
-                </p>
-              </div>
-              <div class="why-choose-btn">
-                <a href="appointment-page.html" class="btn-default btn-highlighted">Book a consultation</a>
-              </div>
-            </div>
-          </div>
-          <div class="why-choose-box">
-            <div class="why-choose-image">
-              <figure class="image-anime reveal">
-                <img loading="lazy" src="images/nakshatra-choose-service-three.jpg" alt="Nakshatra Choose Service Three" >
-              </figure>
-            </div>
-            <div class="why-choose-item">
-              <div class="why-choose-item-content">
-                <h3><span class="counter">4.9</span>/5</h3>
-                <h4 style="color: #FFF;">Google Rating</h4>
-                <p>
-                  Rated 4.9/5 by 150+ patients who trust our expertise and
-                  compassionate care.
-                </p>
-              </div>
-              <div class="why-choose-btn">
-                <a href="appointment-page.html" class="btn-default btn-highlighted">Book a consultation</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Why Choose Us Section -->
-
-
-<!-- HOW IT WORKS -->
-<section class="how-it-work bg-section dark-section section-pad">
-    <div class="container">
-        <!-- Header -->
-        <div class="row section-row align-items-center">
-            <div class="col-lg-6">
-                <div class="section-title">
-                    <h3 class="wow fadeInUp" style="color: #FF70A3;">Your Journey to Parenthood</h3>
-                    <h2 class="text-anime-style-2" data-cursor="-opaque">How Does IVF Work Step by Step?</h2>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="section-content-btn">
-                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>We understand that the IVF journey can feel overwhelming. Here is a clear, step-by-step breakdown of exactly what happens during your treatment at our center.</p>
-                    </div>
-                    <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
-                        <a href="#appointment" class="btn-default btn-highlighted scroll-to">Start Your Journey</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="work-step-box tab-content wow FadeInUp" data-wow-delay="0.25s" id="ivfProcess">
-
-                    <!-- Tab Navigation -->
-                    <div class="work-step-nav">
-                        <ul class="nav nav-tabs" id="mvTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-selected="true"> Preparation</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-selected="false">Lab Process</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="thirds-tab" data-bs-toggle="tab" data-bs-target="#thirds" type="button" role="tab" aria-selected="false">Success</button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- TAB 1 : PREPARATION (Steps 1-2) -->
-                    <div class="work-step-item-box tab-pane fade show active" id="first" role="tabpanel">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="work-step-content">
-                                    <div class="work-step-item-list">
-
-                                        <div class="work-step-item">
-                                            <h3>Week 1</h3>
-                                            <h2>Initial Consultation & Assessment</h2>
-                                            <p>The IVF journey begins with a detailed consultation where fertility evaluations for both partners are conducted, medical history is reviewed, and a personalized treatment plan is created based on individual reproductive needs.</p>
-                                           
-                                        </div>
-
-                                        <div class="work-step-item">
-                                            <h3>Week 2&ndash;3</h3>
-                                            <h2>Ovarian Stimulation</h2>
-                                            <p>Hormonal medications are prescribed to stimulate the ovaries to produce multiple eggs. Regular ultrasounds and hormone level monitoring ensure healthy follicle growth and help doctors adjust treatment for optimal results.</p>
-                                           
-                                        </div>
-
-                                    </div>
-
-                                    <div class="work-step-btn">
-                                        <a href="#appointment" class="btn-default btn-highlighted scroll-to">Book Consultation</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="work-step-image">
-                                    <figure class="image-anime"><img src="images/work-image.jpg" alt="IVF Consultation"></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- TAB 2 : LAB PROCESS (Steps 3-5) -->
-                    <div class="work-step-item-box tab-pane fade" id="second" role="tabpanel">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="work-step-content">
-                                    <div class="work-step-item-list">
-
-                                        <div class="work-step-item">
-                                            <h3>Day 14&ndash;16</h3>
-                                            <h2>Egg Retrieval</h2>
-                                            <p>Egg retrieval is a minimally invasive procedure performed under anesthesia to ensure comfort. Mature eggs are collected from the ovaries and immediately transferred to the laboratory for further processing and fertilization.</p>
-                                           
-                                        </div>
-
-                                        <div class="work-step-item">
-                                            <h3>Day 1</h3>
-                                            <h2>Fertilization</h2>
-                                            <p>Collected eggs are fertilized using IVF or ICSI techniques after sperm collection and preparation. Embryologists carefully monitor fertilization and early embryo development under controlled laboratory conditions.</p>
-                                           
-                                        </div>
-
-                                        <div class="work-step-item">
-                                            <h3>Day 2&ndash;5</h3>
-                                            <h2>Embryo Culture</h2>
-                                            <p>Fertilized embryos are cultured in advanced laboratory conditions until the blastocyst stage. Each embryo is closely assessed for quality, development, and viability before selecting the best embryo for transfer.</p>
-                                           
-                                        </div>
-
-                                    </div>
-
-                                    <div class="work-step-btn">
-                                        <a href="#appointment" class="btn-default btn-highlighted scroll-to">Talk to Embryologist</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="work-step-image">
-                                    <figure class="image-anime"><img src="images/work-image.jpg" alt="IVF Lab"></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- TAB 3 : COMPLETION (Steps 6-8) -->
-                    <div class="work-step-item-box tab-pane fade" id="thirds" role="tabpanel">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="work-step-content">
-                                    <div class="work-step-item-list">
-
-                                        <div class="work-step-item">
-                                            <h3>Day 3&ndash;5</h3>
-                                            <h2>Embryo Transfer</h2>
-                                            <p>Embryo transfer is a simple and painless procedure where the selected embryo is gently placed into the uterus. Patients receive post-transfer care instructions and supportive medications to enhance implantation success.</p>
-                                           
-                                        </div>
-
-                                        <div class="work-step-item">
-                                            <h3>2 Weeks Later</h3>
-                                            <h2>Pregnancy Test</h2>
-                                            <p>A blood test is performed two weeks after embryo transfer to confirm pregnancy. Based on the results, doctors guide patients on next steps, follow-up care, and further treatment planning if required.</p>
-                                           
-                                        </div>
-
-                                        <div class="work-step-item">
-                                            <h3>Overview</h3>
-                                            <h2>IVF Process at Our Center (Video)</h2>
-                                            <p>This video provides a step-by-step overview of the IVF process at our center, helping patients visually understand each stage of treatment, the care involved, and what to expect throughout the journey.</p>
-                                           
-                                        </div>
-
-                                    </div>
-
-                                    <div class="work-step-btn">
-                                        <a href="#appointment" class="btn-default btn-highlighted scroll-to">Book Now</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="work-step-image">
-                                    <figure class="image-anime"><img src="images/work-image.jpg" alt="Success Story"></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-   
-
-
-
-<!-- Convenient Locations Section -->
-<section class="nks-locations-section">
-  <div class="container">
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-lg-8">
-        <p class="wow fadeInUp" style="color: #FF70A3; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">Accessibility</p>
-        <h2 class="text-anime-style-2" data-cursor="-opaque">
-          Convenient IVF Center in Ravet &ndash;<br><span>Serving Multiple Locations</span>
-        </h2>
-        <p class="wow fadeInUp" data-wow-delay="0.2s" style="max-width:620px; margin:16px auto 0;">
-          Nakshatra Clinic is easily accessible to patients across Ravet and nearby regions. We regularly serve couples from the areas below.
-        </p>
-      </div>
-    </div>
-
-    <div class="row g-4 justify-content-center">
-
-      <!-- Baner -->
-      <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.05s">
-        <a class="nks-loc-link" href="https://maps.app.goo.gl/oitGTdJGGSJpPs4ZA" target="_blank" rel="noopener">
-          <div class="nks-loc-card">
-            <div class="nks-loc-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF70A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h5 class="nks-loc-name">Baner</h5>
-            <p class="nks-loc-dist">~1&ndash;2 km</p>
-            <span class="nks-loc-time">&#128337; 3&ndash;5 min drive</span>
-          </div>
-        </a>
-      </div>
-
-      <!-- Wakad -->
-      <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
-        <a class="nks-loc-link" href="https://maps.app.goo.gl/KJnXxroVMnaf1TcX6" target="_blank" rel="noopener">
-          <div class="nks-loc-card">
-            <div class="nks-loc-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF70A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h5 class="nks-loc-name">Wakad</h5>
-            <p class="nks-loc-dist">~5&ndash;7 km</p>
-            <span class="nks-loc-time">&#128337; 12&ndash;15 min drive</span>
-          </div>
-        </a>
-      </div>
-
-      <!-- Hinjewadi -->
-      <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.15s">
-        <a class="nks-loc-link" href="https://maps.app.goo.gl/hg2ZgAbpD9ndeeUK9" target="_blank" rel="noopener">
-          <div class="nks-loc-card">
-            <div class="nks-loc-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF70A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h5 class="nks-loc-name">Hinjewadi</h5>
-            <p class="nks-loc-dist">~8&ndash;10 km</p>
-            <span class="nks-loc-time">&#128337; 15&ndash;20 min drive</span>
-          </div>
-        </a>
-      </div>
-
-      <!-- Kharadi -->
-      <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
-        <a class="nks-loc-link" href="https://maps.app.goo.gl/JGt4gXoyxpzEjYQu8" target="_blank" rel="noopener">
-          <div class="nks-loc-card">
-            <div class="nks-loc-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF70A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h5 class="nks-loc-name">Kharadi</h5>
-            <p class="nks-loc-dist">~18&ndash;20 km</p>
-            <span class="nks-loc-time">&#128337; 35&ndash;45 min drive</span>
-          </div>
-        </a>
-      </div>
-
-      <!-- Hadapsar -->
-      <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.25s">
-        <a class="nks-loc-link" href="https://maps.app.goo.gl/4FzHHEiia52oYKV79" target="_blank" rel="noopener">
-          <div class="nks-loc-card">
-            <div class="nks-loc-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF70A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h5 class="nks-loc-name">Hadapsar</h5>
-            <p class="nks-loc-dist">~22&ndash;25 km</p>
-            <span class="nks-loc-time">&#128337; 40&ndash;50 min drive</span>
-          </div>
-        </a>
-      </div>
-
-      <!-- Viman Nagar -->
-      <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-        <a class="nks-loc-link" href="https://maps.app.goo.gl/rN2Q96VL1FBVj8J58" target="_blank" rel="noopener">
-          <div class="nks-loc-card">
-            <div class="nks-loc-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF70A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h5 class="nks-loc-name">Viman Nagar</h5>
-            <p class="nks-loc-dist">~15&ndash;17 km</p>
-            <span class="nks-loc-time">&#128337; 28&ndash;35 min drive</span>
-          </div>
-        </a>
-      </div>
-
-      <!-- Pimpri-Chinchwad -->
-      <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.35s">
-        <a class="nks-loc-link" href="https://maps.app.goo.gl/HZ5Wrp4TucZseW218" target="_blank" rel="noopener">
-          <div class="nks-loc-card">
-            <div class="nks-loc-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF70A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h5 class="nks-loc-name">Pimpri-Chinchwad <small>(PCMC)</small></h5>
-            <p class="nks-loc-dist">~10&ndash;12 km</p>
-            <span class="nks-loc-time">&#128337; 20&ndash;25 min drive</span>
-          </div>
-        </a>
-      </div>
-
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section>
-
-<style>
-.nks-locations-section {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #fff5f9 0%, #ffffff 60%, #f0f8ff 100%);
-}
-.nks-loc-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 28px 20px 22px;
-  text-align: center;
-  box-shadow: 0 4px 24px rgba(255, 112, 163, 0.10);
-  border: 1px solid rgba(255, 112, 163, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.nks-loc-card::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #FF70A3, #ff9ec6);
-  border-radius: 16px 16px 0 0;
-}
-.nks-loc-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 36px rgba(255, 112, 163, 0.20);
-}
-.nks-loc-icon {
-  width: 56px; height: 56px;
-  border-radius: 50%;
-  background: #fff0f6;
-  display: flex; align-items: center; justify-content: center;
-  margin: 0 auto 14px;
-}
-.nks-loc-name {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #1a1a2e;
-  margin-bottom: 6px;
-}
-.nks-loc-name small {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #888;
-  display: block;
-}
-.nks-loc-dist {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #FF70A3;
-  margin-bottom: 4px;
-}
-.nks-loc-time {
-  font-size: 0.78rem;
-  color: #666;
-  background: #f9f4fb;
-  padding: 3px 10px;
-  border-radius: 20px;
-  display: inline-block;
-}
-@media (max-width: 575px) {
-  .nks-locations-section { padding: 50px 0; }
-  .nks-loc-card { padding: 20px 14px 18px; }
-}
-</style>
-<!-- End Convenient Locations Section -->
-
-<!-- Testimonials Section -->
-<div class="our-testimonials bg-section dark-section">
-  <div class="container">
-    <div class="row section-row align-items-center">
-      <div class="col-lg-6">
-        <div class="section-title">
-          <p class="wow fadeInUp" style="color: #FF70A3;"><b>Testimonials</b></p>
-          <h2 class="text-anime-style-2" data-cursor="-opaque">
-            Heartfelt stories of hope and <span>success</span>
-          </h2>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="section-btn">
-          <div class="review-image-box wow fadeInUp" data-wow-delay="0.2s">
-            <div class="review-box">
-              <div class="review-icon">
-                <img loading="lazy" src="images/google-img.svg" alt="Google Image" >
-              </div>
-              <div class="review-content">
-                <p>Google Rating</p>
-                <ul>
-                  <li>4.9</li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-              </div>
-            </div>
-            <div class="customer-images">
-              <div class="customer-img">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/nakshatra-author-six.jpg" alt="Nakshatra Author" >
-                </figure>
-              </div>
-              <div class="customer-img">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/nakshatra-author-five.jpg" alt="Nakshatra Author" >
-                </figure>
-              </div>
-              <div class="customer-img">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/nakshatra-author-two.jpg" alt="Nakshatra Author" >
-                </figure>
-              </div>
-              <div class="customer-img">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/nakshatra-author-three.jpg" alt="Nakshatra Author" >
-                </figure>
-              </div>
-              <div class="customer-img">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/nakshatra-author-one.jpg" alt="Nakshatra Author" >
-                </figure>
-              </div>
-              <div class="customer-img add-more">
-                <p><span class="counter">150</span>+</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="testimonial-slider">
-          <div class="swiper">
-            <div class="swiper-wrapper" data-cursor-text="Drag">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="testimonial-header">
-                    <div class="testimonial-author">
-                      <div class="author-image">
-                        <div class="nks-author-avatar" style="background:#FF70A3;">K</div>
-                      </div>
-                      <div class="author-content">
-                        <h3>Kunal Joshi</h3>
-                        <p>Pune</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-quote">
-                      <img loading="lazy" src="images/testimonial-quote.svg" alt="Testimonial Quote" >
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    <h3>&ldquo;PCOS Treatment That Actually Worked&rdquo;</h3>
-                    <p>I was struggling with PCOS and irregular periods for years. Dr. Ramit Kamate guided me with the right treatment and lifestyle changes. Within a few months, my cycles improved and I successfully conceived. Very thankful to Nakshatra Clinic. Highly recommended fertility center in Pune!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="testimonial-header">
-                    <div class="testimonial-author">
-                      <div class="author-image">
-                        <div class="nks-author-avatar" style="background:#7C6FFF;">R</div>
-                      </div>
-                      <div class="author-content">
-                        <h3>Riya Sharma</h3>
-                        <p>Pune</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-quote">
-                      <img loading="lazy" src="images/testimonial-quote.svg" alt="Testimonial Quote" >
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    <h3>&ldquo;Best IVF Experience in Pune&rdquo;</h3>
-                    <p>We had an amazing experience at Nakshatra Clinic. Dr. Ramit Kamate is truly one of the best IVF specialists in Pune. After struggling for years, we finally conceived through IVF here. The entire team is supportive, transparent about costs, and very professional. Highly recommended for anyone looking for the best IVF center in Pune!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="testimonial-header">
-                    <div class="testimonial-author">
-                      <div class="author-image">
-                        <div class="nks-author-avatar" style="background:#FF9B44;">R</div>
-                      </div>
-                      <div class="author-content">
-                        <h3>Ramesh More</h3>
-                        <p>Pune</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-quote">
-                      <img loading="lazy" src="images/testimonial-quote.svg" alt="Testimonial Quote" >
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    <h3>&ldquo;Transparent Pricing &amp; Genuine Results&rdquo;</h3>
-                    <p>Nakshatra Clinic offers very transparent pricing and even EMI options, which made IVF treatment affordable for us. Dr. Kamate and his team are very supportive and always available for queries. One of the best IVF centers in Pune with genuine care and results.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="testimonial-header">
-                    <div class="testimonial-author">
-                      <div class="author-image">
-                        <div class="nks-author-avatar" style="background:#2BC4A2;">R</div>
-                      </div>
-                      <div class="author-content">
-                        <h3>Rashmi Patil</h3>
-                        <p>Pune</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-quote">
-                      <img loading="lazy" src="images/testimonial-quote.svg" alt="Testimonial Quote" >
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    <h3>&ldquo;Wonderful IUI Experience&rdquo;</h3>
-                    <p>I visited Nakshatra Clinic for IUI treatment and I'm very happy with the results. Dr. Kamate explained everything clearly and made us feel comfortable throughout the process. The clinic is well-equipped and staff is very caring. If you are searching for a reliable IUI center in Pune, this is the place.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="testimonial-header">
-                    <div class="testimonial-author">
-                      <div class="author-image">
-                        <div class="nks-author-avatar" style="background:#E84393;">M</div>
-                      </div>
-                      <div class="author-content">
-                        <h3>Monika Deshmukh</h3>
-                        <p>Pune</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-quote">
-                      <img loading="lazy" src="images/testimonial-quote.svg" alt="Testimonial Quote" >
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    <h3>&ldquo;Professional &amp; Caring Treatment&rdquo;</h3>
-                    <p>I consulted Dr. Kamate for male infertility issues. He handled everything very professionally and without any hesitation or embarrassment. His treatment plan really improved my condition. I highly recommend Nakshatra Clinic for both male and female fertility treatments.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="testimonial-header">
-                    <div class="testimonial-author">
-                      <div class="author-image">
-                        <div class="nks-author-avatar" style="background:#5B9FFF;">S</div>
-                      </div>
-                      <div class="author-content">
-                        <h3>Sahil Shinde</h3>
-                        <p>Pune</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-quote">
-                      <img loading="lazy" src="images/testimonial-quote.svg" alt="Testimonial Quote" >
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    <h3>&ldquo;Smooth &amp; Stress-Free IVF Journey&rdquo;</h3>
-                    <p>The entire IVF journey at Nakshatra Clinic was smooth and stress-free. The staff is very cooperative and guides you at every step. Dr. Ramit Kamate is extremely knowledgeable and gives confidence to patients. Thank you for your excellent care and support!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="testimonial-header">
-                    <div class="testimonial-author">
-                      <div class="author-image">
-                        <div class="nks-author-avatar" style="background:#A259FF;">S</div>
-                      </div>
-                      <div class="author-content">
-                        <h3>Shri Jadhav</h3>
-                        <p>Pune</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-quote">
-                      <img loading="lazy" src="images/testimonial-quote.svg" alt="Testimonial Quote" >
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    <h3>&ldquo;Step-by-Step Guidance Made It Easy&rdquo;</h3>
-                    <p>From consultation to treatment, everything was smooth and well-managed. The IVF process was explained step-by-step which reduced our stress. The clinic is clean, staff is polite, and doctor is very experienced. Truly the best IVF center in Pune for couples trying to conceive.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-pagination"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Testimonials Section -->
-
-  <div class="our-faqs">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="faqs-content">
-            <div class="section-title">
-              <p class="wow fadeInUp" style="color: #FF70A3;"><b>FAQS</b></p>
-              <h2 class="text-anime-style-1">
-                Your IVF questions, clearly <span>answered here</span>
-              </h2>
-              <p class="wow fadeInUp" data-wow-delay="0.2s">
-                Find clear, trusted answers to the most common questions about
-                IVF—designed to guide and support you every step of the way.
-              </p>
-            </div>
-            <div class="faqs-contact-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="faqs-contact-box-title">
-                <h3>Curious About IVF? Let's Talk.</h3>
-              </div>
-              <div class="faqs-contact-item-box">
-                <div class="cta-contact-item">
-                  <div class="cta-contact-header">
-                    <img loading="lazy" src="images/icon-phone.svg" alt="Icon Phone" >
-                    <h4 style="color: #FFF;">Call Us:</h4>
-                  </div>
-                  <div class="cta-contact-item-content">
-                    <p><a href="tel:+91 7058658711">+91 7058658711</a></p>
-                  </div>
-                </div>
-                <div class="cta-contact-item">
-                  <div class="cta-contact-header">
-                    <img loading="lazy" src="images/icon-mail.svg" alt="Icon Mail" >
-                    <h4 style="color: #FFF;">E-mail Us:</h4>
-                  </div>
-                  <div class="cta-contact-item-content">
-                    <p>
-                      <a href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="faq-accordion" id="faqaccordion">
-            <div class="accordion-item wow fadeInUp">
-              <h3 class="accordion-header" id="heading1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                  Which is the best IVF center in Ravet?
-                </button>
-              </h3>
-              <div id="collapse1" class="accordion-collapse collapse"
-                data-bs-parent="#faqaccordion">
-                <div class="accordion-body">
-                  <p>
-                    The best IVF center in Ravet is one that offers advanced fertility treatments, experienced IVF specialists, high success rates, and personalized care. Leading clinics like Nakshatra Fertility Clinic are known for ethical treatment and patient-focused IVF solutions. They provide the best treatments such as IVF, IUI, ICSI, fertility preservation, egg freezing, male infertility treatment, and advanced reproductive technologies to improve pregnancy success rates.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-              <h3 class="accordion-header" id="heading2">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
-                  aria-expanded="false" aria-controls="collapse2">
-                  Is IVF treatment painful?
-                </button>
-              </h3>
-              <div id="collapse2" class="accordion-collapse collapse show" 
-                data-bs-parent="#faqaccordion">
-                <div class="accordion-body">
-                  <p>
-                    IVF treatment involves minimal discomfort. Stimulation injections use tiny needles and become routine quickly. Egg retrieval is performed under conscious sedation ensuring complete comfort with no procedure memory. Embryo transfer is typically painless, similar to a regular pap smear. Most patients report the emotional aspects more challenging than physical discomfort. Our compassionate team provides comprehensive support throughout your journey.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-              <h3 class="accordion-header" id="heading3">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                  How long does the IVF process take?
-                </button>
-              </h3>
-              <div id="collapse3" class="accordion-collapse collapse" 
-                data-bs-parent="#faqaccordion">
-                <div class="accordion-body">
-                  <p>
-                    A complete IVF cycle from stimulation start to pregnancy test takes approximately 4-6 weeks. This includes 10-14 days of ovarian stimulation, egg retrieval, 3-5 days of embryo culture, embryo transfer, and a 12-14 day wait before pregnancy testing. From your first consultation to knowing results typically requires 2-3 months, depending on cycle timing and personalized protocol requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
-              <h3 class="accordion-header" id="heading4">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                  What is the difference between IVF and ICSI?
-                </button>
-              </h3>
-              <div id="collapse4" class="accordion-collapse collapse" 
-                data-bs-parent="#faqaccordion">
-                <div class="accordion-body">
-                  <p>
-                    IVF involves placing eggs and sperm together allowing natural fertilization, while ICSI directly injects a single selected sperm into each egg using micromanipulation. ICSI is specifically recommended for male factor infertility, low sperm count, poor motility, previous fertilization failures, or when using frozen/surgically retrieved sperm. Your doctor recommends the approach maximizing your success based on diagnostic findings.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
-              <h3 class="accordion-header" id="heading5">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                  How many IVF cycles are needed to get pregnant?
-                </button>
-              </h3>
-              <div id="collapse5" class="accordion-collapse collapse"
-                data-bs-parent="#faqaccordion">
-                <div class="accordion-body">
-                  <p>
-                    The number of IVF cycles needed to get pregnant varies for each couple. Some may conceive in the first cycle, while others may require 2–3 IVF cycles depending on factors like age, fertility condition, and overall health. Consulting an experienced IVF specialist in Ravet can help determine the most effective treatment plan and improve success chances.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
- 
-  <footer class="main-footer">
-      <div class="main-footer-box bg-section dark-section">
-        <div class="container">
-          <!--  Hero strip  -->
-          <div class="row align-items-center">
-            <div class="col-lg-12">
-              <div class="footer-header">
-                <div class="section-title">
-                  <h2 class="text-anime-style-2" data-cursor="-opaque">
-                    Schedule your consultation today!
-                  </h2>
-                  <p>
-                    Book your consultation with our fertility experts—the first
-                    step toward your parenthood journey.
-                  </p>
-                </div>
-                <div class="book-consult-circle accent-circle">
-                  <a href="/appointment-page.html"
-                    ><img loading="lazy" src="/images/book-consultation-circle.svg" alt="Book Consultation Circle" ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--  Links  -->
-          <div class="row">
-            <!-- About + Social  -->
-
-            <!-- Quick-links (narrower) -->
-            <div
-              class="col-lg-2 col-md-6"
-              style="border-right: 1px solid !important"
-            >
-              <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../about-us.html">About Us</a></li>
-                  <li><a href="../contact.html">Contact Us</a></li>
-                  <!-- <li><a href="../appointment-page.html">Appointment</a></li> -->
-                </ul>
-              </div>
-            </div>
-
-            <!-- Services (heading spans 2 columns) -->
-            <div
-              class="col-lg-5 col-md-12"
-              style="border-right: 1px solid !important"
-            >
-              <div class="footer-links">
-                <h3>Services</h3>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="/services/embroys-freezing-vitrification.html"
-                          >Female Infertility</a
-                        >
-                      </li>
-                      <li><a href="/services/female-infertility-surgeries.html">Female Infertility Surgeries</a></li>
-                      <li>
-                        <a href="/services/male-infertility-treatment.html"
-                          >Male Infertility</a
-                        >
-                      </li>
-                      <li><a href="/services/ivf-specialties.html">IVF Specialties</a></li>
-                      <li><a href="/services/ivf-options.html">IVF Options</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li><a href="/services/intrauterine-insemination.html">Intrauterine Insemination</a></li>
-                      <li><a href="/services/ovulation-induction.html">Ovulation Induction</a></li>
-                      <li>
-                        <a href="/services/obstetrics.html"
-                          >Obstetrics & Gynecology Care</a
-                        >
-                      </li>
-                      <li><a href="/services/pregnancy.html">Pregnancy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- IVF Specialties (wider block) -->
-            <div
-              class="col-lg-5 col-md-12"
-              style="border-right: 1px solid !important"
-            >
-              <div class="footer-links">
-                <h3>IVF Specialties</h3>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="/services/detailed-female-infertility-analysis.html"
-                          >Detailed Female Analysis</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/services/endometrial-receptivity-analysis.html"
-                          >Endometrial Receptivity</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/services/follicular-study.html">Follicular Study</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="/services/male-infertility-analysis.html"
-                          >Male Infertility Analysis</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/services/preimplantation-genetic-testing.html">PGT</a>
-                      </li>
-                      <li>
-                        <a href="/services/blastocyst-formation.html"
-                          >Blastocyst Formation</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/services/icsi-treatment.html">ICSI Treatment</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="/services/laser-assisted-hatching.html"
-                          >Laser-Assisted Hatching</a
-                        >
-                      </li>
-                      <li><a href="/services/micro-tese.html">Micro TESE</a></li>
-                      <li>
-                        <a href="/services/testicular-sperm-aspiration.html"
-                          >TESA & Sperm Retrieval</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--  Copyright bar  -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="footer-copyright-text">
-              <p>Copyright © 2026 Nakshatra Clinic. All Rights Reserved.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="https://assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
+<script src="https://assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
 <script type="module">
     TaskadeEmbed.AgentPublicChatPopup.init({
       publicAgentId: '01KAJAMN85JQRMS1JQNC5FEKQP',
@@ -2814,6 +627,8 @@
 
     <script src="js/wow.min.js"></script>
     <script src="js/function.js"></script>
+
 </body>
 
 </html>
+
