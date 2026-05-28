@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <!-- Meta -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,6 +48,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <!-- Font Awesome Icon Css-->
   <link href="css/all.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="https://www.maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Animated Css -->
   <link href="css/animate.css" rel="stylesheet">
   <!-- Magnific Popup Core Css File -->
@@ -56,10 +58,8 @@
   <link rel="stylesheet" href="css/mousecursor.css">
   <!-- Main Custom Css -->
   <link href="css/custom.css" rel="stylesheet" media="screen">
-  <a href="https://wa.me/917058658711" class="float" target="_blank">
-    <i class="fab fa-whatsapp my-float"></i>
-  </a>
-  <script type="application/ld+json">
+  <link href="css/nakshatra-redesign.css?v=17.0" rel="stylesheet">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -137,29 +137,38 @@
 }
 </script>
 
-
   <style>
-    .float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 90px;
-      /* bottom:20px; */
-      right: 35px;
-      background-color: #25d366;
-      color: #FFF;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 3px #999;
-      z-index: 100;
-    }
-
-    .my-float {
-      margin-top: 16px;
-    }
-  </style>
-</head>
+    .blog-hero-redesign { background: var(--gradient-hero); padding: 74px 0 82px; overflow: hidden; }
+    .blog-hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+    .blog-hero-redesign .r-section-title { font-size: clamp(34px, 5vw, 58px); }
+    .blog-hero-card { background: var(--color-white); border: 1px solid rgba(217,27,114,0.12); border-radius: var(--radius-xl); padding: 14px; box-shadow: var(--shadow-soft); position: relative; overflow: hidden; }
+    .blog-hero-card img { width: 100%; min-height: 390px; object-fit: cover; border-radius: 24px; display: block; }
+    .blog-hero-badge { position: absolute; left: 28px; right: 28px; bottom: 28px; display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.96); border: 1px solid rgba(217,27,114,0.12); border-radius: 18px; padding: 14px 18px; box-shadow: var(--shadow-card); }
+    .blog-hero-badge i { width: 40px; height: 40px; border-radius: 12px; display: inline-grid; place-items: center; background: var(--color-primary-soft); color: var(--color-primary); flex-shrink: 0; }
+    .blog-hero-badge strong { display: block; color: var(--color-deep-navy); line-height: 1.2; }
+    .blog-hero-badge span { display: block; color: var(--color-muted); font-size: 13px; }
+    .blog-list-heading { max-width: 820px; margin-bottom: 48px; }
+    .blog-list-heading .r-section-title { max-width: 760px; }
+    .blog-list-heading .r-section-desc { max-width: 660px; }
+    .blog-grid-redesign { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; align-items: stretch; }
+    .blog-card-redesign { background: var(--gradient-card); border: 1px solid rgba(217,27,114,0.10); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); overflow: hidden; min-height: 100%; display: flex; flex-direction: column; transition: var(--transition-smooth); }
+    .blog-card-redesign:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: rgba(217,27,114,0.22); }
+    .blog-card-image { display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 10; overflow: hidden; background: linear-gradient(135deg, #fff 0%, var(--color-blush) 100%); padding: 12px; border-bottom: 1px solid rgba(217,27,114,0.08); }
+    .blog-card-image img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; border-radius: 14px; transition: transform 0.5s ease; }
+    .blog-card-redesign:hover .blog-card-image img { transform: scale(1.018); }
+    .blog-card-body { padding: 24px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+    .blog-card-category { align-self: flex-start; border-radius: 999px; background: var(--color-primary-soft); color: var(--color-primary); font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 6px 12px; }
+    .blog-card-body h2 { font-size: 20px; line-height: 1.32; margin: 0; }
+    .blog-card-body h2 a { color: var(--color-deep-navy); }
+    .blog-card-body h2 a:hover { color: var(--color-primary); }
+    .blog-card-body .service-card-learn-link { margin-top: auto; }
+    .blog-pagination-redesign { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 48px; }
+    .blog-page-control { min-width: 42px; height: 42px; border-radius: 12px; border: 1px solid rgba(217,27,114,0.18); display: inline-flex; align-items: center; justify-content: center; color: var(--color-primary); background: var(--color-white); font-weight: 800; }
+    .blog-page-control.active { background: var(--color-primary); color: var(--color-white); box-shadow: 0 10px 25px rgba(217,27,114,0.18); }
+    .blog-page-control.disabled { opacity: 0.45; }
+    @media (max-width: 992px) { .blog-hero-grid { grid-template-columns: 1fr; gap: 38px; } .blog-hero-card { order: -1; } .blog-grid-redesign { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; } .blog-card-image { aspect-ratio: 16 / 10; } }
+    @media (max-width: 640px) { .blog-hero-redesign { padding: 54px 0 64px; } .blog-hero-card img { min-height: 290px; } .blog-list-heading { margin-bottom: 30px; } .blog-list-heading .r-section-subtitle { display: block; margin-bottom: 10px; } .blog-list-heading .r-section-title { font-size: clamp(28px, 9vw, 36px); margin-bottom: 12px; } .blog-list-heading .r-section-desc { font-size: 15.5px; line-height: 1.65; } .blog-grid-redesign { grid-template-columns: 1fr; gap: 22px; } .blog-card-image { aspect-ratio: 16 / 10; padding: 10px; } .blog-card-body { padding: 22px 18px; } .blog-card-body h2 { font-size: 19px; } .blog-hero-badge { left: 24px; right: 24px; bottom: 24px; } }
+  </style></head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3JF3BY7JN"></script>
 <script>
@@ -170,1151 +179,200 @@
   gtag('config', 'G-G3JF3BY7JN');
 </script>
 
-<body>
-  <a href="tel:+917058658711" class="phone-float" target="_blank">
-    <i class="fa fa-phone phone-icon"></i>
-  </a>
-  <!-- Preloader Start -->
-  <div class="preloader">
-    <div class="loading-container">
-      <div class="loading"></div>
-      <div id="loading-icon"><img loading="lazy" src="images/nakshatra-logo-loader.png" alt="Nakshatra Logo Loader">
-      </div>
-    </div>
-  </div>
-  <!-- Preloader End -->
 
-  <!-- Topbar Section Start -->
-  <div class="topbar">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-9">
-          <div class="topbar-contact-info">
-            <ul>
-              <li>
-                <img loading="lazy" src="images/icon-phone-accent.svg" alt="Icon Phone Accent"><a
-                  href="tel:+91 7058658711">+91 7058658711</a>
-              </li>
-              <li>
-                <img loading="lazy" src="images/icon-mail-accent.svg" alt="icon Mail Accent"><a
-                  href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="topbar-social-links">
-            <ul>
-              <li>
-                <a href="https://www.youtube.com/@nakshatraivfandintimacycli5653"><i
-                    class="fa-brands fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/nakshatra.clinic"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/NakshatraClinic"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Topbar Section End -->
-
-  <!-- Header Start -->
-  <header class="main-header bg-section">
-    <div class="header-sticky">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img loading="lazy" src="images/nakshatra-logo.jpg"
-              alt="Nakshatra IVF Logo" style="width: 2rem;    width: 11rem;
-    background-color: white;
-    object-fit: contain;
-    border-radius: 0.3rem;
-    padding: 8px;"></a>
-          <div class="collapse navbar-collapse main-menu">
-            <div class="nav-menu-wrapper">
-              <ul class="navbar-nav mr-auto" id="menu">
-                <!-- Home -->
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-
-
-                <!-- Rest of top-level items -->
-                <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About Us</a>
-                </li>
-                <!-- Services  â€“  multi-level dropdown -->
-                <li class="nav-item submenu">
-                  <a class="nav-link" href="services.html">Services</a>
-                  <ul>
-                    <!-- Female Infertility -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="services/female-infertility-treatment.html">Female Infertility</a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/female-infertility-treatment.html">Female Infertility
-                            Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/low-amh-treatment.html">Low AMH Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/ovarian-drilling-for-pcod-treatment.html">Ovarian Drilling
-                            for
-                            PCOD Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/polycystic-ovary-syndrome-treatment.html">Polycystic Ovary
-                            Syndrome Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/repeated-implantation-failure.html">Repeated Implantation
-                            Failure</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Female Infertility Surgeries -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="services/female-infertility-surgeries.html">Female Infertility Surgeries
-                      </a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/blocked-fallopian-tubes.html">Blocked Fallopian Tubes</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/endometrial-polyp-removal.html">Endometrial Polyp
-                            Removal</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/endometriosis-treatment.html">Endometriosis Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/ovarian-cysts-removal.html">Ovarian Cysts Removal</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/removal-of-adhesions-in-uterus.html">Removal of Adhesions
-                            in
-                            Uterus</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Male Infertility -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="services/male-infertility-treatment.html">Male Infertility</a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/male-infertility-treatment.html">Male Infertility</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/oligospermia-low-sperm-count-treatment.html">Oligospermia
-                            (Low
-                            Sperm Count) Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/oligo-astheno-teratozoospermia.html">Oligo Astheno
-                            Teratozoospermia</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/dna-fragmentation.html">DNA Fragmentation</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- IVF Specialties -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="services/ivf-specialties.html">IVF Specialties</a>
-                      <ul>
-                        <!-- Advanced IVF Tests -->
-                        <li class="nav-item submenu">
-                          <a class="nav-link" href="services/advanced-ivf-tests.html">Advanced IVF Tests </a>
-                          <ul>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/detailed-female-infertility-analysis.html">Detailed
-                                Female
-                                Infertility Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/endometrial-receptivity-analysis.html">Endometrial
-                                Receptivity
-                                Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/follicular-study.html">Follicular Study</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/male-infertility-analysis.html">Male Infertility
-                                Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/preimplantation-genetic-testing.html">Preimplantation
-                                Genetic
-                                Testing</a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <!-- Advanced IVF Treatment -->
-                        <li class="nav-item submenu">
-                          <a class="nav-link" href="services/advanced-ivf-treatment.html">Advanced IVF Treatment</a>
-                          <ul>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/blastocyst-formation.html">Blastocyst Formation</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/icsi-treatment.html">ICSI Treatment</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/laser-assisted-hatching.html">Laser-Assisted
-                                Hatching</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/micro-tese.html">Micro TESE</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/testicular-sperm-aspiration.html">Testicular Sperm
-                                Aspiration
-                                (TESA) & Sperm
-                                Retrieval</a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <!-- Donor Services -->
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/ovum-donation.html">Ovum Donation</a>
-                        </li>
-
-                        <!-- Fertility Services -->
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/embroys-freezing-vitrification.html">Embryos Freezing &
-                            Vitrification</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Single-link services -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="services/ivf-options.html">IVF Options</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="services/intrauterine-insemination.html">Intrauterine Insemination</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="services/ovulation-induction.html">Ovulation Induction</a>
-                    </li>
-
-                    <!-- Obstetrics & Gynecology Care -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="services/obstetrics-gynecology.html">Obstetrics & Gynecology Care
-                      </a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/obstetrics-gynecology.html">Obstetrics & Gynecology</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/preconception-counseling.html">Preconception Counseling</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/abnormal-uterinebleeding.html">Abnormal Uterine
-                            Bleeding</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/uterine-fibroids.html">Uterine Fibroids</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/hysteroscopy.html">Hysteroscopy</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/laparoscopy.html">Laparoscopy</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/vaginal-infection.html">Vaginal Infection</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/urinary-tractinfection.html">Urinary Tract Infection</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/pregnancy.html">Pregnancy</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Pregnancy -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="services/pregnancy.html">Pregnancy</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item highlighted-menu">
-                  <a class="nav-link" href="appointment-page.html">Appointment</a>
-                </li>
-              </ul>
-            </div>
-            <div class="header-btn">
-              <a href="appointment-page.html" class="btn-default btn-highlighted">Book an Appointment</a>
-            </div>
-          </div>
-          <div class="navbar-toggle"></div>
-        </div>
-      </nav>
-      <div class="responsive-menu"></div>
-    </div>
+<body class="redesign-body">
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <a href="tel:+917058658711" class="phone-float-redesign" target="_blank" aria-label="Call Nakshatra Clinic"><i class="fa fa-phone"></i></a>
+  <a href="https://wa.me/917058658711" class="whatsapp-float-redesign" target="_blank" aria-label="WhatsApp Nakshatra Clinic"><i class="fab fa-whatsapp"></i></a>
+  <header class="site-header-redesign">
+    <div class="r-container"><div class="header-container-redesign">
+      <a class="logo-link" href="index.html"><img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo"></a>
+      <nav class="navigation-menu-redesign"><button class="nav-toggle-btn" aria-label="Toggle Menu" id="navToggle"><span></span><span></span><span></span></button><ul class="nav-links-list" id="navMenu"><button class="nav-close-btn" id="navClose" aria-label="Close Menu">&times;</button><li><a class="nav-link-item" href="index.html">Home</a></li><li><a class="nav-link-item" href="about-us.html">About Us</a></li><li><a class="nav-link-item" href="services.html">Treatments</a></li><li><a class="nav-link-item" href="blog.html">Blog</a></li><li><a class="nav-link-item" href="contact.html">Contact Us</a></li></ul></nav>
+      <div class="header-actions"><div class="header-location-pill"><i class="fa fa-map-marker"></i> Baner, Pune</div><a href="appointment-page.html" class="r-btn-primary"><span class="btn-text-desktop">Book Appointment</span><span class="btn-text-mobile">Book Now</span></a></div>
+    </div></div>
   </header>
-  <!-- Header End -->
-
-  <!-- Page Header Section Start -->
-  <div class="page-header bg-section parallaxie">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <!-- Page Header Box Start -->
-          <div class="page-header-box">
-            <h1 class="text-anime-style-2" data-cursor="-opaque">
-              Our <span>blog</span>
-            </h1>
-            <nav class="wow fadeInUp" data-wow-delay="0.25s">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./">home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  blog
-                </li>
-              </ol>
-            </nav>
-          </div>
-          <!-- Page Header Box End -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Page Header Section End -->
-
-  <!-- Page Blog Start -->
-  <div class="page-blog">
-    <div class="container">
-      <div class="row">
-
-                                        <!-- important health checks before pregnancy 11th march 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/iui-babies-vs-normal-babies-differences.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/iui-babies-vs-normal-babies-differences.jpeg" alt="New Blog Post">
-                </figure>
-              </a>
+  <div class="proof-strip-redesign"><div class="r-container"><div class="proof-strip-grid proof-strip-grid-5"><div class="proof-item"><i class="fa fa-book proof-icon"></i><span class="proof-text">Fertility Guides</span></div><div class="proof-item"><i class="fa fa-stethoscope proof-icon"></i><span class="proof-text">Doctor-led Insights</span></div><div class="proof-item"><i class="fa fa-map-marker proof-icon"></i><span class="proof-text">Baner, Pune</span></div><div class="proof-item"><i class="fa fa-heart proof-icon"></i><span class="proof-text">Pregnancy &amp; IVF Tips</span></div><div class="proof-item"><i class="fa fa-star proof-icon"></i><span class="proof-text"><strong class="highlight">4.9</strong> Rated Clinic</span></div></div></div></div>
+  <main>
+    <section class="blog-hero-redesign">
+      <div class="r-container"><div class="blog-hero-grid">
+        <div class="reveal-left"><span class="r-section-subtitle">Nakshatra Clinic Blog</span><h1 class="r-section-title">Our <span>blog</span></h1><p class="r-section-desc">Read expert fertility and pregnancy health tips in Baner, Pune, covering IVF guidance, prenatal care advice, and reproductive wellness for couples planning parenthood.</p><div class="hero-chips"><div class="hero-chip-item"><i class="fa fa-check"></i> IVF guidance</div><div class="hero-chip-item"><i class="fa fa-check"></i> Pregnancy health</div><div class="hero-chip-item"><i class="fa fa-check"></i> Reproductive wellness</div></div><div class="hero-cta-buttons"><a href="#blog-list" class="r-btn-primary">Explore Articles <i class="fa fa-long-arrow-right"></i></a><a href="appointment-page.html" class="r-btn-secondary">Book Appointment</a></div></div>
+        <div class="blog-hero-card reveal-right"><img loading="lazy" src="images/about-us-nakshatra-clinic.jpg" alt="Nakshatra Clinic Baner Pune"><div class="blog-hero-badge"><i class="fa fa-book"></i><div><strong>Doctor-led articles</strong><span>Fertility, IVF and pregnancy care</span></div></div></div>
+      </div></div>
+    </section>
+    <section class="r-section treatments-redesign" id="blog-list">
+      <div class="r-container"><div class="r-section-title-wrapper blog-list-heading reveal"><span class="r-section-subtitle">Latest Insights</span><h2 class="r-section-title">Fertility, IVF &amp; Pregnancy <span>Guides</span></h2><p class="r-section-desc">Explore patient-friendly articles from the Nakshatra Clinic knowledge library.</p></div><div class="blog-grid-redesign">
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/iui-babies-vs-normal-babies-differences.html">
+              <img loading="lazy" src="images/iui-babies-vs-normal-babies-differences.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/iui-babies-vs-normal-babies-differences.html">IUI Babies vs Normal Babies: Is There Any Difference?</a></h2>
+              <a href="/blogs/iui-babies-vs-normal-babies-differences.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/iui-babies-vs-normal-babies-differences.html">IUI Babies vs Normal Babies: Is There Any Difference?
-</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/iui-babies-vs-normal-babies-differences.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/first-ivf-failed-top-expert-tips-to-boost-success-in-second-ivf-attempt.html">
+              <img loading="lazy" src="images/first-ivf-failed-top-expert-tips-to-boost-success-in-second-ivf-attempt.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/first-ivf-failed-top-expert-tips-to-boost-success-in-second-ivf-attempt.html">First IVF Failed? Top Expert Tips to Boost Success in Your Second IVF Attempt (2026 Guide)</a></h2>
+              <a href="/blogs/first-ivf-failed-top-expert-tips-to-boost-success-in-second-ivf-attempt.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-                                <!-- important health checks before pregnancy 11th march 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/first-ivf-failed-top-expert-tips-to-boost-success-in-second-ivf-attempt.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/first-ivf-failed-top-expert-tips-to-boost-success-in-second-ivf-attempt.jpeg" alt="New Blog Post">
-                </figure>
-              </a>
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/vaginal-infection-causes-symptoms-and-best-treatment-options.html">
+              <img loading="lazy" src="images/vaginal-infection-causes-symptoms-and-best-treatment-options.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/vaginal-infection-causes-symptoms-and-best-treatment-options.html">Vaginal Infection: Causes, Symptoms &amp; Best Treatment Options Planning a Pregnancy</a></h2>
+              <a href="/blogs/vaginal-infection-causes-symptoms-and-best-treatment-options.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/first-ivf-failed-top-expert-tips-to-boost-success-in-second-ivf-attempt.html">First IVF Failed? Top Expert Tips to Boost Success in Your Second IVF Attempt (2026 Guide)
-</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/first-ivf-failed-top-expert-tips-to-boost-success-in-second-ivf-attempt.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/what-is-the-difference-between-normal-and-abnormal-white-discharge.html">
+              <img loading="lazy" src="images/what-is-the-difference-between-normal-and-abnormal-white-discharge.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/what-is-the-difference-between-normal-and-abnormal-white-discharge.html">What Is The Difference Between Normal And Abnormal White Discharge? Planning a Pregnancy</a></h2>
+              <a href="/blogs/what-is-the-difference-between-normal-and-abnormal-white-discharge.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-                        <!-- important health checks before pregnancy 11th march 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/vaginal-infection-causes-symptoms-and-best-treatment-options.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/vaginal-infection-causes-symptoms-and-best-treatment-options.jpeg" alt="New Blog Post">
-                </figure>
-              </a>
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/important-health-checks-before-pregnancy.html">
+              <img loading="lazy" src="images/important-health-checks-before-pregnancy.png" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/important-health-checks-before-pregnancy.html">10 Important Health Checks Before Planning a Pregnancy</a></h2>
+              <a href="/blogs/important-health-checks-before-pregnancy.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/vaginal-infection-causes-symptoms-and-best-treatment-options.html">Vaginal Infection: Causes, Symptoms & Best Treatment Options
-
-
-                    Planning a Pregnancy</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/vaginal-infection-causes-symptoms-and-best-treatment-options.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/how-to-increase-sperm-count-naturally-tips.html">
+              <img loading="lazy" src="images/how-to-increase-sperm-count-naturally-tips.png" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/how-to-increase-sperm-count-naturally-tips.html">How to Increase Sperm Count Naturally: Tips for Men</a></h2>
+              <a href="/blogs/how-to-increase-sperm-count-naturally-tips.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-                <!-- important health checks before pregnancy 11th march 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/what-is-the-difference-between-normal-and-abnormal-white-discharge.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/what-is-the-difference-between-normal-and-abnormal-white-discharge.jpeg" alt="New Blog Post">
-                </figure>
-              </a>
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/ten-warning-signs-uti.html">
+              <img loading="lazy" src="images/ten-warning-signs-uti.png" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/ten-warning-signs-uti.html">10 Warning Signs of a Urinary Tract Infection</a></h2>
+              <a href="/blogs/ten-warning-signs-uti.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/what-is-the-difference-between-normal-and-abnormal-white-discharge.html">What Is The Difference Between Normal And Abnormal White Discharge?
-
-                    Planning a Pregnancy</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/what-is-the-difference-between-normal-and-abnormal-white-discharge.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/how-many-iui-cycles-to-get-pregnant.html">
+              <img loading="lazy" src="images/how-many-iui-cycles-to-get-pregnant.png" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/how-many-iui-cycles-to-get-pregnant.html">How Many IUI Cycles to Get Pregnant?</a></h2>
+              <a href="/blogs/how-many-iui-cycles-to-get-pregnant.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-        <!-- important health checks before pregnancy 11th march 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/important-health-checks-before-pregnancy.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/important-health-checks-before-pregnancy.png" alt="New Blog Post">
-                </figure>
-              </a>
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/ten-steps-to-getting-pregnant-with-blocked-fallopian-tubes.html">
+              <img loading="lazy" src="/images/ten-steps-to-getting-pregnant-with-blocked-fallopian-tubes.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/ten-steps-to-getting-pregnant-with-blocked-fallopian-tubes.html">10 Steps to Getting Pregnant with Blocked Fallopian Tubes</a></h2>
+              <a href="/blogs/ten-steps-to-getting-pregnant-with-blocked-fallopian-tubes.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/important-health-checks-before-pregnancy.html">10 Important Health Checks Before
-                    Planning a Pregnancy</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/important-health-checks-before-pregnancy.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/top-fifteen-signs-of-male-infertility.html">
+              <img loading="lazy" src="/images/top-fifteen-signs-of-male-infertility.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/top-fifteen-signs-of-male-infertility.html">Top 15 Signs of Male Infertility Affecting Sperm Health</a></h2>
+              <a href="/blogs/top-fifteen-signs-of-male-infertility.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-        <!-- how to increase sperm count 11th march 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/how-to-increase-sperm-count-naturally-tips.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/how-to-increase-sperm-count-naturally-tips.png" alt="New Blog Post">
-                </figure>
-              </a>
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/when-can-you-have-sex-after-delivery.html">
+              <img loading="lazy" src="/images/when-can-you-have-sex-after-delivery.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/when-can-you-have-sex-after-delivery.html">Sex After Delivery: After How Many Days Can You Have Sex? Doctor-Approved Guide</a></h2>
+              <a href="/blogs/when-can-you-have-sex-after-delivery.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/how-to-increase-sperm-count-naturally-tips.html">How to Increase Sperm Count
-                    Naturally: Tips for Men</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/how-to-increase-sperm-count-naturally-tips.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/best-age-for-pregnancy-in-women-and-men.html">
+              <img loading="lazy" src="/images/best-age-for-pregnancy-in-women-and-men.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/best-age-for-pregnancy-in-women-and-men.html">What Is the Right Age for Pregnancy in Women and Men?</a></h2>
+              <a href="/blogs/best-age-for-pregnancy-in-women-and-men.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-
-        <!-- ten warning signs of UTI 11th march 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/ten-warning-signs-uti.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/ten-warning-signs-uti.png" alt="New Blog Post">
-                </figure>
-              </a>
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/most-common-cause-of-female-infertility-in-india.html">
+              <img loading="lazy" src="/images/most-common-cause-of-female-infertility-in-india.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/most-common-cause-of-female-infertility-in-india.html">What Is the Most Common Cause of Female Infertility in India?</a></h2>
+              <a href="/blogs/most-common-cause-of-female-infertility-in-india.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/ten-warning-signs-uti.html">10 Warning Signs of a Urinary Tract Infection</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/ten-warning-signs-uti.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/top-best-ivf-centers-in-pune.html">
+              <img loading="lazy" src="/images/top-best-ivf-centers-in-pune.png" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/top-best-ivf-centers-in-pune.html">Top 10 Best IVF Centers In Pune (2026)</a></h2>
+              <a href="/blogs/top-best-ivf-centers-in-pune.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-
-
-        <!-- how many IUI cycles to get pregnant 11th march 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/how-many-iui-cycles-to-get-pregnant.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="images/how-many-iui-cycles-to-get-pregnant.png" alt="New Blog Post">
-                </figure>
-              </a>
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="/blogs/what-is-medical-termination-of-pregnancy.html">
+              <img loading="lazy" src="/images/what-is-medical-termination-of-pregnancy.jpeg" alt="New Blog Post">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="/blogs/what-is-medical-termination-of-pregnancy.html">What Is Medical Termination of Pregnancy? Process, Benefits &amp; Risks</a></h2>
+              <a href="/blogs/what-is-medical-termination-of-pregnancy.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/how-many-iui-cycles-to-get-pregnant.html">How Many IUI Cycles to Get Pregnant?</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/how-many-iui-cycles-to-get-pregnant.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
+          </article>
+          <article class="blog-card-redesign reveal">
+            <a class="blog-card-image" href="./blogs/what-ivf-step-by-step-guide-to-the-ivf-process.html">
+              <img loading="lazy" src="/images/best-ivf-treatment-in-pune.jpg" alt="Blog Nakshatra Clinic First">
+            </a>
+            <div class="blog-card-body">
+              <h2><a href="./blogs/what-ivf-step-by-step-guide-to-the-ivf-process.html">What Is IVF? Step-by-Step Guide To The IVF Process</a></h2>
+              <a href="./blogs/what-ivf-step-by-step-guide-to-the-ivf-process.html" class="service-card-learn-link">Read More <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
+          </article>
 
-
-
-        <!-- 10 steps to getting pregnant with blocked fallopian tubes 14th feb 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/ten-steps-to-getting-pregnant-with-blocked-fallopian-tubes.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="/images/ten-steps-to-getting-pregnant-with-blocked-fallopian-tubes.jpeg"
-                    alt="New Blog Post">
-                </figure>
-              </a>
-            </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/ten-steps-to-getting-pregnant-with-blocked-fallopian-tubes.html">10 Steps to Getting
-                    Pregnant with Blocked Fallopian Tubes</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/ten-steps-to-getting-pregnant-with-blocked-fallopian-tubes.html"
-                  class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
-            </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-
-
-
-        <!-- top 15 signs of male infertility 13th feb 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/top-fifteen-signs-of-male-infertility.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="/images/top-fifteen-signs-of-male-infertility.jpeg" alt="New Blog Post">
-                </figure>
-              </a>
-            </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/top-fifteen-signs-of-male-infertility.html">Top 15 Signs of Male Infertility Affecting
-                    Sperm Health</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/top-fifteen-signs-of-male-infertility.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
-            </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-
-        <!-- Sex After Delivery: After How Many Days Can You Have Sex? Doctor-Approved Guide 13th feb 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/when-can-you-have-sex-after-delivery.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="/images/when-can-you-have-sex-after-delivery.jpeg" alt="New Blog Post">
-                </figure>
-              </a>
-            </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/when-can-you-have-sex-after-delivery.html">Sex After Delivery: After How Many Days Can
-                    You Have Sex? Doctor-Approved Guide</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/when-can-you-have-sex-after-delivery.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
-            </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-
-        <!-- What Is the Right Age for Pregnancy in Women and Men? 13th feb 2026-->
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/best-age-for-pregnancy-in-women-and-men.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="/images/best-age-for-pregnancy-in-women-and-men.jpeg" alt="New Blog Post">
-                </figure>
-              </a>
-            </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/best-age-for-pregnancy-in-women-and-men.html">What Is the Right Age for Pregnancy in
-                    Women and Men?</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/best-age-for-pregnancy-in-women-and-men.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
-            </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-        <!-- most common cause of female infertility in india blog 22nd jan 2026-->
-
-
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/most-common-cause-of-female-infertility-in-india.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="/images/most-common-cause-of-female-infertility-in-india.jpeg"
-                    alt="New Blog Post">
-                </figure>
-              </a>
-            </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/most-common-cause-of-female-infertility-in-india.html">What Is the Most Common Cause
-                    of Female Infertility in India?</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/most-common-cause-of-female-infertility-in-india.html" class="readmore-btn">read
-                  more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
-            </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-        <!-- top 10 best ivf centers in pune 2026 blog written on 22nd jan 2026-->
-
-
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/top-best-ivf-centers-in-pune.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="/images/top-best-ivf-centers-in-pune.png" alt="New Blog Post">
-                </figure>
-              </a>
-            </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/top-best-ivf-centers-in-pune.html">Top 10 Best IVF Centers In Pune (2026)</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/top-best-ivf-centers-in-pune.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
-            </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-        <!-- what is medical termination of pregnancy 13th Jan 2026 -->
-
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/what-is-medical-termination-of-pregnancy.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="/images/what-is-medical-termination-of-pregnancy.jpeg" alt="New Blog Post">
-                </figure>
-              </a>
-            </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/what-is-medical-termination-of-pregnancy.html">What Is Medical Termination of
-                    Pregnancy? Process, Benefits & Risks</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/what-is-medical-termination-of-pregnancy.html" class="readmore-btn">read more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
-            </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="./blogs/what-ivf-step-by-step-guide-to-the-ivf-process.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="/images/best-ivf-treatment-in-pune.jpg" alt="Blog Nakshatra Clinic First">
-                </figure>
-              </a>
-            </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="./blogs/what-ivf-step-by-step-guide-to-the-ivf-process.html">
-                    What Is IVF? Step-by-Step Guide To The IVF Process</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="./blogs/what-ivf-step-by-step-guide-to-the-ivf-process.html" class="readmore-btn">read more</a>
-              </div>
-
-              <!-- Post Item Readmore Button End-->
-            </div>
-            <!-- Post Item Body End -->
-
-
-          </div>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <!-- Post Item Start -->
-          <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Post Featured Image Start-->
-            <div class="post-featured-image">
-              <a href="/blogs/causes-of-female-infertility-in-india-treatment-options.html" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img loading="lazy" src="/images/causes-of-female-infertility-in-india-treatment-options.jpeg"
-                    alt="Post 2">
-                </figure>
-              </a>
-            </div>
-            <!-- Post Featured Image End -->
-
-            <!-- Post Item Body Start -->
-            <div class="post-item-body">
-              <!-- Post Item Content Start -->
-              <div class="post-item-content">
-                <h2>
-                  <a href="/blogs/causes-of-female-infertility-in-india-treatment-options.html">23 Common Causes of
-                    Female Infertility in India & Successful Treatment Options</a>
-                </h2>
-              </div>
-              <!-- Post Item Content End -->
-
-              <!-- Post Item Readmore Button Start-->
-              <div class="post-item-btn">
-                <a href="/blogs/causes-of-female-infertility-in-india-treatment-options.html" class="readmore-btn">read
-                  more</a>
-              </div>
-              <!-- Post Item Readmore Button End-->
-            </div>
-            <!-- Post Item Body End -->
-          </div>
-          <!-- Post Item End -->
-        </div>
-
-        <div class="col-lg-12">
-          <!-- Page Pagination Start -->
-          <div class="page-pagination wow fadeInUp" data-wow-delay="1.2s">
-            <ul class="pagination">
-              <li>
-                <a href="#"><i class="fa-solid fa-angle-left"></i></a>
-              </li>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li>
-                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-              </li>
-            </ul>
-          </div>
-          <!-- Page Pagination End -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Page Blog End -->
-
-  <!-- Footer Start -->
-  <footer class="main-footer">
-    <div class="main-footer-box bg-section dark-section">
-      <div class="container">
-        <!--  Hero strip  -->
-        <div class="row align-items-center">
-          <div class="col-lg-12">
-            <div class="footer-header">
-              <div class="section-title">
-                <h2 class="text-anime-style-2" data-cursor="-opaque">
-                  Schedule your consultation today!
-                </h2>
-                <p>
-                  Book your consultation with our fertility expertsâ€”the first
-                  step toward your parenthood journey.
-                </p>
-              </div>
-              <div class="book-consult-circle accent-circle">
-                <a href="appointment-page.html"><img loading="lazy" src="images/book-consultation-circle.svg"
-                    alt="Book Consultation Circle"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--  Links  -->
-        <div class="row">
-          <!-- About + Social  -->
-
-          <!-- Quick-links (narrower) -->
-          <div class="col-lg-2 col-md-6" style="border-right: 1px solid !important">
-            <div class="footer-links">
-              <h3>Quick Links</h3>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="../about-us.html">About Us</a></li>
-                <li><a href="../contact.html">Contact Us</a></li>
-                <!-- <li><a href="../appointment-page.html">Appointment</a></li> -->
-              </ul>
-            </div>
-          </div>
-
-          <!-- Services (heading spans 2 columns) -->
-          <div class="col-lg-5 col-md-12" style="border-right: 1px solid !important">
-            <div class="footer-links">
-              <h3>Services</h3>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="footer-links">
-                  <ul>
-                    <li>
-                      <a href="services/embroys-freezing-vitrification.html">Female Infertility</a>
-                    </li>
-                    <li><a href="services/female-infertility-surgeries.html">Female Infertility Surgeries</a></li>
-                    <li>
-                      <a href="services/male-infertility-treatment.html">Male Infertility</a>
-                    </li>
-                    <li><a href="services/ivf-specialties.html">IVF Specialties</a></li>
-                    <li><a href="services/ivf-options.html">IVF Options</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="footer-links">
-                  <ul>
-                    <li><a href="services/intrauterine-insemination.html">Intrauterine Insemination</a></li>
-                    <li><a href="services/ovulation-induction.html">Ovulation Induction</a></li>
-                    <li>
-                      <a href="services/obstetrics.html">Obstetrics & Gynecology Care</a>
-                    </li>
-                    <li><a href="services/pregnancy.html">Pregnancy</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- IVF Specialties (wider block) -->
-          <div class="col-lg-5 col-md-12" style="border-right: 1px solid !important">
-            <div class="footer-links">
-              <h3>IVF Specialties</h3>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-6">
-                <div class="footer-links">
-                  <ul>
-                    <li>
-                      <a href="services/detailed-female-infertility-analysis.html">Detailed Female Analysis</a>
-                    </li>
-                    <li>
-                      <a href="services/endometrial-receptivity-analysis.html">Endometrial Receptivity</a>
-                    </li>
-                    <li>
-                      <a href="services/follicular-study.html">Follicular Study</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-6">
-                <div class="footer-links">
-                  <ul>
-                    <li>
-                      <a href="services/male-infertility-analysis.html">Male Infertility Analysis</a>
-                    </li>
-                    <li>
-                      <a href="services/preimplantation-genetic-testing.html">PGT</a>
-                    </li>
-                    <li>
-                      <a href="services/blastocyst-formation.html">Blastocyst Formation</a>
-                    </li>
-                    <li>
-                      <a href="services/icsi-treatment.html">ICSI Treatment</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-6">
-                <div class="footer-links">
-                  <ul>
-                    <li>
-                      <a href="services/laser-assisted-hatching.html">Laser-Assisted Hatching</a>
-                    </li>
-                    <li><a href="services/micro-tese.html">Micro TESE</a></li>
-                    <li>
-                      <a href="services/testicular-sperm-aspiration.html">TESA & Sperm Retrieval</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  Copyright bar  -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="footer-copyright-text">
-            <p>Copyright Â© 2026 Nakshatra IVF. All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        </div><nav class="blog-pagination-redesign" aria-label="Blog pagination"><span class="blog-page-control disabled" aria-hidden="true"><i class="fa fa-angle-left"></i></span><span class="blog-page-control active" aria-current="page">1</span><span class="blog-page-control">2</span><span class="blog-page-control">3</span><span class="blog-page-control disabled" aria-hidden="true"><i class="fa fa-angle-right"></i></span></nav></div>
+    </section>
+  </main>
+  <footer class="footer-redesign">
+    <div class="r-container"><div class="footer-top-grid">
+      <div class="footer-brand-column"><a href="index.html"><img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo" style="height: 52px; background: white; border-radius: 8px; padding: 4px;"></a><p>Nakshatra Fertility &amp; IVF Center is Baner's leading boutique fertility clinic dedicated to supporting parents on their journey with medical integrity.</p><div class="footer-socials"><a href="https://www.facebook.com/NakshatraClinic" class="footer-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/nakshatra.clinic" class="footer-social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com/@nakshatraivfandintimacycli5653" class="footer-social-icon" aria-label="Youtube"><i class="fab fa-youtube"></i></a></div></div>
+      <div><h3 class="footer-column-title">Quick Links</h3><ul class="footer-links-list"><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="services.html">Services &amp; Treatments</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="appointment-page.html">Direct Appointment</a></li></ul></div>
+      <div><h3 class="footer-column-title">IVF Specialties</h3><ul class="footer-links-list"><li><a href="services/advanced-ivf-treatment.html">Advanced IVF Treatment</a></li><li><a href="services/icsi-treatment.html">ICSI Treatment</a></li><li><a href="services/blastocyst-formation.html">Blastocyst Formation</a></li><li><a href="services/laser-assisted-hatching.html">Laser-Assisted Hatching</a></li><li><a href="services/preimplantation-genetic-testing.html">PGT</a></li></ul></div>
+      <div><h3 class="footer-column-title">Contact Us</h3><ul class="footer-contact-list"><li class="footer-contact-item"><i class="fa fa-map-marker"></i><div><a href="https://www.maps.app.goo.gl/iFk9TBnLfwoBGy5KA" target="_blank" rel="noopener noreferrer">Office 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon, Baner 411045</a></div></li><li class="footer-contact-item"><i class="fa fa-phone"></i><a href="tel:+917058658711">+91 7058658711</a></li><li class="footer-contact-item"><i class="fa fa-envelope"></i><a href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a></li><li class="footer-contact-item"><i class="fa fa-clock-o"></i><span>Mon - Sun: 10:00 AM - 07:00 PM</span></li></ul></div>
+    </div><div class="footer-bottom-bar"><p>Copyright &copy; 2026 Nakshatra Clinic. All Rights Reserved.</p></div></div>
   </footer>
-
-  <!-- Footer End -->
-
-  <!-- Jquery Library File -->
-  <script src="https://www.assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
+  <div class="mobile-sticky-bar"><a href="appointment-page.html" class="msb-btn msb-primary"><i class="fa fa-calendar-check-o"></i><span>Book</span></a><a href="tel:+917058658711" class="msb-btn"><i class="fa fa-phone"></i><span>Call</span></a><a href="https://wa.me/917058658711" class="msb-btn msb-wa" target="_blank"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a></div>
+  <script>
+    const progressBar = document.getElementById('scrollProgressBar');
+    function updateProgress() { if (!progressBar) return; const total = document.documentElement.scrollHeight - window.innerHeight; progressBar.style.width = (total > 0 ? (window.scrollY / total) * 100 : 0) + '%'; }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('scroll', () => { const h = document.querySelector('.site-header-redesign'); if (h) h.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
+    const navToggle = document.getElementById('navToggle'); const navMenu = document.getElementById('navMenu'); const navClose = document.getElementById('navClose'); const navOverlay = document.getElementById('navOverlay');
+    function openMenu() { navMenu && navMenu.classList.add('active'); navToggle && navToggle.classList.add('active'); if (navOverlay) { navOverlay.style.display = 'block'; requestAnimationFrame(() => navOverlay.classList.add('active')); } document.body.style.overflow = 'hidden'; }
+    function closeMenu() { navMenu && navMenu.classList.remove('active'); navToggle && navToggle.classList.remove('active'); if (navOverlay) { navOverlay.classList.remove('active'); setTimeout(() => { navOverlay.style.display = 'none'; }, 400); } document.body.style.overflow = ''; }
+    if (navToggle && navMenu) navToggle.addEventListener('click', () => navMenu.classList.contains('active') ? closeMenu() : openMenu());
+    if (navClose) navClose.addEventListener('click', closeMenu); if (navOverlay) navOverlay.addEventListener('click', closeMenu); document.querySelectorAll('.nav-link-item').forEach(l => l.addEventListener('click', closeMenu));
+    const revealObs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); e.target.classList.add('visible'); revealObs.unobserve(e.target); } }); }, { threshold: 0.04, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-stagger').forEach(el => revealObs.observe(el));
+  </script>
+<script src="https://www.assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
   <script type="module">
     TaskadeEmbed.AgentPublicChatPopup.init({
       publicAgentId: "01KAJAMN85JQRMS1JQNC5FEKQP",
@@ -1357,6 +415,5 @@
   <script src="js/wow.min.js"></script>
   <!-- Main Custom js file -->
   <script src="js/function.js"></script>
-</body>
 
-</html>
+</body></html>
