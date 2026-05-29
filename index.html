@@ -81,6 +81,53 @@
     
     <link rel="stylesheet" href="https://www.maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <style>
+      .service-card-icon-wrapper svg {
+        width: 28px;
+        height: 28px;
+        stroke: currentColor;
+        stroke-width: 2.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .insta-reels-section {
+        background:
+          radial-gradient(circle at 14% 10%, rgba(217, 27, 114, 0.12) 0, transparent 30%),
+          radial-gradient(circle at 88% 18%, rgba(124, 58, 237, 0.08) 0, transparent 28%),
+          linear-gradient(135deg, #fff7fb 0%, #fff 46%, #fdebf4 100%);
+      }
+      .insta-reels-deco-circle {
+        background: rgba(217, 27, 114, 0.08);
+        border: 1px solid rgba(217, 27, 114, 0.1);
+      }
+      .insta-eyebrow {
+        background: rgba(217, 27, 114, 0.08);
+        color: var(--color-primary);
+        border: 1px solid rgba(217, 27, 114, 0.14);
+      }
+      .insta-title {
+        color: var(--color-deep-navy);
+      }
+      .insta-desc {
+        color: var(--color-body);
+      }
+      .insta-follow-btn {
+        background: linear-gradient(135deg, #d91b72 0%, #f04b98 100%);
+        border-color: transparent;
+        color: #ffffff !important;
+        text-shadow: 0 1px 1px rgba(60, 12, 42, 0.18);
+        box-shadow: 0 12px 28px rgba(217, 27, 114, 0.24);
+      }
+      .insta-follow-btn i {
+        color: #ffffff;
+      }
+      .insta-follow-btn:hover {
+        background: linear-gradient(135deg, #b8155a 0%, #d91b72 100%);
+        color: #ffffff !important;
+      }
+    </style>
+
     <!-- Structured JSON-LD Schema Markup -->
     <script type="application/ld+json">
     {
@@ -370,6 +417,7 @@
                   </div>
                 </div>
               </li>
+              <li><a class="nav-link-item" href="blog.html">Blog</a></li>
               <li><a class="nav-link-item" href="contact.html">Contact Us</a></li>
             </ul>
           </nav>
@@ -725,7 +773,17 @@
           </div>
 
           <div class="service-card-redesign service-card-reveal">
-            <div class="service-card-icon-wrapper"><i class="fa fa-snowflake-o"></i></div>
+            <div class="service-card-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2v20"></path>
+                <path d="M4.9 4.9l14.2 14.2"></path>
+                <path d="M19.1 4.9L4.9 19.1"></path>
+                <path d="M8 2.8 12 6l4-3.2"></path>
+                <path d="M8 21.2 12 18l4 3.2"></path>
+                <path d="m2.8 8 3.2 4-3.2 4"></path>
+                <path d="m21.2 8-3.2 4 3.2 4"></path>
+              </svg>
+            </div>
             <div class="service-card-info">
               <h3>Egg Freezing for Career-Planning Women</h3>
               <p>Decide now. Use later. Single-cycle vitrification with transparent pricing. Your eggs, your timeline.</p>
@@ -735,7 +793,15 @@
           </div>
 
           <div class="service-card-redesign service-card-reveal">
-            <div class="service-card-icon-wrapper"><i class="fa fa-heart-o"></i></div>
+            <div class="service-card-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 18c2.2-3.2 4.8-4.8 8-4.8s5.8 1.6 8 4.8"></path>
+                <path d="M4 12.5c2.2-2.2 4.8-3.3 8-3.3s5.8 1.1 8 3.3"></path>
+                <path d="M4 7h16"></path>
+                <path d="M7 21h10"></path>
+                <path d="M12 3v4"></path>
+              </svg>
+            </div>
             <div class="service-card-info">
               <h3>Thin Endometrium / Lining Issues</h3>
               <p>The diagnosis most clinics miss. If your embryo is good but transfer keeps failing, the lining is often the answer.</p>
