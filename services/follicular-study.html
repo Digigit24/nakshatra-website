@@ -1890,6 +1890,38 @@
         .follicular-overview-section .diagnostic-content-card p { max-width: 100%; }
         .follicular-step-card { padding: 20px; }
         .follicular-cta-section { padding-bottom: 122px; }
+      }
+      .follicular-hero .diagnostic-hero-media {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 16px !important;
+      }
+      .follicular-hero .diagnostic-hero-image-frame,
+      .follicular-hero .diagnostic-floating-note {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 auto !important;
+      }
+      .follicular-hero .diagnostic-floating-note {
+        display: grid !important;
+        grid-template-columns: 46px minmax(0, 1fr) !important;
+        margin: 0 !important;
+      }
+      .follicular-hero .diagnostic-floating-note > span:last-child,
+      .follicular-hero .diagnostic-floating-note strong,
+      .follicular-hero .diagnostic-floating-note span span {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+      }
+      @media (max-width: 768px) {
+        .follicular-hero .diagnostic-floating-note {
+          grid-template-columns: 42px minmax(0, 1fr) !important;
+          padding: 12px 14px !important;
+        }
       }</style>
   </head>
 
