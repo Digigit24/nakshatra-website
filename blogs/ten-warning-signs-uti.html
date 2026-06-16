@@ -15,11 +15,11 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.nakshatraclinic.com/blogs/ten-warning-signs-uti.html">
-  <meta property="og:title" content="10 Warning Signs of a Urinary Tract Infection (UTI) Doctor-Approved Guide">
+  <meta property="og:title" content="10 Warning Signs of a Urinary Tract Infection (UTI): Doctor-Approved Guide">
   <meta property="og:description"
     content="Learn 10 warning signs of a UTI, including burning urination, frequent urges, and pelvic pain. Early diagnosis helps prevent serious complications.">
   <meta property="og:image"
-    content="https://www.www.nakshatraclinic.com/images/ten-warning-signs-uti.png">
+    content="https://www.nakshatraclinic.com/images/ten-warning-signs-uti.png">
   <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@nakshatraclinic">
@@ -30,19 +30,19 @@
     <meta name="twitter:description"
       content="Learn 10 warning signs of a UTI, including burning urination, frequent urges, and pelvic pain. Early diagnosis helps prevent serious complications.">
     <meta name="twitter:image"
-      content="https://www.www.nakshatraclinic.com/images/ten-warning-signs-uti.png">
+      content="https://www.nakshatraclinic.com/images/ten-warning-signs-uti.png">
 
   <link rel="canonical"
       href="https://www.nakshatraclinic.com/blogs/ten-warning-signs-uti.html">
     <!-- Page Title -->
     
     <!-- Favicon Icon -->
- <link rel="shortcut icon" type="image/x-icon" href="../images/nakshatra-logo-loader.png" >
+ <link rel="shortcut icon" type="image/x-icon" href="/images/nakshatra-logo-loader.png" >
     <!-- Google Fonts Css-->
-    <link rel="preconnect" href="https://www.fonts.googleapis.com" >
-    <link rel="preconnect" href="https://www.fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
-      href="https://www.fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -1076,7 +1076,7 @@
 
 <p>In this article, we'll explore <b>10 warning signs of a UTI</b>, explain why they occur, discuss risk factors, and share practical tips to prevent infections. By the end, you'll know how to recognize early symptoms and take action before the infection worsens.</p>
 
-<h2>What is a Urinary Tract Infection</h2>
+<h2>What is a Urinary Tract Infection?</h2>
 <p>A urinary tract infection (<b>UTI</b>) occurs when harmful bacteria, most commonly <i>Escherichia coli (E. coli)</i>, enter the urinary tract. The urinary system includes:</p>
 
 <ul>
@@ -1186,7 +1186,7 @@
 <p>UTIs usually cause burning during urination, frequent urges, and cloudy or bloody urine. Yeast infections primarily cause itching, irritation, and thick white discharge. Accurate diagnosis is essential, as the treatment differs: UTIs often require antibiotics, while yeast infections need antifungal medications.</p>
 
 <h3>Q6: What should I do if I have recurrent UTIs?</h3>
-<p>Recurrent UTIs-occurring two or more times in six months-require a medical evaluation to identify underlying causes. Preventive strategies include staying hydrated, practicing proper hygiene, using probiotics, and sometimes taking low-dose antibiotics as prescribed. Monitoring symptoms and lifestyle changes can reduce recurrence risk.</p>
+<p>Recurrent UTIs - occurring two or more times in six months-require a medical evaluation to identify underlying causes. Preventive strategies include staying hydrated, practicing proper hygiene, using probiotics, and sometimes taking low-dose antibiotics as prescribed. Monitoring symptoms and lifestyle changes can reduce recurrence risk.</p>
 
 <h3>Q7: Can diet affect UTI symptoms?</h3>
 <p>Yes. Drinking plenty of water helps flush bacteria, while avoiding caffeine, alcohol, and highly sugary foods reduces bladder irritation. Cranberry juice or supplements may help prevent bacterial adherence. A balanced diet rich in fruits and vegetables supports urinary and overall health.</p>
@@ -1255,7 +1255,7 @@
                 <div class="widget-box">
                    <h4 class="widget-title">Search</h4>
                    <form class="search-form" action="../blog.html" method="GET">
-                      <input type="text" placeholder="Enter keyword...">
+                      <input type="text" name="s" placeholder="Enter keyword..." required>
                       <button type="submit" aria-label="Search"><i class="fa fa-search"></i></button>
                    </form>
                 </div>
@@ -1459,7 +1459,7 @@
         if (header) header.classList.toggle('scrolled', window.scrollY > 20); 
         if (progressBar) { 
           const docHeight = document.documentElement.scrollHeight - window.innerHeight; 
-          progressBar.style.width = docHeight > 0  `${(window.scrollY / docHeight) * 100}%` : '0%'; 
+          progressBar.style.width = docHeight > 0 ? `${(window.scrollY / docHeight) * 100}%` : '0%';
         } 
       }
       
@@ -1486,7 +1486,7 @@
         document.body.style.overflow = ''; 
       }
       
-      if (navToggle && navMenu) navToggle.addEventListener('click', () => navMenu.classList.contains('active')  closeMenu() : openMenu());
+      if (navToggle && navMenu) navToggle.addEventListener('click', () => navMenu.classList.contains('active') ? closeMenu() : openMenu());
       if (navClose) navClose.addEventListener('click', closeMenu);
       if (navOverlay) navOverlay.addEventListener('click', closeMenu);
       
