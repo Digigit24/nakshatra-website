@@ -887,6 +887,37 @@
           display: none !important;
         }
       }
+
+      /* ── Fix 1: Freeze-service card images – full-bleed at card top ──
+         Drop card padding entirely; restore 24px horizontal spacing for the
+         non-image children via explicit margins. overflow:hidden + border-radius
+         on the card clips the image top corners cleanly, no negative-margin hack. */
+      .freeze-service-section .diagnostic-card {
+        padding: 0;
+        overflow: hidden;
+      }
+      .freeze-service-section .freeze-service-card-image {
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+      .freeze-service-section .diagnostic-card .diagnostic-card-icon {
+        margin: 20px 0 0 24px;
+      }
+      .freeze-service-section .diagnostic-card h3 {
+        margin: 18px 24px 10px;
+      }
+      .freeze-service-section .diagnostic-card p {
+        margin: 0 24px 24px;
+      }
+
+      /* ── Fix 2: FAQ heading – custom.css sets .reveal { display:inline-flex;
+         overflow:hidden } which collapses the section heading wrapper. ── */
+      .freeze-faq-section .reveal {
+        display: block;
+        overflow: visible;
+      }
 </style>
   </head>
 
@@ -1114,7 +1145,7 @@
             <article class="diagnostic-card"><img loading="lazy" class="freeze-service-card-image" src="../images/improving-egg-quality.jpg" alt="Advanced egg retrieval and vitrification"><span class="diagnostic-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="m4.93 4.93 14.14 14.14"></path><path d="M2 12h20"></path><path d="m4.93 19.07 14.14-14.14"></path></svg></span><h3>Advanced Egg Retrieval &amp; Vitrification</h3><p>Egg freezing involves ovarian stimulation, egg retrieval, and vitrification. The process preserves eggs at extremely low temperatures for future use when pregnancy is desired.</p></article>
             <article class="diagnostic-card"><img loading="lazy" class="freeze-service-card-image" src="../images/spermpreparation.jpg" alt="Sperm collection and cryopreservation"><span class="diagnostic-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.5L5 20a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 20L14 9.5V2"></path><path d="M8 2h8"></path><path d="M7 16h10"></path></svg></span><h3>High-Quality Sperm Collection &amp; Cryopreservation</h3><p>Sperm freezing includes semen collection, analysis, preparation, and cryopreservation so samples can be stored securely for future fertility treatments.</p></article>
             <article class="diagnostic-card"><img loading="lazy" class="freeze-service-card-image" src="../images/fertility-focused-polyp-removal.jpg" alt="Future IVF planning"><span class="diagnostic-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><path d="M3 10h18"></path><path d="M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"></path></svg></span><h3>Future IVF Planning &amp; Embryo Creation</h3><p>Stored eggs or sperm may be used later in assisted reproductive treatments such as IVF or ICSI when the individual or couple is ready to plan pregnancy.</p></article>
-            <article class="diagnostic-card"><img loading="lazy" class="freeze-service-card-image" src="../images/egg-sperm-freezing-clinic-in-pune.jpg" alt="Safe long term fertility storage"><span class="diagnostic-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="m4.93 4.93 14.14 14.14"></path><path d="M2 12h20"></path><path d="m4.93 19.07 14.14-14.14"></path></svg></span><h3>Safe, Secure Long-Term Storage</h3><p>Frozen eggs and sperm are stored in monitored cryopreservation conditions to protect reproductive cells until future use.</p></article>
+            <article class="diagnostic-card"><img loading="lazy" class="freeze-service-card-image" src="../images/safe-secure-long-term-storage.jpg" alt="Safe long term fertility storage"><span class="diagnostic-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="m4.93 4.93 14.14 14.14"></path><path d="M2 12h20"></path><path d="m4.93 19.07 14.14-14.14"></path></svg></span><h3>Safe, Secure Long-Term Storage</h3><p>Frozen eggs and sperm are stored in monitored cryopreservation conditions to protect reproductive cells until future use.</p></article>
             <article class="diagnostic-card"><img loading="lazy" class="freeze-service-card-image" src="../images/fertility-preservation-for-medical-treatements.jpg" alt="Fertility preservation for medical treatments"><span class="diagnostic-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"></path></svg></span><h3>Fertility Preservation for Medical Treatments</h3><p>Egg or sperm freezing can be considered before cancer therapy, chemotherapy, radiation, surgery, or medical treatment that may affect fertility.</p></article>
           </div>
         </div>

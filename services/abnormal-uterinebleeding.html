@@ -647,6 +647,14 @@
           min-width: 0 !important;
         }
       }
+
+      /* ── Icon alignment fix: .service-floating-note span { display:block }
+         overrides .service-icon-soft { display:inline-flex } due to higher
+         specificity (class+element beats class). Restore inline-flex so the
+         SVG stays centred inside the icon box. Scoped to this element only. ── */
+      .service-floating-note .service-icon-soft {
+        display: inline-flex;
+      }
     </style>
   </head>
 

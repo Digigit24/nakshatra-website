@@ -1294,7 +1294,22 @@
           word-break: normal !important;
           overflow-wrap: normal !important;
         }
-      }</style>
+      }
+      /* Fix .reveal interference in adhesion sections */
+      .adhesion-overview-section .diagnostic-overview-panel.reveal { display: grid; overflow: visible; }
+      .adhesion-overview-section .diagnostic-content-card { display: block; }
+      .adhesion-overview-section .diagnostic-content-card .r-section-subtitle,
+      .adhesion-overview-section .diagnostic-content-card .r-section-title,
+      .adhesion-overview-section .diagnostic-content-card p { grid-column: unset; grid-row: unset; max-width: 100%; }
+      .adhesion-treatment-section .reveal,
+      .adhesion-related-section .reveal,
+      .adhesion-faq-section .reveal { display: block; overflow: visible; }
+      /* Fix treatment card images: full-bleed with icon overlay */
+      .adhesion-treatment-section .diagnostic-card { padding: 0; overflow: hidden; }
+      .adhesion-treatment-section .diagnostic-card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+      .adhesion-treatment-section .diagnostic-card .diagnostic-card-icon { margin: -22px 0 0 24px; position: relative; z-index: 1; background: #FFFFFF; box-shadow: var(--shadow-card); }
+      .adhesion-treatment-section .diagnostic-card h3 { margin: 18px 24px 10px; }
+      .adhesion-treatment-section .diagnostic-card p { margin: 0 24px 24px; }</style>
   </head>
 
   <body class="redesign-body">

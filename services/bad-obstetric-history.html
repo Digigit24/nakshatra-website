@@ -908,6 +908,29 @@
           width: 100%;
         }
       }
+
+      /* ── Fix 1: FAQ heading – custom.css .reveal { display:inline-flex;
+         overflow:hidden } collapses the section title wrapper.
+         Scoped to boh-faq-section only. ── */
+      .boh-faq-section .reveal {
+        display: block;
+        overflow: visible;
+      }
+
+      /* ── Fix 2: Overview section – both .diagnostic-overview-image and
+         .diagnostic-content-card carry the .reveal class, so custom.css
+         forces display:inline-flex on them. The image container loses its
+         block layout; the content card's children (subtitle, h2, p) lay out
+         in a row instead of a column. Restore block display on both. ── */
+      .diagnostic-overview-image.reveal,
+      .diagnostic-content-card.reveal {
+        display: block;
+      }
+      /* custom.css also sets .reveal img { height:100% } which overrides
+         aspect-ratio:4/3 on the overview image — force height:auto. */
+      .diagnostic-overview-image.reveal img {
+        height: auto;
+      }
     </style>
   </head>
 
@@ -1138,7 +1161,7 @@
         <div class="r-container">
           <div class="diagnostic-overview-panel">
             <div class="diagnostic-overview-image reveal">
-              <img loading="lazy" src="../images/pregnancy-checkup-in-pune-expert-antenatal-maternity-care.jpg" alt="Pregnancy care consultation in Pune">
+              <img loading="lazy" src="../images/bad-obstetric-history-treatment-pune-new.jpg" alt="Bad obstetric history treatment in Pune">
             </div>
             <div class="diagnostic-content-card reveal">
               <span class="r-section-subtitle">Overview</span>
@@ -1212,7 +1235,7 @@
         </div>
       </section>
 
-      <section class="r-section">
+      <section class="r-section boh-faq-section">
         <div class="r-container">
           <div class="r-section-title-wrapper reveal">
             <span class="r-section-subtitle">FAQ</span>

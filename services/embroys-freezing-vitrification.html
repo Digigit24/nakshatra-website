@@ -1387,6 +1387,14 @@
           width: 100%;
         }
       }
+
+      /* ── FAQ heading fix: custom.css sets .reveal { display:inline-flex;
+         overflow:hidden } which collapses the section heading wrapper.
+         Scoped to this FAQ section only. ── */
+      .freeze-faq-section .reveal {
+        display: block;
+        overflow: visible;
+      }
     </style>
   </head>
 

@@ -1160,6 +1160,13 @@
           grid-template-columns: minmax(0, 1fr);
         }
       }
+
+      /* ── FAQ heading: custom.css .reveal { display:inline-flex; overflow:hidden }
+         collapses the section title wrapper. Scoped to cvs-faq-section only. ── */
+      .cvs-faq-section .reveal {
+        display: block;
+        overflow: visible;
+      }
 </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3JF3BY7JN"></script>
@@ -1442,7 +1449,7 @@
         </div>
       </section>
 
-      <section class="r-section">
+      <section class="r-section cvs-faq-section">
         <div class="r-container">
           <div class="r-section-title-wrapper reveal">
             <span class="r-section-subtitle">FAQ</span>

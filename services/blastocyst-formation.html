@@ -597,6 +597,58 @@
         padding: 0 22px 20px;
         line-height: 1.7;
       }
+
+      /* Scoped FAQ layout fix - applies only to .blasto-faq-section on this page */
+      /* custom.css sets .reveal { display: inline-flex; overflow: hidden } which breaks the heading block */
+      .blasto-faq-section .reveal {
+        display: block;
+        overflow: visible;
+      }
+      .blasto-faq-section .service-faq-list {
+        gap: 12px;
+        max-width: 880px;
+        margin-inline: auto;
+      }
+      .blasto-faq-section .service-faq-item {
+        border-radius: 16px;
+        transition: box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+      .blasto-faq-section .service-faq-item:hover {
+        border-color: rgba(217, 27, 114, 0.22);
+        box-shadow: 0 12px 30px rgba(24, 22, 63, 0.10);
+      }
+      .blasto-faq-section .service-faq-question {
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px 24px;
+        font-size: 16px;
+        line-height: 1.45;
+      }
+      .blasto-faq-section .service-faq-question::after {
+        flex-shrink: 0;
+        font-size: 24px;
+        line-height: 1.4;
+        font-weight: 700;
+      }
+      .blasto-faq-section .service-faq-answer p {
+        padding: 4px 24px 22px;
+        font-size: 15px;
+      }
+      @media (max-width: 600px) {
+        .blasto-faq-section .service-faq-question {
+          padding: 16px 18px;
+          font-size: 15px;
+          gap: 12px;
+          line-height: 1.4;
+        }
+        .blasto-faq-section .service-faq-question::after {
+          font-size: 22px;
+        }
+        .blasto-faq-section .service-faq-answer p {
+          padding: 4px 18px 18px;
+          font-size: 14.5px;
+        }
+      }
       .ivf-techniques-panel {
         display: block;
       }
@@ -1197,7 +1249,7 @@
         </div>
       </section>
 
-      <section class="r-section" style="background: var(--color-blush);">
+      <section class="r-section blasto-faq-section" style="background: var(--color-blush);">
         <div class="r-container">
           <div class="r-section-title-wrapper reveal">
             <span class="r-section-subtitle">FAQ</span>

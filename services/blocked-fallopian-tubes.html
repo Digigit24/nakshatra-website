@@ -973,6 +973,22 @@
           width: 100%;
         }
       }
+
+      /* ── FAQ heading: custom.css .reveal { display:inline-flex; overflow:hidden }
+         collapses the section title wrapper. Scoped to bft-faq-section only. ── */
+      .bft-faq-section .reveal {
+        display: block;
+        overflow: visible;
+      }
+
+      /* ── Gap fix: .r-section bottom is 100px + .diagnostic-cta-section top is
+         88px = 188px total gap. Trim both to reduce it to ~80px total. ── */
+      .bft-faq-section {
+        padding-bottom: 48px;
+      }
+      .diagnostic-cta-section {
+        padding-top: 32px;
+      }
     </style>
   </head>
 
@@ -1240,7 +1256,7 @@
         </div>
       </section>
 
-      <section class="r-section">
+      <section class="r-section bft-faq-section">
         <div class="r-container">
           <div class="r-section-title-wrapper reveal">
             <span class="r-section-subtitle">FAQ</span>
