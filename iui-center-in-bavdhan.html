@@ -1104,9 +1104,19 @@
         }
       });
 
-      document.querySelector(".nks-insta-swiper").addEventListener("touchstart", function () {
+      var instaEl = document.querySelector(".nks-insta-swiper");
+      function disableIframePointer() {
+        instaEl.querySelectorAll("iframe").forEach(function(f){ f.style.pointerEvents = "none"; });
+      }
+      function enableIframePointer() {
+        instaEl.querySelectorAll("iframe").forEach(function(f){ f.style.pointerEvents = ""; });
+      }
+      instaEl.addEventListener("touchstart", function () {
         instaSwiper.autoplay.stop();
+        disableIframePointer();
       }, { passive: true });
+      instaEl.addEventListener("touchend", enableIframePointer, { passive: true });
+      instaEl.addEventListener("touchcancel", enableIframePointer, { passive: true });
     });
     </script>
     <script src="js/jquery.waypoints.min.js"></script>
@@ -1119,11 +1129,4 @@
   
    
 
-    <script src="js/wow.min.js"></script>
-    <script src="js/function.js"></script>
-
-
-
-
-</body>
-</html>
+    <script src="js/wow
