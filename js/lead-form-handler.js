@@ -45,7 +45,26 @@
       }
     }
 
-    const formData = new FormData(form);
+    // Normalize field names to match the backend table
+    // (first_name, last_name, email, phone, services, appointment_date)
+    const FIELD_MAP = {
+      firstname: "first_name",
+      fname: "first_name",
+      first_name: "first_name",
+      lastname: "last_name",
+      lname: "last_name",
+      last_name: "last_name",
+      service: "services",
+      services: "services",
+      date: "appointment_date",
+      appointmentDate: "appointment_date",
+      appointment_date: "appointment_date",
+    };
+    const rawData = new FormData(form);
+    const formData = new FormData();
+    rawData.forEach(function (value, key) {
+      formData.append(FIELD_MAP[key] || key, value);
+    });
     formData.append("client_event_id", crypto.randomUUID());
 
     fetch(API_ENDPOINT, {
