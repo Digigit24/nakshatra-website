@@ -45,25 +45,37 @@
       }
     }
 
-    // Normalize field names to match the backend table
-    // (first_name, last_name, email, phone, services, appointment_date)
-    const FIELD_MAP = {
-      firstname: "first_name",
-      fname: "first_name",
-      first_name: "first_name",
-      lastname: "last_name",
-      lname: "last_name",
-      last_name: "last_name",
-      service: "services",
-      services: "services",
-      date: "appointment_date",
-      appointmentDate: "appointment_date",
-      appointment_date: "appointment_date",
+    // Send each mapped value under BOTH normalized and legacy keys so the
+    // backend can read whichever it expects
+    // (first_name/fname/firstname, last_name/lname/lastname,
+    //  services/service, appointment_date/date).
+    const ALIASES = {
+      first_name: ["first_name", "fname", "firstname"],
+      last_name: ["last_name", "lname", "lastname"],
+      services: ["services", "service"],
+      appointment_date: ["appointment_date", "date"],
     };
+    const CANONICAL = { appointmentDate: "appointment_date" };
+    Object.keys(ALIASES).forEach(function (canon) {
+      ALIASES[canon].forEach(function (k) {
+        CANONICAL[k] = canon;
+      });
+    });
+
     const rawData = new FormData(form);
     const formData = new FormData();
+    const appended = {};
     rawData.forEach(function (value, key) {
-      formData.append(FIELD_MAP[key] || key, value);
+      const canon = CANONICAL[key];
+      if (canon) {
+        if (appended[canon]) return; // avoid duplicates if form has two variants
+        appended[canon] = true;
+        ALIASES[canon].forEach(function (k) {
+          formData.append(k, value);
+        });
+      } else {
+        formData.append(key, value); // email, phone, message, etc. unchanged
+      }
     });
     formData.append("client_event_id", crypto.randomUUID());
 
