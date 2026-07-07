@@ -1,6 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+
     <!-- Meta -->
     <meta charset="utf-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
@@ -35,14 +36,14 @@
   <link rel="canonical"
       href="https://www.nakshatraclinic.com/blog-single.html">
     <!-- Page Title -->
-  
+
     <!-- Favicon Icon -->
  <link rel="shortcut icon" type="image/x-icon" href="images/nakshatra-logo-loader.png" >
     <!-- Google Fonts Css-->
-    <link rel="preconnect" href="https://www.fonts.googleapis.com" >
-    <link rel="preconnect" href="https://www.fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
-      href="https://www.fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
       rel="stylesheet"
     >
     <!-- Bootstrap Css -->
@@ -53,6 +54,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" >
     <!-- Font Awesome Icon Css-->
     <link href="css/all.min.css" rel="stylesheet" media="screen" >
+    <link rel="stylesheet" href="https://www.maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" >
     <!-- Animated Css -->
     <link href="css/animate.css" rel="stylesheet" >
     <!-- Magnific Popup Core Css File -->
@@ -62,13 +64,10 @@
     <link rel="stylesheet" href="css/mousecursor.css" >
     <!-- Main Custom Css -->
     <link href="css/custom.css" rel="stylesheet" media="screen" >
-    <a href="https://wa.me/917058658711" class="float" target="_blank">
-<i class="fab fa-whatsapp my-float"></i>
-</a>
+    <link href="css/nakshatra-redesign.css?v=17.0" rel="stylesheet" >
     <script type="application/ld+json">
-      <script type="application/ld+json">
 {
-  "@context": "https://www.schema.org",
+  "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
@@ -307,30 +306,35 @@
   ]
 }
 </script>
-    </script>
-     <style>
-       .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-  bottom: 90px;
-	/* bottom:20px; */
-	right:35px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-    </style>
-  </head>
-  <!-- Google tag (gtag.js) -->
+<style>
+      .single-blog-hero { background: var(--gradient-hero); padding: 72px 0 82px; }
+      .single-blog-hero-inner { max-width: 920px; margin: 0 auto; text-align: center; }
+      .single-blog-hero .r-section-title { font-size: clamp(34px, 5vw, 58px); }
+      .single-blog-meta { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+      .single-blog-meta-item { display: inline-flex; align-items: center; gap: 8px; background: var(--color-white); border: 1px solid rgba(217,27,114,0.14); border-radius: 999px; padding: 8px 14px; color: var(--color-purple); font-weight: 700; font-size: 14px; box-shadow: var(--shadow-card); }
+      .single-blog-layout { max-width: 940px; margin: 0 auto; }
+      .single-blog-image { background: var(--color-white); border: 1px solid rgba(217,27,114,0.12); border-radius: var(--radius-xl); padding: 14px; box-shadow: var(--shadow-soft); margin-bottom: 42px; }
+      .single-blog-image img { width: 100%; display: block; border-radius: 24px; object-fit: cover; }
+      .single-blog-content { background: rgba(255,255,255,0.82); border: 1px solid rgba(217,27,114,0.10); border-radius: var(--radius-xl); padding: clamp(26px, 5vw, 54px); box-shadow: var(--shadow-card); }
+      .single-blog-content p { color: var(--color-body); font-size: 17px; line-height: 1.85; margin: 0 0 22px; }
+      .single-blog-content h2 { font-size: clamp(27px, 4vw, 38px); margin: 38px 0 18px; }
+      .single-blog-content blockquote { margin: 34px 0; padding: 28px 30px; border-left: 4px solid var(--color-primary); background: var(--color-blush); border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
+      .single-blog-content blockquote p { margin: 0; color: var(--color-purple); font-size: 19px; font-weight: 700; line-height: 1.7; }
+      .single-blog-content ul { display: grid; gap: 12px; margin: 20px 0 28px; padding: 0; list-style: none; }
+      .single-blog-content li { position: relative; padding-left: 28px; color: var(--color-body); line-height: 1.75; }
+      .single-blog-content li::before { content: '\f00c'; font-family: 'FontAwesome'; position: absolute; left: 0; top: 2px; color: var(--color-primary); }
+      .single-blog-footer { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-top: 30px; padding-top: 28px; border-top: 1px solid var(--color-border); flex-wrap: wrap; }
+      .single-blog-tags, .single-blog-share { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+      .single-blog-tags strong, .single-blog-share strong { color: var(--color-deep-navy); }
+      .single-blog-tag { display: inline-flex; border-radius: 999px; background: var(--color-primary-soft); color: var(--color-primary); padding: 7px 12px; font-weight: 800; font-size: 13px; }
+      .single-blog-share a { width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--color-white); color: var(--color-primary); border: 1px solid rgba(217,27,114,0.16); }
+      .single-blog-share a:hover { background: var(--color-primary); color: var(--color-white); transform: translateY(-2px); }
+      .single-blog-cta { margin-top: 44px; padding: 34px; background: linear-gradient(135deg, var(--color-deep-navy) 0%, var(--color-purple) 100%); border-radius: var(--radius-xl); color: var(--color-white); display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+      .single-blog-cta h2 { color: var(--color-white); font-size: clamp(24px, 4vw, 34px); margin: 0 0 8px; }
+      .single-blog-cta p { color: rgba(255,255,255,0.76); margin: 0; }
+      @media (max-width: 700px) { .single-blog-hero { padding: 54px 0 64px; } .single-blog-meta { justify-content: flex-start; } .single-blog-hero-inner { text-align: left; } .single-blog-content { border-radius: var(--radius-lg); } .single-blog-content p { font-size: 16px; line-height: 1.75; } .single-blog-content blockquote { padding: 22px; } .single-blog-footer { align-items: flex-start; } .single-blog-cta { padding: 26px 20px; } .single-blog-cta .r-btn-primary { width: 100%; } }
+    </style></head>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3JF3BY7JN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -339,347 +343,16 @@
 
   gtag('config', 'G-G3JF3BY7JN');
 </script>
-<body>
- <a href="tel:+917058658711" class="phone-float" target="_blank">
-      <i class="fa fa-phone phone-icon"></i>
-    </a>
-    <!-- Preloader Start -->
-    <div class="preloader">
-      <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img loading="lazy" src="images/nakshatra-logo-loader.png" alt="Nakshatra Logo Loader" ></div>
-      </div>
-    </div>
-    <!-- Preloader End -->
-    <!-- Topbar Section Start -->
-    <div class="topbar">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-lg-9">
-            <div class="topbar-contact-info">
-              <ul>
-                <li>
-                  <img
-                    loading="lazy"
-                    src="images/icon-phone-accent.svg"
-                    alt="Icon Phone Accent"
-                  ><a href="tel:+91 7058658711">+91 7058658711</a>
-                </li>
-                <li>
-                  <img
-                    loading="lazy"
-                    src="images/icon-mail-accent.svg"
-                    alt="Icon Mail Accent"
-                  ><a href="mailto:nakshtraclinic@gmail.com"
-                    >nakshtraclinic@gmail.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="topbar-social-links">
-              <ul>
-                <li>
-                  <a href="https://www.youtube.com/@nakshatraivfandintimacycli5653"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-               <li>
-                <a href="https://www.instagram.com/nakshatra.clinic"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/NakshatraClinic"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Topbar Section End -->
 
-    <!-- Header Start -->
-  <header class="main-header bg-section">
-    <div class="header-sticky">
-     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo"
-              style="width: 2rem;    width: 11rem;
-    background-color: white;
-    object-fit: contain;
-    border-radius: 0.3rem;
-    padding: 8px;" ></a>
-          <div class="collapse navbar-collapse main-menu">
-            <div class="nav-menu-wrapper">
-              <ul class="navbar-nav mr-auto" id="menu">
-                <!-- Home -->
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-               
-
-                <!-- Rest of top-level items -->
-                <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About Us</a>
-                </li>
-                 <!-- Services  â€“  multi-level dropdown -->
-                <li class="nav-item submenu">
-                  <a class="nav-link" href="services.html">Services</a>
-                  <ul>
-                    <!-- Female Infertility -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="services/female-infertility-treatment.html">Female Infertility</a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/female-infertility-treatment.html">Female Infertility
-                            Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/low-amh-treatment.html">Low AMH Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/ovarian-drilling-for-pcod-treatment.html">Ovarian Drilling for
-                            PCOD Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/polycystic-ovary-syndrome-treatment.html">Polycystic Ovary
-                            Syndrome Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/repeated-implantation-failure.html">Repeated Implantation
-                            Failure</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Female Infertility Surgeries -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="services/female-infertility-surgeries.html">Female Infertility Surgeries
-                      </a>
-                      <ul>
-                         <li class="nav-item">
-                          <a class="nav-link" href="services/blocked-fallopian-tubes.html">Blocked Fallopian Tubes</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/endometrial-polyp-removal.html">Endometrial Polyp Removal</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/endometriosis-treatment.html">Endometriosis Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/ovarian-cysts-removal.html">Ovarian Cysts Removal</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/removal-of-adhesions-in-uterus.html">Removal of Adhesions in
-                            Uterus</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Male Infertility -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="services/male-infertility-treatment.html">Male Infertility</a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/male-infertility-treatment.html">Male Infertility</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/oligospermia-low-sperm-count-treatment.html">Oligospermia (Low
-                            Sperm Count) Treatment</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/oligo-astheno-teratozoospermia.html">Oligo Astheno
-                            Teratozoospermia</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/dna-fragmentation.html">DNA Fragmentation</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- IVF Specialties -->
-                    <li class="nav-item submenu">
-                      <a class="nav-link" href="services/ivf-specialties.html">IVF Specialties</a>
-                      <ul>
-                        <!-- Advanced IVF Tests -->
-                        <li class="nav-item submenu">
-                          <a class="nav-link" href="services/advanced-ivf-tests.html">Advanced IVF Tests </a>
-                          <ul>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/detailed-female-infertility-analysis.html">Detailed Female
-                                Infertility Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/endometrial-receptivity-analysis.html">Endometrial Receptivity
-                                Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/follicular-study.html">Follicular Study</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/male-infertility-analysis.html">Male Infertility Analysis</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/preimplantation-genetic-testing.html">Preimplantation Genetic
-                                Testing</a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <!-- Advanced IVF Treatment -->
-                        <li class="nav-item submenu">
-                       <a class="nav-link" href="services/advanced-ivf-treatment.html">Advanced IVF Treatment</a>
-                          <ul>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/blastocyst-formation.html">Blastocyst Formation</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/icsi-treatment.html">ICSI Treatment</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/laser-assisted-hatching.html">Laser-Assisted Hatching</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/micro-tese.html">Micro TESE</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="services/testicular-sperm-aspiration.html">Testicular Sperm Aspiration
-                                (TESA) & Sperm
-                                Retrieval</a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <!-- Donor Services -->
-                            <li class="nav-item">
-                          <a class="nav-link" href="services/ovum-donation.html">Ovum Donation</a>
-                        </li>
-
-                        <!-- Fertility Services -->
-                          <li class="nav-item">
-                          <a class="nav-link" href="services/embroys-freezing-vitrification.html">Embryos Freezing & Vitrification</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Single-link services -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="services/ivf-options.html">IVF Options</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="services/intrauterine-insemination.html">Intrauterine Insemination</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="services/ovulation-induction.html">Ovulation Induction</a>
-                    </li>
-
-                    <!-- Obstetrics & Gynecology Care -->
-                  <li class="nav-item submenu">
-                      <a class="nav-link" href="services/obstetrics-gynecology.html">Obstetrics & Gynecology Care
-                      </a>
-                      <ul>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/obstetrics-gynecology.html">Obstetrics & Gynecology</a>
-                        </li>
-                            <li class="nav-item">
-                          <a class="nav-link" href="services/preconception-counseling.html">Preconception Counseling</a>
-                        </li>
-                     <li class="nav-item">
-                          <a class="nav-link" href="services/abnormal-uterinebleeding.html">Abnormal Uterine Bleeding</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/uterine-fibroids.html">Uterine Fibroids</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/hysteroscopy.html">Hysteroscopy</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/laparoscopy.html">Laparoscopy</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/vaginal-infection.html">Vaginal Infection</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/urinary-tractinfection.html">Urinary Tract Infection</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="services/pregnancy.html">Pregnancy</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <!-- Pregnancy -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="services/pregnancy.html">Pregnancy</a>
-                    </li>
-                  </ul>
-                </li>
-                   <li class="nav-item">
-                  <a class="nav-link" href="/blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item highlighted-menu">
-                  <a class="nav-link" href="appointment-page.html">Appointment</a>
-                </li>
-              </ul>
-            </div>
-            <div class="header-btn">
-              <a href="appointment-page.html" class="btn-default btn-highlighted">Book an Appointment</a>
-            </div>
-          </div>
-          <div class="navbar-toggle"></div>
-        </div>
-      </nav>
-      <div class="responsive-menu"></div>
-    </div>
-  </header> 
-    <!-- Header End -->
-
-    <!-- Page Header Start -->
-    <div class="page-header bg-section parallaxie">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-12">
-            <!-- Page Header Box Start -->
-            <div class="page-header-box">
-              <h1 class="text-anime-style-2" data-cursor="-opaque">
-                Understanding IVF A ...
-              </h1>
-              <div class="post-single-meta wow fadeInUp">
-                <ol class="breadcrumb">
-                  <li><i class="fa-regular fa-user"></i> Admin</li>
-                  <li><i class="fa-regular fa-clock"></i> 22 April 2026</li>
-                </ol>
-              </div>
-            </div>
-            <!-- Page Header Box End -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Page Header End -->
-
-    <!-- Page Single Post Start -->
-    <div class="page-single-post">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- Post Featured Image Start -->
-            <div class="post-image">
-              <figure class="image-anime reveal">
-                <img loading="lazy" src="images/blog-nakshatra-clinic-first.jpg" alt="Blog Nakshatra Clinic First" >
-              </figure>
-            </div>
-            <!-- Post Featured Image Start -->
-
-            <!-- Post Single Content Start -->
-            <div class="post-content">
-              <!-- Post Entry Start -->
-              <div class="post-entry">
-                <p class="wow fadeInUp">
+  <body class="redesign-body">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    <div class="nav-overlay" id="navOverlay"></div>
+    <a href="tel:+917058658711" class="phone-float-redesign" target="_blank" aria-label="Call Nakshatra Clinic"><i class="fa fa-phone"></i></a>
+    <a href="https://wa.me/917058658711" target="_blank" rel="noopener" class="whatsapp-float-redesign" aria-label="WhatsApp Nakshatra Clinic"><i class="fab fa-whatsapp"></i></a>
+    <header class="site-header-redesign"><div class="r-container"><div class="header-container-redesign"><a class="logo-link" href="index.html"><img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo"></a><nav class="navigation-menu-redesign"><button class="nav-toggle-btn" aria-label="Toggle Menu" id="navToggle"><span></span><span></span><span></span></button><ul class="nav-links-list" id="navMenu"><button class="nav-close-btn" id="navClose" aria-label="Close Menu">&times;</button><li><a class="nav-link-item" href="index.html">Home</a></li><li><a class="nav-link-item" href="about-us.html">About Us</a></li><li><a class="nav-link-item" href="services.html">Treatments</a></li><li><a class="nav-link-item" href="blog.html">Blog</a></li><li><a class="nav-link-item" href="contact.html">Contact Us</a></li></ul></nav><div class="header-actions"><div class="header-location-pill"><i class="fa fa-map-marker"></i> Baner, Pune</div><a href="appointment-page.html" class="r-btn-primary"><span class="btn-text-desktop">Book Appointment</span><span class="btn-text-mobile">Book Now</span></a></div></div></div></header>
+    <div class="proof-strip-redesign"><div class="r-container"><div class="proof-strip-grid proof-strip-grid-5"><div class="proof-item"><i class="fa fa-book proof-icon"></i><span class="proof-text">Fertility Guide</span></div><div class="proof-item"><i class="fa fa-user-md proof-icon"></i><span class="proof-text">Doctor-led Insight</span></div><div class="proof-item"><i class="fa fa-calendar proof-icon"></i><span class="proof-text">22 April 2026</span></div><div class="proof-item"><i class="fa fa-map-marker proof-icon"></i><span class="proof-text">Baner, Pune</span></div><div class="proof-item"><i class="fa fa-heart proof-icon"></i><span class="proof-text">IVF Care</span></div></div></div></div>
+    <main><section class="single-blog-hero"><div class="r-container"><div class="single-blog-hero-inner reveal"><span class="r-section-subtitle">Fertility Treatments</span><h1 class="r-section-title">Understanding IVF A ...</h1><div class="single-blog-meta"><span class="single-blog-meta-item"><i class="fa fa-user"></i> Admin</span><span class="single-blog-meta-item"><i class="fa fa-clock-o"></i> 22 April 2026</span><span class="single-blog-meta-item"><i class="fa fa-heart"></i> IVF Guide</span></div></div></div></section><section class="r-section treatments-redesign"><div class="r-container"><article class="single-blog-layout"><div class="single-blog-image reveal"><img loading="lazy" src="images/blog-nakshatra-clinic-first.jpg" alt="Blog Nakshatra Clinic First"></div><div class="single-blog-content">
+                <p class="reveal">
                   In Vitro Fertilization (IVF) is one of the most effective and
                   widely used assisted reproductive technologies (ART) available
                   today. It involves a complex series of procedures where mature
@@ -690,7 +363,7 @@
                   successful pregnancy.
                 </p>
 
-                <p class="wow fadeInUp" data-wow-delay="0.2s">
+                <p class="reveal">
                   IVF is often recommended for couples facing various fertility
                   challenges such as blocked fallopian tubes, male factor
                   infertility, ovulation disorders, or unexplained infertility.
@@ -699,7 +372,7 @@
                   long struggled with the heartbreak of infertility.
                 </p>
 
-                <blockquote class="wow fadeInUp" data-wow-delay="0.4s">
+                <blockquote class="reveal">
                   <p>
                     IVF begins with hormone therapy to stimulate the ovaries,
                     followed by egg retrieval, lab-based fertilization with
@@ -709,8 +382,8 @@
                   </p>
                 </blockquote>
 
-                <p class="wow fadeInUp" data-wow-delay="0.6s">
-                  IVF is not just a medical procedure â€” it's a journey filled
+                <p class="reveal">
+                  IVF is not just a medical procedure Ã¢â‚¬â€ it's a journey filled
                   with hope, resilience, and emotional strength. For many, it
                   represents a second chance at building the family they've
                   always dreamed of. With supportive care and advanced
@@ -718,12 +391,12 @@
                   field of reproductive health.
                 </p>
 
-                <h2 class="wow fadeInUp" data-wow-delay="0.8s">
+                <h2 class="reveal">
                   Preparing for your IVF journey
                 </h2>
 
-                <p class="wow fadeInUp" data-wow-delay="1s">
-                  IVF is not just a medical procedure â€” it's a journey filled
+                <p class="reveal">
+                  IVF is not just a medical procedure Ã¢â‚¬â€ it's a journey filled
                   with hope, resilience, and emotional strength. For many, it
                   represents a second chance at building the family they've
                   always dreamed of. With supportive care and advanced
@@ -731,7 +404,7 @@
                   field of reproductive health.
                 </p>
 
-                <ul class="wow fadeInUp" data-wow-delay="1.2s">
+                <ul class="reveal">
                   <li>
                     Our team of highly trained fertility specialists combines
                     years of clinical expertise with compassionate care to
@@ -759,257 +432,36 @@
                   </li>
                 </ul>
 
-                <p class="wow fadeInUp" data-wow-delay="1.4s">
-                  IVF is not just a medical procedure â€” it's a journey filled
+                <p class="reveal">
+                  IVF is not just a medical procedure Ã¢â‚¬â€ it's a journey filled
                   with hope, resilience, and emotional strength. For many, it
                   represents a second chance at building the family they've
                   always dreamed of. With supportive care and advanced
                   technology, IVF continues to be a beacon of possibility in the
                   field of reproductive health.
                 </p>
-              </div>
-              <!-- Post Entry End -->
-
-              <!-- Post Tag Links Start -->
-              <div class="post-tag-links">
-                <div class="row align-items-center">
-                  <div class="col-lg-8">
-                    <!-- Post Tags Start -->
-                    <div class="post-tags wow fadeInUp" data-wow-delay="0.5s">
-                      <span class="tag-links">
-                        Tags:
-                        <a href="#">Fertility</a>
-                        <a href="#">Treatment</a>
-                        <a href="#">Success</a>
-                      </span>
-                    </div>
-                    <!-- Post Tags End -->
-                  </div>
-
-                  <div class="col-lg-4">
-                    <!-- Post Social Links Start -->
-                    <div
-                      class="post-social-sharing wow fadeInUp"
-                      data-wow-delay="0.5s"
-                    >
-                      <ul>
-                        <li>
-                          <a href="#"
-                            ><i class="fa-brands fa-facebook-f"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><i class="fa-brands fa-linkedin-in"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- Post Social Links End -->
-                  </div>
-                </div>
-              </div>
-              <!-- Post Tag Links End -->
-            </div>
-            <!-- Post Single Content End -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Page Single Post End -->
-
-    <!-- Footer Start -->
-  <footer class="main-footer">
-      <div class="main-footer-box bg-section dark-section">
-        <div class="container">
-          <!--  Hero strip  -->
-          <div class="row align-items-center">
-            <div class="col-lg-12">
-              <div class="footer-header">
-                <div class="section-title">
-                  <h2 class="text-anime-style-2" data-cursor="-opaque">
-                    Schedule your consultation today!
-                  </h2>
-                  <p>
-                    Book your consultation with our fertility expertsâ€”the first
-                    step toward your parenthood journey.
-                  </p>
-                </div>
-                <div class="book-consult-circle accent-circle">
-                  <a href="appointment-page.html"
-                    ><img loading="lazy" src="images/book-consultation-circle.svg" alt="Book Consultation Circle" ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--  Links  -->
-          <div class="row">
-            <!-- About + Social  -->
-
-            <!-- Quick-links (narrower) -->
-            <div
-              class="col-lg-2 col-md-6"
-              style="border-right: 1px solid !important"
-            >
-              <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="../about-us.html">About Us</a></li>
-                  <li><a href="../contact.html">Contact Us</a></li>
-                  <!-- <li><a href="../appointment-page.html">Appointment</a></li> -->
-                </ul>
-              </div>
-            </div>
-
-            <!-- Services (heading spans 2 columns) -->
-            <div
-              class="col-lg-5 col-md-12"
-              style="border-right: 1px solid !important"
-            >
-              <div class="footer-links">
-                <h3>Services</h3>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="services/embroys-freezing-vitrification.html"
-                          >Female Infertility</a
-                        >
-                      </li>
-                      <li><a href="services/female-infertility-surgeries.html">Female Infertility Surgeries</a></li>
-                      <li>
-                        <a href="services/male-infertility-treatment.html"
-                          >Male Infertility</a
-                        >
-                      </li>
-                      <li><a href="services/ivf-specialties.html">IVF Specialties</a></li>
-                      <li><a href="services/ivf-options.html">IVF Options</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li><a href="services/intrauterine-insemination.html">Intrauterine Insemination</a></li>
-                      <li><a href="services/ovulation-induction.html">Ovulation Induction</a></li>
-                      <li>
-                        <a href="services/obstetrics.html"
-                          >Obstetrics & Gynecology Care</a
-                        >
-                      </li>
-                      <li><a href="services/pregnancy.html">Pregnancy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- IVF Specialties (wider block) -->
-            <div
-              class="col-lg-5 col-md-12"
-              style="border-right: 1px solid !important"
-            >
-              <div class="footer-links">
-                <h3>IVF Specialties</h3>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="services/detailed-female-infertility-analysis.html"
-                          >Detailed Female Analysis</a
-                        >
-                      </li>
-                      <li>
-                        <a href="services/endometrial-receptivity-analysis.html"
-                          >Endometrial Receptivity</a
-                        >
-                      </li>
-                      <li>
-                        <a href="services/follicular-study.html">Follicular Study</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="services/male-infertility-analysis.html"
-                          >Male Infertility Analysis</a
-                        >
-                      </li>
-                      <li>
-                        <a href="services/preimplantation-genetic-testing.html">PGT</a>
-                      </li>
-                      <li>
-                        <a href="services/blastocyst-formation.html"
-                          >Blastocyst Formation</a
-                        >
-                      </li>
-                      <li>
-                        <a href="services/icsi-treatment.html">ICSI Treatment</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-6">
-                  <div class="footer-links">
-                    <ul>
-                      <li>
-                        <a href="services/laser-assisted-hatching.html"
-                          >Laser-Assisted Hatching</a
-                        >
-                      </li>
-                      <li><a href="services/micro-tese.html">Micro TESE</a></li>
-                      <li>
-                        <a href="services/testicular-sperm-aspiration.html"
-                          >TESA & Sperm Retrieval</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--  Copyright bar  -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="footer-copyright-text">
-              <p>Copyright Â© 2026 Nakshatra IVF. All Rights Reserved.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Footer End -->
-
-    <!-- Jquery Library File -->
-    <script src="https://www.assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
+              <div class="single-blog-footer"><div class="single-blog-tags"><strong>Tags:</strong><span class="single-blog-tag">Fertility</span><span class="single-blog-tag">Treatment</span><span class="single-blog-tag">Success</span></div><div class="single-blog-share"><strong>Share:</strong><a href="https://www.facebook.com/NakshatraClinic" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.linkedin.com/company/nakshatra-ivf-fertility-intimacy-cosmetic-clinic-pune/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/nakshatra.clinic" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/@nakshatraivfandintimacycli5653" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div></div></div><div class="single-blog-cta reveal"><div><h2>Schedule your consultation today!</h2><p>Book your consultation with our fertility experts, the first step toward your parenthood journey.</p></div><a href="appointment-page.html" class="r-btn-primary">Book Appointment <i class="fa fa-calendar-check-o"></i></a></div></article></div></section></main>
+    <footer class="footer-redesign"><div class="r-container"><div class="footer-top-grid"><div class="footer-brand-column"><a href="index.html"><img loading="lazy" src="images/nakshatra-logo.jpg" alt="Nakshatra IVF Logo" style="height: 52px; background: white; border-radius: 8px; padding: 4px;"></a><p>Nakshatra Fertility &amp; IVF Center is Baner's leading boutique fertility clinic dedicated to supporting parents on their journey with medical integrity.</p><div class="footer-socials"><a href="https://www.facebook.com/NakshatraClinic" class="footer-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/nakshatra.clinic" class="footer-social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com/@nakshatraivfandintimacycli5653" class="footer-social-icon" aria-label="Youtube"><i class="fab fa-youtube"></i></a></div></div><div><h3 class="footer-column-title">Quick Links</h3><ul class="footer-links-list"><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="services.html">Services &amp; Treatments</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="appointment-page.html">Direct Appointment</a></li></ul></div><div><h3 class="footer-column-title">IVF Specialties</h3><ul class="footer-links-list"><li><a href="services/advanced-ivf-treatment.html">Advanced IVF Treatment</a></li><li><a href="services/icsi-treatment.html">ICSI Treatment</a></li><li><a href="services/blastocyst-formation.html">Blastocyst Formation</a></li><li><a href="services/laser-assisted-hatching.html">Laser-Assisted Hatching</a></li><li><a href="services/preimplantation-genetic-testing.html">PGT</a></li></ul></div><div><h3 class="footer-column-title">Contact Us</h3><ul class="footer-contact-list"><li class="footer-contact-item"><i class="fa fa-map-marker"></i><div><a href="https://maps.app.goo.gl/iFk9TBnLfwoBGy5KA" target="_blank" rel="noopener noreferrer">Office 101, Chaitanya High Point, Dasara Chowk, Balewadi Gaon, Baner 411045</a></div></li><li class="footer-contact-item"><i class="fa fa-phone"></i><a href="tel:+917058658711">+91 7058658711</a></li><li class="footer-contact-item"><i class="fa fa-envelope"></i><a href="mailto:nakshtraclinic@gmail.com">nakshtraclinic@gmail.com</a></li><li class="footer-contact-item"><i class="fa fa-clock-o"></i><span>Mon - Sun: 10:00 AM - 07:00 PM</span></li></ul></div></div><div class="footer-bottom-bar"><p>Copyright &copy; 2026 Nakshatra IVF. All Rights Reserved.</p></div></div></footer>
+    <div class="mobile-sticky-bar"><a href="appointment-page.html" class="msb-btn msb-primary"><i class="fa fa-calendar-check-o"></i><span>Book</span></a><a href="tel:+917058658711" class="msb-btn"><i class="fa fa-phone"></i><span>Call</span></a><a href="https://wa.me/917058658711" target="_blank" rel="noopener" class="msb-btn msb-wa"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a></div>
+    <script>
+      const progressBar = document.getElementById('scrollProgressBar');
+      function updateProgress(){if(!progressBar)return;const total=document.documentElement.scrollHeight-window.innerHeight;progressBar.style.width=(total>0?(window.scrollY/total)*100:0)+'%'}
+      window.addEventListener('scroll',updateProgress,{passive:true});
+      window.addEventListener('scroll',()=>{const h=document.querySelector('.site-header-redesign');if(h)h.classList.toggle('scrolled',window.scrollY>50)},{passive:true});
+      const navToggle=document.getElementById('navToggle'),navMenu=document.getElementById('navMenu'),navClose=document.getElementById('navClose'),navOverlay=document.getElementById('navOverlay');
+      function openMenu(){navMenu&&navMenu.classList.add('active');navToggle&&navToggle.classList.add('active');if(navOverlay){navOverlay.style.display='block';requestAnimationFrame(()=>navOverlay.classList.add('active'))}document.body.style.overflow='hidden'}
+      function closeMenu(){navMenu&&navMenu.classList.remove('active');navToggle&&navToggle.classList.remove('active');if(navOverlay){navOverlay.classList.remove('active');setTimeout(()=>{navOverlay.style.display='none'},400)}document.body.style.overflow=''}
+      if(navToggle&&navMenu)navToggle.addEventListener('click',()=>navMenu.classList.contains('active')?closeMenu():openMenu());if(navClose)navClose.addEventListener('click',closeMenu);if(navOverlay)navOverlay.addEventListener('click',closeMenu);document.querySelectorAll('.nav-link-item').forEach(l=>l.addEventListener('click',closeMenu));
+      const revealObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('revealed');e.target.classList.add('visible');revealObs.unobserve(e.target)}})},{threshold:.04,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-stagger').forEach(el=>revealObs.observe(el));
+    </script>
+<script src="https://www.assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
     <script type="module">
       TaskadeEmbed.AgentPublicChatPopup.init({
         publicAgentId: "01KAJAMN85JQRMS1JQNC5FEKQP",
       });
     </script>
 
-  
+
     <!-- Bootstrap js file -->
     <script src="https://www.assets.taskade.com/embeds/latest/taskade-embed.min.js"></script>
     <script type="module">
@@ -1031,19 +483,19 @@
     <!-- Magnific js file -->
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- SmoothScroll -->
-  
+
     <!-- Parallax js -->
     <script src="js/parallaxie.js"></script>
     <!-- MagicCursor js file -->
     <script src="js/gsap.min.js"></script>
     <script src="js/magiccursor.js"></script>
     <!-- Text Effect js file -->
-  
-  
+
+
 
     <!-- Wow js file -->
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
-  </body>
-</html>
+
+  </body></html>
