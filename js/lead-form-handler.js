@@ -4,9 +4,30 @@
  * previously duplicated on index/contact/about-us/appointment-page/services.
  * Behavior is intentionally identical to that inline script, with the
  * contact-page variant's gtag condition merged in (appointmentForm OR contactForm).
+ *
+ * Tracking update (Digitech, Oct 2026):
+ *  - Hard-coded gtag/fbq calls removed. Tracking now goes through Google Tag
+ *    Manager (GTM-WBZ7VJCT) via dataLayer events:
+ *      generate_lead  -> fired only when Celiyo confirms success (response.ok)
+ *      form_error     -> fired when Celiyo returns an error or the network fails
+ *  - No personal or health data is ever pushed to the dataLayer.
+ *  - Optional: sends visit source fields (src_utm_*, src_gclid, src_landing_page,
+ *    src_referrer) to Celiyo when window.NK_TRACKING_CONFIG.sendSourceFields
+ *    is true (set in js/nk-attribution.js after Celiyo confirms the fields).
  */
 (function () {
   const API_ENDPOINT = "https://hms.celiyo.com/api/nakshatra/submit/";
+
+  function pushEvent(obj) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(obj);
+  }
+
+  function formId(form) {
+    if (form.id) return form.id;
+    if (form.classList && form.classList.contains("nks-form")) return "locationForm";
+    return "unnamedForm";
+  }
 
   function isLeadForm(form) {
     // Skip non-lead forms (e.g. blog search forms): GET forms and .search-form
@@ -77,7 +98,23 @@
         formData.append(key, value); // email, phone, message, etc. unchanged
       }
     });
-    formData.append("client_event_id", crypto.randomUUID());
+    const clientEventId = crypto.randomUUID();
+    formData.append("client_event_id", clientEventId);
+
+    // Visit source for the CRM (only when enabled after Celiyo confirms the fields)
+    const cfg = window.NK_TRACKING_CONFIG || {};
+    if (cfg.sendSourceFields === true && window.nkAttribution) {
+      const src = window.nkAttribution.formFields();
+      Object.keys(src).forEach(function (k) {
+        formData.append(k, src[k]);
+      });
+    }
+
+    const trackBase = {
+      form_id: formId(form),
+      form_location: window.location.pathname,
+      lead_ref: clientEventId, // random ID, also stored in Celiyo: links GA4/Ads to the CRM record without personal data
+    };
 
     fetch(API_ENDPOINT, {
       method: "POST",
@@ -88,25 +125,8 @@
     })
       .then((response) => {
         if (response.ok) {
-          // Track Facebook Pixel
-          if (typeof window.fbq === "function") {
-            window.fbq("track", "Lead");
-          }
-
-          const isAppointmentForm =
-            form.id === "appointmentForm" || form.id === "contactForm";
-
-          if (isAppointmentForm) {
-            // Direct conversion via gtag
-            if (typeof window.gtag === "function") {
-              window.gtag("event", "conversion", {
-                send_to: "AW-338713549/69GcCKrHo9gbEM23waEB",
-                event_callback: function () {
-                  console.log("Direct conversion tracked successfully");
-                },
-              });
-            }
-          }
+          // Confirmed lead: GTM sends it to GA4 (generate_lead), Google Ads and Meta (if enabled)
+          pushEvent(Object.assign({ event: "generate_lead", lead_type: "form" }, trackBase));
 
           // Reset form after successful submission
           setTimeout(() => {
@@ -116,12 +136,14 @@
 
           showMessage(form, "Message Sent Successfully!", "success");
         } else {
+          pushEvent(Object.assign({ event: "form_error", error_type: "http_" + response.status }, trackBase));
           form.dataset.submitting = "false";
           showMessage(form, "Submission failed. Please retry.", "error");
         }
       })
       .catch((error) => {
         console.error("Form submission error:", error);
+        pushEvent(Object.assign({ event: "form_error", error_type: "network" }, trackBase));
         form.dataset.submitting = "false";
         showMessage(
           form,
