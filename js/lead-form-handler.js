@@ -7,7 +7,7 @@
  *
  * Tracking update (Digitech, Oct 2026):
  *  - Hard-coded gtag/fbq calls removed. Tracking now goes through Google Tag
- *    Manager (GTM-WBZ7VJCT) via dataLayer events:
+ *    Manager (GTM-PJF3JH6B) via dataLayer events:
  *      generate_lead  -> fired only when Celiyo confirms success (response.ok)
  *      form_error     -> fired when Celiyo returns an error or the network fails
  *  - No personal or health data is ever pushed to the dataLayer.
